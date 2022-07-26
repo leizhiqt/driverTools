@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qml/GroupBox_ARINC429_Recv.qml</file>
+        <file>qml/GroupBox_ARINC429_Recv_Send.qml</file>
+        <file>qml/GroupBox_DIO_Recv_Send.qml</file>
+        <file>qml/GroupBox_RS232_Recv.qml</file>
+        <file>qml/GroupBox_RS232_Recv_Send.qml</file>
+        <file>qml/GroupBox_RS422_Manchester.qml</file>
+        <file>qml/GroupBox_RS422_Recv.qml</file>
+        <file>qml/GroupBox_RS422_Recv_Send.qml</file>
+        <file>qml/HZXTabButton.qml</file>
+        <file>qml/HZXText.qml</file>
+        <file>qml/main.qml</file>
+        <file>qml/PageARINC429.qml</file>
+        <file>qml/PageDIO.qml</file>
+        <file>qml/PageDisp.qml</file>
+        <file>qml/PageRS232.qml</file>
+        <file>qml/PageRS422.qml</file>
+        <file>qtquickcontrols2.conf</file>
+    </qresource>
+</RCC>
