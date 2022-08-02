@@ -97,14 +97,12 @@ void rs422Comm::setRecvRS422(const int fd, const QString &recvRS422)
 //    }
 
     if(objList.count()>=fd){
-        LOG_INFO("setRecvRS422 fd=%d",fd);
         //result = (int)rs422_write(rs422PortReadAddress[fd-1], msg_buf, (uint16_t)size);
         QList<QObject*> rs422RecvItemTextAreaList=objList[fd-1]->findChildren<QObject*>("rs422RecvItemTextArea");
         if (rs422RecvItemTextAreaList.count()>0){
             QObject* rs422RecvItemTextArea= rs422RecvItemTextAreaList.first();
             if(rs422RecvItemTextArea)
             {
-                LOG_INFO("setRecvRS422 fd=%d",fd);
                 //QString m_sendBytesStr=QString("%1").arg(m_sendBytesRS422[fd-1],3,10,QChar('0'));
                 QString m_recvStr=QString("%1").arg(m_recvRS422[fd-1]);
                 //rs422RecvItemTextArea->setProperty("text",m_recvStr);
@@ -115,11 +113,9 @@ void rs422Comm::setRecvRS422(const int fd, const QString &recvRS422)
         }
         QList<QObject*> labelRecvBytesRS422List=objList[fd-1]->findChildren<QObject*>("lbl422RecvBytes");
         if (labelRecvBytesRS422List.count()>0){
-            LOG_INFO("setRecvRS422 fd=%d",fd);
             QObject* labelRecvBytesRS422= labelRecvBytesRS422List.first();
             if(labelRecvBytesRS422)
             {
-                LOG_INFO("setRecvRS422 fd=%d",fd);
                 //QString m_sendBytesStr=QString("%1").arg(m_sendBytesRS422[fd-1],3,10,QChar('0'));
                 QString m_recvBytesStr=QString("%1").arg(m_recvBytesRS422[fd-1]);
                 labelRecvBytesRS422->setProperty("text",m_recvBytesStr);

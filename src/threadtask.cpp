@@ -3,6 +3,7 @@
 #include <QThread>
 #include <QDebug>
 #include "callc.h"
+#include "bclog.h"
 
 #include "uartfunc.h"
 pthread_mutex_t mutex;
@@ -77,7 +78,7 @@ void ThreadTask::runAutoTest()
 
     uint32_t status;
     bool isPass=false;
-    for(int i=0;i<dioPortNum-6;i++)
+    for(int i=0;i<dioPortNum;i++)
     {
         isPass=false;
         emit recvAutoTestStringChanged(QString("<br>设置IO_%1为输出模式，并输出高电平").arg(i+1));
@@ -87,16 +88,19 @@ void ThreadTask::runAutoTest()
         QThread::QThread::msleep(50);
         status=io_read();
         qDebug("status=%x",status);
-        uint16_t flag=8;
-        uint16_t flag1=8;
-//        if (i!=0)
-//            flag=(((uint16_t)0x01) << i);
-//        if (i<7)
-//            flag1=(((uint16_t)0x01) << i+7);
-//        else
-//            flag1=(((uint16_t)0x01) << i-7);
-//        qDebug("flag=%x",flag);
-//        qDebug("flag1=%x",flag1);
+        uint16_t flag=0;
+        uint16_t flag1=0;
+
+        LOG_INFO("%d",flag);
+
+        if (i!=0)
+            flag=(((uint16_t)0x01) << i);
+        if (i<7)
+            flag1=(((uint16_t)0x01) << i+7);
+        else
+            flag1=(((uint16_t)0x01) << i-7);
+        LOG_INFO("flag=%x",flag);
+        LOG_INFO("flag1=%x",flag1);
 
         if (status==flag)
         {

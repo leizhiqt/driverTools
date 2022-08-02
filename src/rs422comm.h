@@ -9,6 +9,7 @@
 #include <QtSerialPort/QSerialPortInfo>
 #include <QtSerialPort/QSerialPort>
 #include "callc.h"
+#include "bclog.h"
 
 class rs422Comm : public QObject
 {

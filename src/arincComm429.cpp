@@ -5,6 +5,7 @@
 #include <QThread>
 #include "threadtask.h"
 #include "callc.h"
+#include "bclog.h"
 
 uint8_t rxbuf429[arinc429PortNum][2048];
 
@@ -34,6 +35,8 @@ arincComm429::arincComm429(QObject *parent) : QObject(parent)
 
 void arincComm429::setRecvArinc429(const int fd, const QString &recvArinc429)
 {
+    LOG_INFO("setRecvArinc429 fd=%d %s",fd,recvArinc429.toLatin1().data());
+    printf_hex(recvArinc429.toLatin1().data(),recvArinc429.length());
 //    if (recvArinc429 == m_recvArinc429[fd-1]  && recvArinc429!="")
 //        return;
     if (recvArinc429=="") m_recvBytesArinc429[fd-1]=0;
@@ -41,7 +44,7 @@ void arincComm429::setRecvArinc429(const int fd, const QString &recvArinc429)
     //emit recvRS42210Changed();
     //emit recvBytesRS42210Changed();
     QList<QObject*> objList=qmlObject->findChildren<QObject*>("arinc429GroupBox");
-    if(objList.count()>fd){
+    if(objList.count()>=fd){
        // result = (int)rs422_write(arinc429PortReadAddress[fd-1], msg_buf, (uint16_t)size);
         QList<QObject*> arinc429RecvItemTextAreaList=objList[fd-1]->findChildren<QObject*>("arinc429RecvItemTextArea");
         if (arinc429RecvItemTextAreaList.count()>0){

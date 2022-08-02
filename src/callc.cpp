@@ -96,78 +96,78 @@ int crs422_config(uint32_t fd, uint32_t baudrate, uint32_t bits, uint32_t parity
         result=rs422_config(RS422_TX_09,baudrate, bits, parity, stop);
         result=rs422_config(RS422_RX_09,baudrate, bits, parity, stop);
         break;
-    case 10:
-        result = rs422_close(RS422_TX_10);
-        result = rs422_close(RS422_RX_10);
-        result = rs422_open(RS422_TX_10);
-        result = rs422_open(RS422_RX_10);
-        result=rs422_config(RS422_TX_10,baudrate, bits, parity, stop);
-        result=rs422_config(RS422_RX_10,baudrate, bits, parity, stop);
-        break;
-    case 11:
-        result = rs422_close(RS422_TX_11);
-        result = rs422_close(RS422_RX_11);
-        result = rs422_open(RS422_TX_11);
-        result = rs422_open(RS422_RX_11);
-        result=rs422_config(RS422_TX_11,baudrate, bits, parity, stop);
-        result=rs422_config(RS422_RX_11,baudrate, bits, parity, stop);
-        break;
-    case 12:
-        result = rs422_close(RS422_TX_12);
-        result = rs422_close(RS422_RX_12);
-        result = rs422_open(RS422_TX_12);
-        result = rs422_open(RS422_RX_12);
-        result=rs422_config(RS422_TX_12,baudrate, bits, parity, stop);
-        result=rs422_config(RS422_RX_12,baudrate, bits, parity, stop);
-        break;
-    case 13:
-        result = rs422_close(RS422_TX_13);
-        result = rs422_close(RS422_RX_13);
-        result = rs422_open(RS422_TX_13);
-        result = rs422_open(RS422_RX_13);
-        result=rs422_config(RS422_TX_13,baudrate, bits, parity, stop);
-        result=rs422_config(RS422_RX_13,baudrate, bits, parity, stop);
-        break;
-    case 14:
-        result = rs422_close(RS422_TX_14);
-        result = rs422_close(RS422_RX_14);
-        result = rs422_open(RS422_TX_14);
-        result = rs422_open(RS422_RX_14);
-        result=rs422_config(RS422_TX_14,baudrate, bits, parity, stop);
-        result=rs422_config(RS422_RX_14,baudrate, bits, parity, stop);
-        break;
-    case 15:
-        result = rs422_close(RS422_TX_15);
-        result = rs422_close(RS422_RX_15);
-        result = rs422_open(RS422_TX_15);
-        result = rs422_open(RS422_RX_15);
-        result=rs422_config(RS422_TX_15,baudrate, bits, parity, stop);
-        result=rs422_config(RS422_RX_15,baudrate, bits, parity, stop);
-        break;
-    case 16:
-        result = rs422_close(RS422_TX_16);
-        result = rs422_close(RS422_RX_16);
-        result = rs422_open(RS422_TX_16);
-        result = rs422_open(RS422_RX_16);
-        result=rs422_config(RS422_TX_16,baudrate, bits, parity, stop);
-        result=rs422_config(RS422_RX_16,baudrate, bits, parity, stop);
-        break;
-    case 17:
-        result = rs422_close(RS422_TX_17);
-        result = rs422_close(RS422_RX_17);
-        result = rs422_open(RS422_TX_17);
-        result = rs422_open(RS422_RX_17);
-        result=rs422_config(RS422_TX_17,baudrate, bits, parity, stop);
-        result=rs422_config(RS422_RX_17,baudrate, bits, parity, stop);
-        break;
-    case 18:
-        result = rs422_close(RS422_TX_18);
-        result = rs422_close(RS422_RX_18);
-        result = rs422_open(RS422_TX_18);
-        result = rs422_open(RS422_RX_18);
-        result=rs422_config(RS422_TX_18,baudrate, bits, parity, stop);
-        result=rs422_config(RS422_RX_18,baudrate, bits, parity, stop);
-        break;
+//    case 10:
+//        result = rs422_close(RS422_TX_10);
+//        result = rs422_close(RS422_RX_10);
+//        result = rs422_open(RS422_TX_10);
+//        result = rs422_open(RS422_RX_10);
+//        result=rs422_config(RS422_TX_10,baudrate, bits, parity, stop);
+//        result=rs422_config(RS422_RX_10,baudrate, bits, parity, stop);
+//        break;
+//    case 11:
+//        result = rs422_close(RS422_TX_11);
+//        result = rs422_close(RS422_RX_11);
+//        result = rs422_open(RS422_TX_11);
+//        result = rs422_open(RS422_RX_11);
+//        result=rs422_config(RS422_TX_11,baudrate, bits, parity, stop);
+//        result=rs422_config(RS422_RX_11,baudrate, bits, parity, stop);
+//        break;
+//    case 12:
+//        result = rs422_close(RS422_TX_12);
+//        result = rs422_close(RS422_RX_12);
+//        result = rs422_open(RS422_TX_12);
+//        result = rs422_open(RS422_RX_12);
+//        result=rs422_config(RS422_TX_12,baudrate, bits, parity, stop);
+//        result=rs422_config(RS422_RX_12,baudrate, bits, parity, stop);
+//        break;
+//    case 13:
+//        result = rs422_close(RS422_TX_13);
+//        result = rs422_close(RS422_RX_13);
+//        result = rs422_open(RS422_TX_13);
+//        result = rs422_open(RS422_RX_13);
+//        result=rs422_config(RS422_TX_13,baudrate, bits, parity, stop);
+//        result=rs422_config(RS422_RX_13,baudrate, bits, parity, stop);
+//        break;
+//    case 14:
+//        result = rs422_close(RS422_TX_14);
+//        result = rs422_close(RS422_RX_14);
+//        result = rs422_open(RS422_TX_14);
+//        result = rs422_open(RS422_RX_14);
+//        result=rs422_config(RS422_TX_14,baudrate, bits, parity, stop);
+//        result=rs422_config(RS422_RX_14,baudrate, bits, parity, stop);
+//        break;
+//    case 15:
+//        result = rs422_close(RS422_TX_15);
+//        result = rs422_close(RS422_RX_15);
+//        result = rs422_open(RS422_TX_15);
+//        result = rs422_open(RS422_RX_15);
+//        result=rs422_config(RS422_TX_15,baudrate, bits, parity, stop);
+//        result=rs422_config(RS422_RX_15,baudrate, bits, parity, stop);
+//        break;
+//    case 16:
+//        result = rs422_close(RS422_TX_16);
+//        result = rs422_close(RS422_RX_16);
+//        result = rs422_open(RS422_TX_16);
+//        result = rs422_open(RS422_RX_16);
+//        result=rs422_config(RS422_TX_16,baudrate, bits, parity, stop);
+//        result=rs422_config(RS422_RX_16,baudrate, bits, parity, stop);
+//        break;
+//    case 17:
+//        result = rs422_close(RS422_TX_17);
+//        result = rs422_close(RS422_RX_17);
+//        result = rs422_open(RS422_TX_17);
+//        result = rs422_open(RS422_RX_17);
+//        result=rs422_config(RS422_TX_17,baudrate, bits, parity, stop);
+//        result=rs422_config(RS422_RX_17,baudrate, bits, parity, stop);
+//        break;
+//    case 18:
+//        result = rs422_close(RS422_TX_18);
+//        result = rs422_close(RS422_RX_18);
+//        result = rs422_open(RS422_TX_18);
+//        result = rs422_open(RS422_RX_18);
+//        result=rs422_config(RS422_TX_18,baudrate, bits, parity, stop);
+//        result=rs422_config(RS422_RX_18,baudrate, bits, parity, stop);
+//        break;
 
     }
     return result;
@@ -202,29 +202,29 @@ int carinc429_config(uint32_t fd, uint32_t baudrate, uint32_t parity, uint32_t e
         result=arinc429_config(ARINC429_TX_03,baudrate, parity, encmode);
         result=arinc429_config(ARINC429_RX_03,baudrate, parity, encmode);
         break;
-    case 4:
-        result = arinc429_close(ARINC429_TX_04);
-        result = arinc429_close(ARINC429_RX_04);
-        result = arinc429_open(ARINC429_TX_04);
-        result = arinc429_open(ARINC429_RX_04);
-        result=arinc429_config(ARINC429_TX_04,baudrate, parity, encmode);
-        result=arinc429_config(ARINC429_RX_04,baudrate, parity, encmode);
-        break;
-    case 5:
-        result = arinc429_close(ARINC429_TX_05);
-        result = arinc429_close(ARINC429_RX_05);
-        result = arinc429_open(ARINC429_TX_05);
-        result = arinc429_open(ARINC429_RX_05);
-        result=arinc429_config(ARINC429_TX_05,baudrate, parity, encmode);
-        result=arinc429_config(ARINC429_RX_05,baudrate, parity, encmode);
-        break;
-    case 6:
-        result = arinc429_close(ARINC429_TX_06);
-        result = arinc429_close(ARINC429_RX_06);
-        result = arinc429_open(ARINC429_TX_06);
-        result = arinc429_open(ARINC429_RX_06);
-        result=arinc429_config(ARINC429_TX_06,baudrate, parity, encmode);
-        result=arinc429_config(ARINC429_RX_06,baudrate, parity, encmode);
+//    case 4:
+//        result = arinc429_close(ARINC429_TX_04);
+//        result = arinc429_close(ARINC429_RX_04);
+//        result = arinc429_open(ARINC429_TX_04);
+//        result = arinc429_open(ARINC429_RX_04);
+//        result=arinc429_config(ARINC429_TX_04,baudrate, parity, encmode);
+//        result=arinc429_config(ARINC429_RX_04,baudrate, parity, encmode);
+//        break;
+//    case 5:
+//        result = arinc429_close(ARINC429_TX_05);
+//        result = arinc429_close(ARINC429_RX_05);
+//        result = arinc429_open(ARINC429_TX_05);
+//        result = arinc429_open(ARINC429_RX_05);
+//        result=arinc429_config(ARINC429_TX_05,baudrate, parity, encmode);
+//        result=arinc429_config(ARINC429_RX_05,baudrate, parity, encmode);
+//        break;
+//    case 6:
+//        result = arinc429_close(ARINC429_TX_06);
+//        result = arinc429_close(ARINC429_RX_06);
+//        result = arinc429_open(ARINC429_TX_06);
+//        result = arinc429_open(ARINC429_RX_06);
+//        result=arinc429_config(ARINC429_TX_06,baudrate, parity, encmode);
+//        result=arinc429_config(ARINC429_RX_06,baudrate, parity, encmode);
 
 
     }

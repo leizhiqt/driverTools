@@ -134,18 +134,16 @@ Item {
                     CheckBox{
                         id:checkHexSend
                         text: "十六进制"
-                        checked: true
-                        enabled: ture
                         anchors.bottom: parent.bottom
                         anchors.bottomMargin: 10
                         anchors.left: parent.left
                         anchors.leftMargin: 10
-
+                        checked: false
                         height: 40
 
                         //选择状态更改事件
                         onCheckedChanged: {
-                             arinc429.setHexarinc429(grp.fd,checked);
+//                             arinc429.setHexarinc429(grp.fd,checked);
                             console.log(grp.title + ",选择十六进制:" + checked)
                             if (checked)
                             {

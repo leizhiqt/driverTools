@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <RCC>
     <qresource prefix="/">
-        <file alias="qtquickcontrols2.conf">../../qtquickcontrols2.conf</file>
+        <file alias="qtquickcontrols2.conf">../../../driverToolsTest111/qtquickcontrols2.conf</file>
     </qresource>
 </RCC>

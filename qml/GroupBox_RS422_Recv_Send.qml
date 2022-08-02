@@ -105,6 +105,7 @@ Item {
                     CheckBox{
                         id:checkHexSend
                         text: "十六进制"
+
                         anchors.bottom: parent.bottom
                         anchors.bottomMargin: 10
                         anchors.left: parent.left
