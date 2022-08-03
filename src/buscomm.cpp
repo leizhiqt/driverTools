@@ -13,7 +13,23 @@
 #include <QTime>
 #include <QThreadPool>
 #include "threadtask.h"
+#include "convert_util.h"
 
+void str_trim(char  *s1)
+{
+    char *s2;
+    s2 = s1; //让我们的S2指向数组，以便更改数组里面的东西
+    while (*s1) {
+        if (*s1 == ' ') {
+            s1++;
+        } else {
+            *s2 = *s1;
+            s1++;
+            s2++; //指向数组的指针往后移动
+        }
+    }
+    *s2 = '\0';
+}
 
 busComm *busComm::pThis = 0;
 /**
@@ -58,12 +74,12 @@ void busComm::setRecvString(const QString &recvString)
 }
 void busComm::appendRecvString(const QString &recvString)
 {
-//    m_recvString.append(recvString);
-//    if (enableDisplay)
-//    {
-//        emit recvStringChanged();
-//        enableDisplay=false;
-//    }
+    //    m_recvString.append(recvString);
+    //    if (enableDisplay)
+    //    {
+    //        emit recvStringChanged();
+    //        enableDisplay=false;
+    //    }
     if(recvString.indexOf("接收:")>-1)
     {
         m_tempString=recvString;
@@ -100,7 +116,7 @@ void busComm::appendRecvString(const QString &recvString)
                 autoTestError=autoTestError+recvString;
             }
             if (recvString.indexOf("测试完毕")>-1 && autoTestError.length()>2){
-                    m_recvString.append("<br>有问题端口如下："+autoTestError+"<br><br>");
+                m_recvString.append("<br>有问题端口如下："+autoTestError+"<br><br>");
             }
             m_recvString.append(recvString);
             if (enableDisplay)
@@ -176,6 +192,8 @@ void busComm::onRecvStringMsg(int fd,QByteArray data,int length)
 }
 void busComm::onRecvStringMsg(QByteArray data,int length)
 {
+    LOG_INFO("%s",data.begin());
+
     char msg_buf[length];
     memset(msg_buf,0,length*sizeof(uint8_t));
     memcpy(msg_buf,data,length);
@@ -195,6 +213,7 @@ void busComm::onRecvStringMsg(int fd,QString revcString)
 }
 void busComm::onRecvStringMsg(QString revcString)
 {
+    LOG_INFO("onRecvStringMsg=%s",revcString.toUtf8().data());
     appendRecvString(revcString);
 }
 
@@ -238,10 +257,10 @@ void busComm::btnAutoTestClicked()
 
     QThreadPool::globalInstance()->start(autoTestThread);
 
-//    result = rs232->openRS232();
-//    result = rs422->openRS422();
-//    result = arinc429->openArinc429();
-//    result = diocomm->openDIO();
+    //    result = rs232->openRS232();
+    //    result = rs422->openRS422();
+    //    result = arinc429->openArinc429();
+    //    result = diocomm->openDIO();
 
 }
 
@@ -270,8 +289,8 @@ void busComm::btnAutoTestClicked()
 
 void busComm::open()
 {
-    QThreadPool::globalInstance()->setMaxThreadCount(10);   
-    rs232=rs232Comm::getInstance();    
+    QThreadPool::globalInstance()->setMaxThreadCount(10);
+    rs232=rs232Comm::getInstance();
     rs422=rs422Comm::getInstance();
     arinc429=arincComm429::getInstance();
     diocomm=dioComm::getInstance();
@@ -342,6 +361,8 @@ int busComm::writeDigital(int pin, int value)
 
 int busComm::recvMsgTest(int busType,int recFd, QByteArray data,int length)
 {
+    LOG_INFO("recvMsgTest %s",data.begin());
+
     int result = -1;
     switch(busType)
     {
@@ -361,12 +382,29 @@ int busComm::recvMsgTest(int busType,int recFd, QByteArray data,int length)
 
 void busComm::onTheadSendMsg(int busType, int fd, QByteArray msgPack, int size, bool checkHexSend)
 {
+    LOG_INFO("onTheadSendMsg busType=%d size=%d",busType,size);
     sendMsg(busType,  fd,  msgPack,  size,  checkHexSend);
 }
 
 int busComm::sendMsg(int busType, int fd, QByteArray msgPack, int size, bool checkHexSend)
 {
     //checkHexSend = false
+//    LOG_INFO("sendMsg busType=%d size=%d",busType,size);
+
+//    char *s_p = msgPack.begin();
+//    char *buf_p=(char *) malloc(sizeof(char)*size);
+//    strncpy(buf_p,s_p,size);
+//    str_trim(buf_p);
+
+//    int buf_len=strlen(buf_p);
+//    int hbuf_len=buf_len/2;
+
+//    char *hbuf_p=(char *) malloc(sizeof(char)*buf_len);
+//    memset(hbuf_p,'\0',buf_len);
+//    hexs_to_binary(buf_p,buf_len,(uchar_8 *)hbuf_p);
+
+//    LOG_INFO("sendMsg busType=%d size=%d",busType,size);
+
     int result = -1;
     switch(busType)
     {
@@ -374,12 +412,14 @@ int busComm::sendMsg(int busType, int fd, QByteArray msgPack, int size, bool che
         if (checkHexSend)
         {
             QString str=QString(msgPack);
-            QByteArray ab=str.replace(" ","").toLatin1();
+            QByteArray ab=QByteArray::fromHex(str.replace(" ","").toLatin1());
             result=arinc429->sendMsg429(fd,ab,ab.length());
+//            LOG_INFO("arinc429 checkHexSend %02x %02x %02x %02x ",*hbuf_p,*(hbuf_p+1),*(hbuf_p+2),*(hbuf_p+3));
         }
         else
         {
             result=arinc429->sendMsg429(fd,msgPack,size);
+            LOG_INFO("arinc429 assic size=%d",size);
         }
         break;
     case 2:
@@ -408,16 +448,26 @@ int busComm::sendMsg(int busType, int fd, QByteArray msgPack, int size, bool che
         break;
 
     }
+
     if (checkHexSend)
     {
         QString str=QString(msgPack);
         QByteArray ab=QByteArray::fromHex(str.replace(" ","").toLatin1());
-        recvMsgTest(busType, fd, ab, ab.length());
+
+        LOG_INFO("arinc429 assic size=%d",size);
+
+        recvMsgTest(busType, fd, ab,ab.length());
     }
     else
     {
+        LOG_INFO("arinc429 assic size=%d",size);
+
         recvMsgTest(busType, fd, msgPack, size);
     }
+
+//    delete buf_p;
+//    delete hbuf_p;
+
     return result;
 }
 

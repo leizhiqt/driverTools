@@ -25,11 +25,10 @@ void ThreadTask::runAutoTest()
     QString sendString="Send RS23201 Test";
     QByteArray data=sendString.toLatin1();
 
-
     for(int i=0;i<rs232PortNum;i++)
     {
 
-       sendString=QString("Send RS232_%1 Test").arg(i+1);/*Send RS232_%1 Test*/
+       sendString=QString("Send RS232_%1 Test").arg(i+1);
        emit recvAutoTestStringChanged(QString("测试RS232通道%1,发送:").arg(i+1)+sendString);
        data=sendString.toLatin1();
        emit threadSendMsg(3,i+1,data,data.length(),true);
@@ -65,12 +64,15 @@ void ThreadTask::runAutoTest()
         emit recvAutoTestStringChanged("<br><br>");
     }
 
-    for(int i=0;i<arinc429PortNum;i++)
+    for(int i=0;i<arinc429PortNum;i++)//arinc429PortNum
     {
-        sendString="AA555A01";
+        sendString="12345678";
+        sendString="41 41 35 35 35 41 30 31";
         emit recvAutoTestStringChanged(QString("测试Arinc429通道%1,发送:").arg(i+1)+sendString);
+
         data=sendString.toLatin1();
         emit threadSendMsg(1,i+1,data,data.length(),true);
+
         emit recvAutoTestStringChanged(QString("测试Arinc429通道%1,接收:").arg(i+1)+sendString);
         QThread::msleep(50);
         emit recvAutoTestStringChanged("<br><br>");
@@ -133,7 +135,6 @@ void ThreadTask::runAutoTest()
             emit recvAutoTestStringChanged(QString("<font color=\"#FF00FF\">IO_%1回环测试未通过!</font><br>").arg(i+1));
         }
     }
-
 
     isPass=false;
     emit recvAutoTestStringChanged("<br>设置IO_15为输出模式，并输出高电平");
@@ -247,6 +248,7 @@ void ThreadTask::runDIO()
         QThread::msleep(100);
     }
     qDebug()<< "DIO Thread Closed!";
+
 }
 
 void ThreadTask::run429()

@@ -1,1 +1,951 @@
-[2022-08-02 10:28:23 main.cpp 17]abcd
+[2022-08-03 14:50:10 main.cpp 17]abcd
+[2022-08-03 14:50:16 src/rs422comm.cpp 82]setRecvRS422 fd=1 
+[2022-08-03 14:50:16 src/rs422comm.cpp 92]setRecvRS422 fd=1 count=18
+[2022-08-03 14:50:16 src/rs422comm.cpp 109]setRecvRS422 fd=1 
+[2022-08-03 14:50:16 src/rs422comm.cpp 123]setRecvRS422 fd=1
+[2022-08-03 14:50:16 src/rs422comm.cpp 127]setRecvRS422 fd=1
+[2022-08-03 14:50:16 src/rs422comm.cpp 82]setRecvRS422 fd=2 
+[2022-08-03 14:50:16 src/rs422comm.cpp 92]setRecvRS422 fd=2 count=18
+[2022-08-03 14:50:16 src/rs422comm.cpp 109]setRecvRS422 fd=2 
+[2022-08-03 14:50:16 src/rs422comm.cpp 123]setRecvRS422 fd=2
+[2022-08-03 14:50:16 src/rs422comm.cpp 127]setRecvRS422 fd=2
+[2022-08-03 14:50:16 src/rs422comm.cpp 82]setRecvRS422 fd=3 
+[2022-08-03 14:50:16 src/rs422comm.cpp 92]setRecvRS422 fd=3 count=18
+[2022-08-03 14:50:16 src/rs422comm.cpp 109]setRecvRS422 fd=3 
+[2022-08-03 14:50:16 src/rs422comm.cpp 123]setRecvRS422 fd=3
+[2022-08-03 14:50:16 src/rs422comm.cpp 127]setRecvRS422 fd=3
+[2022-08-03 14:50:16 src/rs422comm.cpp 82]setRecvRS422 fd=4 
+[2022-08-03 14:50:16 src/rs422comm.cpp 92]setRecvRS422 fd=4 count=18
+[2022-08-03 14:50:16 src/rs422comm.cpp 109]setRecvRS422 fd=4 
+[2022-08-03 14:50:16 src/rs422comm.cpp 123]setRecvRS422 fd=4
+[2022-08-03 14:50:16 src/rs422comm.cpp 127]setRecvRS422 fd=4
+[2022-08-03 14:50:16 src/rs422comm.cpp 82]setRecvRS422 fd=5 
+[2022-08-03 14:50:16 src/rs422comm.cpp 92]setRecvRS422 fd=5 count=18
+[2022-08-03 14:50:16 src/rs422comm.cpp 109]setRecvRS422 fd=5 
+[2022-08-03 14:50:16 src/rs422comm.cpp 123]setRecvRS422 fd=5
+[2022-08-03 14:50:16 src/rs422comm.cpp 127]setRecvRS422 fd=5
+[2022-08-03 14:50:16 src/rs422comm.cpp 82]setRecvRS422 fd=6 
+[2022-08-03 14:50:16 src/rs422comm.cpp 92]setRecvRS422 fd=6 count=18
+[2022-08-03 14:50:16 src/rs422comm.cpp 109]setRecvRS422 fd=6 
+[2022-08-03 14:50:16 src/rs422comm.cpp 123]setRecvRS422 fd=6
+[2022-08-03 14:50:16 src/rs422comm.cpp 127]setRecvRS422 fd=6
+[2022-08-03 14:50:16 src/rs422comm.cpp 82]setRecvRS422 fd=7 
+[2022-08-03 14:50:16 src/rs422comm.cpp 92]setRecvRS422 fd=7 count=18
+[2022-08-03 14:50:16 src/rs422comm.cpp 109]setRecvRS422 fd=7 
+[2022-08-03 14:50:16 src/rs422comm.cpp 123]setRecvRS422 fd=7
+[2022-08-03 14:50:16 src/rs422comm.cpp 127]setRecvRS422 fd=7
+[2022-08-03 14:50:16 src/rs422comm.cpp 82]setRecvRS422 fd=8 
+[2022-08-03 14:50:16 src/rs422comm.cpp 92]setRecvRS422 fd=8 count=18
+[2022-08-03 14:50:16 src/rs422comm.cpp 109]setRecvRS422 fd=8 
+[2022-08-03 14:50:16 src/rs422comm.cpp 123]setRecvRS422 fd=8
+[2022-08-03 14:50:16 src/rs422comm.cpp 127]setRecvRS422 fd=8
+[2022-08-03 14:50:16 src/rs422comm.cpp 82]setRecvRS422 fd=9 
+[2022-08-03 14:50:16 src/rs422comm.cpp 92]setRecvRS422 fd=9 count=18
+[2022-08-03 14:50:16 src/rs422comm.cpp 109]setRecvRS422 fd=9 
+[2022-08-03 14:50:16 src/rs422comm.cpp 123]setRecvRS422 fd=9
+[2022-08-03 14:50:16 src/rs422comm.cpp 127]setRecvRS422 fd=9
+[2022-08-03 14:50:16 src/rs422comm.cpp 82]setRecvRS422 fd=10 
+[2022-08-03 14:50:16 src/rs422comm.cpp 92]setRecvRS422 fd=10 count=18
+[2022-08-03 14:50:16 src/rs422comm.cpp 109]setRecvRS422 fd=10 
+[2022-08-03 14:50:16 src/rs422comm.cpp 123]setRecvRS422 fd=10
+[2022-08-03 14:50:16 src/rs422comm.cpp 127]setRecvRS422 fd=10
+[2022-08-03 14:50:16 src/rs422comm.cpp 82]setRecvRS422 fd=11 
+[2022-08-03 14:50:16 src/rs422comm.cpp 92]setRecvRS422 fd=11 count=18
+[2022-08-03 14:50:16 src/rs422comm.cpp 109]setRecvRS422 fd=11 
+[2022-08-03 14:50:16 src/rs422comm.cpp 123]setRecvRS422 fd=11
+[2022-08-03 14:50:16 src/rs422comm.cpp 127]setRecvRS422 fd=11
+[2022-08-03 14:50:16 src/rs422comm.cpp 82]setRecvRS422 fd=12 
+[2022-08-03 14:50:16 src/rs422comm.cpp 92]setRecvRS422 fd=12 count=18
+[2022-08-03 14:50:16 src/rs422comm.cpp 109]setRecvRS422 fd=12 
+[2022-08-03 14:50:16 src/rs422comm.cpp 123]setRecvRS422 fd=12
+[2022-08-03 14:50:16 src/rs422comm.cpp 127]setRecvRS422 fd=12
+[2022-08-03 14:50:16 src/rs422comm.cpp 82]setRecvRS422 fd=13 
+[2022-08-03 14:50:16 src/rs422comm.cpp 92]setRecvRS422 fd=13 count=18
+[2022-08-03 14:50:16 src/rs422comm.cpp 109]setRecvRS422 fd=13 
+[2022-08-03 14:50:16 src/rs422comm.cpp 123]setRecvRS422 fd=13
+[2022-08-03 14:50:16 src/rs422comm.cpp 127]setRecvRS422 fd=13
+[2022-08-03 14:50:16 src/rs422comm.cpp 82]setRecvRS422 fd=14 
+[2022-08-03 14:50:16 src/rs422comm.cpp 92]setRecvRS422 fd=14 count=18
+[2022-08-03 14:50:16 src/rs422comm.cpp 109]setRecvRS422 fd=14 
+[2022-08-03 14:50:16 src/rs422comm.cpp 123]setRecvRS422 fd=14
+[2022-08-03 14:50:16 src/rs422comm.cpp 127]setRecvRS422 fd=14
+[2022-08-03 14:50:16 src/rs422comm.cpp 82]setRecvRS422 fd=15 
+[2022-08-03 14:50:16 src/rs422comm.cpp 92]setRecvRS422 fd=15 count=18
+[2022-08-03 14:50:16 src/rs422comm.cpp 109]setRecvRS422 fd=15 
+[2022-08-03 14:50:16 src/rs422comm.cpp 123]setRecvRS422 fd=15
+[2022-08-03 14:50:16 src/rs422comm.cpp 127]setRecvRS422 fd=15
+[2022-08-03 14:50:16 src/rs422comm.cpp 82]setRecvRS422 fd=16 
+[2022-08-03 14:50:16 src/rs422comm.cpp 92]setRecvRS422 fd=16 count=18
+[2022-08-03 14:50:16 src/rs422comm.cpp 109]setRecvRS422 fd=16 
+[2022-08-03 14:50:16 src/rs422comm.cpp 123]setRecvRS422 fd=16
+[2022-08-03 14:50:16 src/rs422comm.cpp 127]setRecvRS422 fd=16
+[2022-08-03 14:50:16 src/rs422comm.cpp 82]setRecvRS422 fd=17 
+[2022-08-03 14:50:16 src/rs422comm.cpp 92]setRecvRS422 fd=17 count=18
+[2022-08-03 14:50:16 src/rs422comm.cpp 109]setRecvRS422 fd=17 
+[2022-08-03 14:50:16 src/rs422comm.cpp 123]setRecvRS422 fd=17
+[2022-08-03 14:50:16 src/rs422comm.cpp 127]setRecvRS422 fd=17
+[2022-08-03 14:50:16 src/rs422comm.cpp 82]setRecvRS422 fd=18 
+[2022-08-03 14:50:16 src/rs422comm.cpp 92]setRecvRS422 fd=18 count=18
+[2022-08-03 14:50:16 src/rs422comm.cpp 109]setRecvRS422 fd=18 
+[2022-08-03 14:50:16 src/rs422comm.cpp 123]setRecvRS422 fd=18
+[2022-08-03 14:50:16 src/rs422comm.cpp 127]setRecvRS422 fd=18
+[2022-08-03 14:50:16 src/rs232comm.cpp 146]setRecvRS422 fd=1 count=14
+[2022-08-03 14:50:16 src/rs232comm.cpp 146]setRecvRS422 fd=2 count=14
+[2022-08-03 14:50:16 src/rs232comm.cpp 146]setRecvRS422 fd=3 count=14
+[2022-08-03 14:50:16 src/rs232comm.cpp 146]setRecvRS422 fd=4 count=14
+[2022-08-03 14:50:16 src/rs232comm.cpp 146]setRecvRS422 fd=5 count=14
+[2022-08-03 14:50:16 src/rs232comm.cpp 146]setRecvRS422 fd=6 count=14
+[2022-08-03 14:50:16 src/rs232comm.cpp 146]setRecvRS422 fd=7 count=14
+[2022-08-03 14:50:16 src/rs232comm.cpp 146]setRecvRS422 fd=8 count=14
+[2022-08-03 14:50:16 src/rs232comm.cpp 146]setRecvRS422 fd=9 count=14
+[2022-08-03 14:50:16 src/rs232comm.cpp 146]setRecvRS422 fd=10 count=14
+[2022-08-03 14:50:16 src/rs232comm.cpp 146]setRecvRS422 fd=11 count=14
+[2022-08-03 14:50:16 src/rs232comm.cpp 146]setRecvRS422 fd=12 count=14
+[2022-08-03 14:50:16 src/rs232comm.cpp 146]setRecvRS422 fd=13 count=14
+[2022-08-03 14:50:16 src/rs232comm.cpp 146]setRecvRS422 fd=14 count=14
+[2022-08-03 14:50:16 src/arincComm429.cpp 122]setRecvArincComm429
+[2022-08-03 14:50:16 src/arincComm429.cpp 122]setRecvArincComm429
+[2022-08-03 14:50:16 src/arincComm429.cpp 122]setRecvArincComm429
+[2022-08-03 14:50:16 src/arincComm429.cpp 122]setRecvArincComm429
+[2022-08-03 14:50:16 src/arincComm429.cpp 122]setRecvArincComm429
+[2022-08-03 14:50:16 src/arincComm429.cpp 122]setRecvArincComm429
+[2022-08-03 14:50:16 src/arincComm429.cpp 122]setRecvArincComm429
+[2022-08-03 14:50:16 src/arincComm429.cpp 122]setRecvArincComm429
+[2022-08-03 14:50:16 src/buscomm.cpp 216]onRecvStringMsg=一键测试开始<br><br>
+[2022-08-03 14:50:16 src/buscomm.cpp 216]onRecvStringMsg=测试RS232通道1,发送:Send RS232_1 Test
+[2022-08-03 14:50:16 src/buscomm.cpp 385]onTheadSendMsg busType=3 size=17
+[2022-08-03 14:50:16 src/buscomm.cpp 457]arinc429 assic size=17
+[2022-08-03 14:50:16 src/buscomm.cpp 364]recvMsgTest �2
+[2022-08-03 14:50:16 src/rs232comm.cpp 146]setRecvRS422 fd=1 count=14
+[2022-08-03 14:50:16 src/buscomm.cpp 216]onRecvStringMsg=<br>RS232通道1,接收:Send RS232_1 Test
+[2022-08-03 14:50:17 src/buscomm.cpp 216]onRecvStringMsg=<br><br>
+[2022-08-03 14:50:17 src/buscomm.cpp 216]onRecvStringMsg=测试RS232通道2,发送:Send RS232_2 Test
+[2022-08-03 14:50:17 src/buscomm.cpp 385]onTheadSendMsg busType=3 size=17
+[2022-08-03 14:50:17 src/buscomm.cpp 457]arinc429 assic size=17
+[2022-08-03 14:50:17 src/buscomm.cpp 364]recvMsgTest �2.
+[2022-08-03 14:50:17 src/rs232comm.cpp 146]setRecvRS422 fd=2 count=14
+[2022-08-03 14:50:17 src/buscomm.cpp 216]onRecvStringMsg=<br>RS232通道2,接收:Send RS232_2 Test
+[2022-08-03 14:50:17 src/buscomm.cpp 216]onRecvStringMsg=<br><br>
+[2022-08-03 14:50:17 src/buscomm.cpp 216]onRecvStringMsg=测试RS232通道3,发送:Send RS232_3 Test
+[2022-08-03 14:50:17 src/buscomm.cpp 385]onTheadSendMsg busType=3 size=17
+[2022-08-03 14:50:17 src/buscomm.cpp 457]arinc429 assic size=17
+[2022-08-03 14:50:17 src/buscomm.cpp 364]recvMsgTest �2>
+[2022-08-03 14:50:17 src/rs232comm.cpp 146]setRecvRS422 fd=3 count=14
+[2022-08-03 14:50:17 src/buscomm.cpp 216]onRecvStringMsg=<br>RS232通道3,接收:Send RS232_3 Test
+[2022-08-03 14:50:17 src/buscomm.cpp 216]onRecvStringMsg=<br><br>
+[2022-08-03 14:50:17 src/buscomm.cpp 216]onRecvStringMsg=测试RS232通道4,发送:Send RS232_4 Test
+[2022-08-03 14:50:17 src/buscomm.cpp 385]onTheadSendMsg busType=3 size=17
+[2022-08-03 14:50:17 src/buscomm.cpp 457]arinc429 assic size=17
+[2022-08-03 14:50:17 src/buscomm.cpp 364]recvMsgTest �2N
+[2022-08-03 14:50:17 src/rs232comm.cpp 146]setRecvRS422 fd=4 count=14
+[2022-08-03 14:50:17 src/buscomm.cpp 216]onRecvStringMsg=<br>RS232通道4,接收:Send RS232_4 Test
+[2022-08-03 14:50:17 src/buscomm.cpp 216]onRecvStringMsg=<br><br>
+[2022-08-03 14:50:17 src/buscomm.cpp 216]onRecvStringMsg=测试RS232通道5,发送:Send RS232_5 Test
+[2022-08-03 14:50:17 src/buscomm.cpp 385]onTheadSendMsg busType=3 size=17
+[2022-08-03 14:50:17 src/buscomm.cpp 457]arinc429 assic size=17
+[2022-08-03 14:50:17 src/buscomm.cpp 364]recvMsgTest �2^
+[2022-08-03 14:50:17 src/rs232comm.cpp 146]setRecvRS422 fd=5 count=14
+[2022-08-03 14:50:17 src/buscomm.cpp 216]onRecvStringMsg=<br>RS232通道5,接收:Send RS232_5 Test
+[2022-08-03 14:50:17 src/buscomm.cpp 216]onRecvStringMsg=<br><br>
+[2022-08-03 14:50:17 src/buscomm.cpp 216]onRecvStringMsg=测试RS232通道6,发送:Send RS232_6 Test
+[2022-08-03 14:50:17 src/buscomm.cpp 385]onTheadSendMsg busType=3 size=17
+[2022-08-03 14:50:17 src/buscomm.cpp 457]arinc429 assic size=17
+[2022-08-03 14:50:17 src/buscomm.cpp 364]recvMsgTest �2n
+[2022-08-03 14:50:17 src/rs232comm.cpp 146]setRecvRS422 fd=6 count=14
+[2022-08-03 14:50:17 src/buscomm.cpp 216]onRecvStringMsg=<br>RS232通道6,接收:Send RS232_6 Test
+[2022-08-03 14:50:17 src/buscomm.cpp 216]onRecvStringMsg=<br><br>
+[2022-08-03 14:50:17 src/buscomm.cpp 216]onRecvStringMsg=测试RS232通道7,发送:Send RS232_7 Test
+[2022-08-03 14:50:17 src/buscomm.cpp 385]onTheadSendMsg busType=3 size=17
+[2022-08-03 14:50:17 src/buscomm.cpp 457]arinc429 assic size=17
+[2022-08-03 14:50:17 src/buscomm.cpp 364]recvMsgTest �2~
+[2022-08-03 14:50:17 src/rs232comm.cpp 146]setRecvRS422 fd=7 count=14
+[2022-08-03 14:50:17 src/buscomm.cpp 216]onRecvStringMsg=<br>RS232通道7,接收:Send RS232_7 Test
+[2022-08-03 14:50:17 src/buscomm.cpp 216]onRecvStringMsg=<br><br>
+[2022-08-03 14:50:17 src/buscomm.cpp 216]onRecvStringMsg=测试RS232通道8,发送:Send RS232_8 Test
+[2022-08-03 14:50:17 src/buscomm.cpp 385]onTheadSendMsg busType=3 size=17
+[2022-08-03 14:50:17 src/buscomm.cpp 457]arinc429 assic size=17
+[2022-08-03 14:50:17 src/buscomm.cpp 364]recvMsgTest �2�
+[2022-08-03 14:50:17 src/rs232comm.cpp 146]setRecvRS422 fd=8 count=14
+[2022-08-03 14:50:17 src/buscomm.cpp 216]onRecvStringMsg=<br>RS232通道8,接收:Send RS232_8 Test
+[2022-08-03 14:50:17 src/buscomm.cpp 216]onRecvStringMsg=<br><br>
+[2022-08-03 14:50:17 src/buscomm.cpp 216]onRecvStringMsg=测试RS232通道9,发送:Send RS232_9 Test
+[2022-08-03 14:50:17 src/buscomm.cpp 385]onTheadSendMsg busType=3 size=17
+[2022-08-03 14:50:17 src/buscomm.cpp 457]arinc429 assic size=17
+[2022-08-03 14:50:17 src/buscomm.cpp 364]recvMsgTest �2�
+[2022-08-03 14:50:17 src/rs232comm.cpp 146]setRecvRS422 fd=9 count=14
+[2022-08-03 14:50:17 src/buscomm.cpp 216]onRecvStringMsg=<br>RS232通道9,接收:Send RS232_9 Test
+[2022-08-03 14:50:17 src/buscomm.cpp 216]onRecvStringMsg=<br><br>
+[2022-08-03 14:50:17 src/buscomm.cpp 216]onRecvStringMsg=测试RS232通道10,发送:Send RS232_10 Test
+[2022-08-03 14:50:17 src/buscomm.cpp 385]onTheadSendMsg busType=3 size=18
+[2022-08-03 14:50:17 src/buscomm.cpp 457]arinc429 assic size=18
+[2022-08-03 14:50:17 src/buscomm.cpp 364]recvMsgTest �#!
+[2022-08-03 14:50:17 src/rs232comm.cpp 146]setRecvRS422 fd=10 count=14
+[2022-08-03 14:50:17 src/buscomm.cpp 216]onRecvStringMsg=<br>RS232通道10,接收:Send RS232_10 Test
+[2022-08-03 14:50:17 src/buscomm.cpp 216]onRecvStringMsg=<br><br>
+[2022-08-03 14:50:17 src/buscomm.cpp 216]onRecvStringMsg=测试RS232通道11,发送:Send RS232_11 Test
+[2022-08-03 14:50:17 src/buscomm.cpp 385]onTheadSendMsg busType=3 size=18
+[2022-08-03 14:50:17 src/buscomm.cpp 457]arinc429 assic size=18
+[2022-08-03 14:50:17 src/buscomm.cpp 364]recvMsgTest �#!
+[2022-08-03 14:50:17 src/rs232comm.cpp 146]setRecvRS422 fd=11 count=14
+[2022-08-03 14:50:17 src/buscomm.cpp 216]onRecvStringMsg=<br>RS232通道11,接收:Send RS232_11 Test
+[2022-08-03 14:50:17 src/buscomm.cpp 216]onRecvStringMsg=<br><br>
+[2022-08-03 14:50:17 src/buscomm.cpp 216]onRecvStringMsg=测试RS232通道12,发送:Send RS232_12 Test
+[2022-08-03 14:50:17 src/buscomm.cpp 385]onTheadSendMsg busType=3 size=18
+[2022-08-03 14:50:17 src/buscomm.cpp 457]arinc429 assic size=18
+[2022-08-03 14:50:17 src/buscomm.cpp 364]recvMsgTest �#!.
+[2022-08-03 14:50:17 src/rs232comm.cpp 146]setRecvRS422 fd=12 count=14
+[2022-08-03 14:50:17 src/buscomm.cpp 216]onRecvStringMsg=<br>RS232通道12,接收:Send RS232_12 Test
+[2022-08-03 14:50:17 src/buscomm.cpp 216]onRecvStringMsg=<br><br>
+[2022-08-03 14:50:17 src/buscomm.cpp 216]onRecvStringMsg=测试RS232通道13,发送:Send RS232_13 Test
+[2022-08-03 14:50:17 src/buscomm.cpp 385]onTheadSendMsg busType=3 size=18
+[2022-08-03 14:50:17 src/buscomm.cpp 457]arinc429 assic size=18
+[2022-08-03 14:50:17 src/buscomm.cpp 364]recvMsgTest �#!>
+[2022-08-03 14:50:17 src/rs232comm.cpp 146]setRecvRS422 fd=13 count=14
+[2022-08-03 14:50:17 src/buscomm.cpp 216]onRecvStringMsg=<br>RS232通道13,接收:Send RS232_13 Test
+[2022-08-03 14:50:17 src/buscomm.cpp 216]onRecvStringMsg=<br><br>
+[2022-08-03 14:50:17 src/buscomm.cpp 216]onRecvStringMsg=测试RS232通道14,发送:Send RS232_14 Test
+[2022-08-03 14:50:17 src/buscomm.cpp 385]onTheadSendMsg busType=3 size=18
+[2022-08-03 14:50:17 src/buscomm.cpp 457]arinc429 assic size=18
+[2022-08-03 14:50:17 src/buscomm.cpp 364]recvMsgTest �#!N
+[2022-08-03 14:50:17 src/rs232comm.cpp 146]setRecvRS422 fd=14 count=14
+[2022-08-03 14:50:17 src/buscomm.cpp 216]onRecvStringMsg=<br>RS232通道14,接收:Send RS232_14 Test
+[2022-08-03 14:50:17 src/buscomm.cpp 216]onRecvStringMsg=<br><br>
+[2022-08-03 14:50:17 src/buscomm.cpp 216]onRecvStringMsg=测试RS422通道1,发送:Send RS422_1 Test
+[2022-08-03 14:50:17 src/buscomm.cpp 385]onTheadSendMsg busType=2 size=17
+[2022-08-03 14:50:17 src/buscomm.cpp 457]arinc429 assic size=17
+[2022-08-03 14:50:17 src/buscomm.cpp 364]recvMsgTest �"
+[2022-08-03 14:50:17 src/rs422comm.cpp 213]onRS422RecvMsg fd=1
+[2022-08-03 14:50:17 src/rs422comm.cpp 219]onRS422RecvMsg fd=1
+[2022-08-03 14:50:17 src/rs422comm.cpp 221]onRS422RecvMsg fd=1
+[2022-08-03 14:50:17 src/rs422comm.cpp 177]appendRecvRS422 fd=1
+[2022-08-03 14:50:17 src/rs422comm.cpp 180]appendRecvRS422
+[2022-08-03 14:50:17 src/rs422comm.cpp 183]appendRecvRS422
+[2022-08-03 14:50:17 src/rs422comm.cpp 199]appendRecvRS422
+[2022-08-03 14:50:17 src/rs422comm.cpp 202]appendRecvRS422
+[2022-08-03 14:50:17 src/rs422comm.cpp 82]setRecvRS422 fd=1  0e d4 22 1e
+[2022-08-03 14:50:17 src/rs422comm.cpp 92]setRecvRS422 fd=1 count=18
+[2022-08-03 14:50:17 src/rs422comm.cpp 109]setRecvRS422 fd=1  0e d4 22 1e
+[2022-08-03 14:50:17 src/rs422comm.cpp 123]setRecvRS422 fd=1
+[2022-08-03 14:50:17 src/rs422comm.cpp 127]setRecvRS422 fd=1
+[2022-08-03 14:50:17 src/rs422comm.cpp 208]appendRecvRS422
+[2022-08-03 14:50:17 src/rs422comm.cpp 223]onRS422RecvMsg fd=1
+[2022-08-03 14:50:17 src/rs422comm.cpp 230]onRS422RecvMsg fd=1
+[2022-08-03 14:50:17 src/buscomm.cpp 216]onRecvStringMsg=<br>RS422通道1,接收:Send RS422_1 Test
+[2022-08-03 14:50:17 src/buscomm.cpp 216]onRecvStringMsg=<br><br>
+[2022-08-03 14:50:17 src/buscomm.cpp 216]onRecvStringMsg=测试RS422通道3,发送:Send RS422_3 Test
+[2022-08-03 14:50:17 src/buscomm.cpp 385]onTheadSendMsg busType=2 size=17
+[2022-08-03 14:50:17 src/buscomm.cpp 457]arinc429 assic size=17
+[2022-08-03 14:50:17 src/buscomm.cpp 364]recvMsgTest �">
+[2022-08-03 14:50:17 src/rs422comm.cpp 213]onRS422RecvMsg fd=3
+[2022-08-03 14:50:17 src/rs422comm.cpp 219]onRS422RecvMsg fd=3
+[2022-08-03 14:50:17 src/rs422comm.cpp 221]onRS422RecvMsg fd=3
+[2022-08-03 14:50:17 src/rs422comm.cpp 177]appendRecvRS422 fd=3
+[2022-08-03 14:50:17 src/rs422comm.cpp 180]appendRecvRS422
+[2022-08-03 14:50:17 src/rs422comm.cpp 183]appendRecvRS422
+[2022-08-03 14:50:17 src/rs422comm.cpp 199]appendRecvRS422
+[2022-08-03 14:50:17 src/rs422comm.cpp 202]appendRecvRS422
+[2022-08-03 14:50:17 src/rs422comm.cpp 82]setRecvRS422 fd=3  0e d4 22 3e
+[2022-08-03 14:50:17 src/rs422comm.cpp 92]setRecvRS422 fd=3 count=18
+[2022-08-03 14:50:17 src/rs422comm.cpp 109]setRecvRS422 fd=3  0e d4 22 3e
+[2022-08-03 14:50:17 src/rs422comm.cpp 123]setRecvRS422 fd=3
+[2022-08-03 14:50:17 src/rs422comm.cpp 127]setRecvRS422 fd=3
+[2022-08-03 14:50:17 src/rs422comm.cpp 208]appendRecvRS422
+[2022-08-03 14:50:17 src/rs422comm.cpp 223]onRS422RecvMsg fd=3
+[2022-08-03 14:50:17 src/rs422comm.cpp 230]onRS422RecvMsg fd=3
+[2022-08-03 14:50:17 src/buscomm.cpp 216]onRecvStringMsg=<br>RS422通道3,接收:Send RS422_3 Test
+[2022-08-03 14:50:17 src/buscomm.cpp 216]onRecvStringMsg=<br><br>
+[2022-08-03 14:50:17 src/buscomm.cpp 216]onRecvStringMsg=测试RS422通道5,发送:Send RS422_5 Test
+[2022-08-03 14:50:17 src/buscomm.cpp 385]onTheadSendMsg busType=2 size=17
+[2022-08-03 14:50:17 src/buscomm.cpp 457]arinc429 assic size=17
+[2022-08-03 14:50:17 src/buscomm.cpp 364]recvMsgTest �"^
+[2022-08-03 14:50:17 src/rs422comm.cpp 213]onRS422RecvMsg fd=5
+[2022-08-03 14:50:17 src/rs422comm.cpp 219]onRS422RecvMsg fd=5
+[2022-08-03 14:50:17 src/rs422comm.cpp 221]onRS422RecvMsg fd=5
+[2022-08-03 14:50:17 src/rs422comm.cpp 177]appendRecvRS422 fd=5
+[2022-08-03 14:50:17 src/rs422comm.cpp 180]appendRecvRS422
+[2022-08-03 14:50:17 src/rs422comm.cpp 183]appendRecvRS422
+[2022-08-03 14:50:17 src/rs422comm.cpp 199]appendRecvRS422
+[2022-08-03 14:50:17 src/rs422comm.cpp 202]appendRecvRS422
+[2022-08-03 14:50:17 src/rs422comm.cpp 82]setRecvRS422 fd=5  0e d4 22 5e
+[2022-08-03 14:50:17 src/rs422comm.cpp 92]setRecvRS422 fd=5 count=18
+[2022-08-03 14:50:17 src/rs422comm.cpp 109]setRecvRS422 fd=5  0e d4 22 5e
+[2022-08-03 14:50:17 src/rs422comm.cpp 123]setRecvRS422 fd=5
+[2022-08-03 14:50:17 src/rs422comm.cpp 127]setRecvRS422 fd=5
+[2022-08-03 14:50:17 src/rs422comm.cpp 208]appendRecvRS422
+[2022-08-03 14:50:17 src/rs422comm.cpp 223]onRS422RecvMsg fd=5
+[2022-08-03 14:50:17 src/rs422comm.cpp 230]onRS422RecvMsg fd=5
+[2022-08-03 14:50:17 src/buscomm.cpp 216]onRecvStringMsg=<br>RS422通道5,接收:Send RS422_5 Test
+[2022-08-03 14:50:17 src/buscomm.cpp 216]onRecvStringMsg=<br><br>
+[2022-08-03 14:50:17 src/buscomm.cpp 216]onRecvStringMsg=测试RS422通道7,发送:Send RS422_7 Test
+[2022-08-03 14:50:17 src/buscomm.cpp 385]onTheadSendMsg busType=2 size=17
+[2022-08-03 14:50:17 src/buscomm.cpp 457]arinc429 assic size=17
+[2022-08-03 14:50:17 src/buscomm.cpp 364]recvMsgTest �"~
+[2022-08-03 14:50:17 src/rs422comm.cpp 213]onRS422RecvMsg fd=7
+[2022-08-03 14:50:17 src/rs422comm.cpp 219]onRS422RecvMsg fd=7
+[2022-08-03 14:50:17 src/rs422comm.cpp 221]onRS422RecvMsg fd=7
+[2022-08-03 14:50:17 src/rs422comm.cpp 177]appendRecvRS422 fd=7
+[2022-08-03 14:50:17 src/rs422comm.cpp 180]appendRecvRS422
+[2022-08-03 14:50:17 src/rs422comm.cpp 183]appendRecvRS422
+[2022-08-03 14:50:17 src/rs422comm.cpp 199]appendRecvRS422
+[2022-08-03 14:50:17 src/rs422comm.cpp 202]appendRecvRS422
+[2022-08-03 14:50:17 src/rs422comm.cpp 82]setRecvRS422 fd=7  0e d4 22 7e
+[2022-08-03 14:50:17 src/rs422comm.cpp 92]setRecvRS422 fd=7 count=18
+[2022-08-03 14:50:17 src/rs422comm.cpp 109]setRecvRS422 fd=7  0e d4 22 7e
+[2022-08-03 14:50:17 src/rs422comm.cpp 123]setRecvRS422 fd=7
+[2022-08-03 14:50:17 src/rs422comm.cpp 127]setRecvRS422 fd=7
+[2022-08-03 14:50:17 src/rs422comm.cpp 208]appendRecvRS422
+[2022-08-03 14:50:17 src/rs422comm.cpp 223]onRS422RecvMsg fd=7
+[2022-08-03 14:50:17 src/rs422comm.cpp 230]onRS422RecvMsg fd=7
+[2022-08-03 14:50:17 src/buscomm.cpp 216]onRecvStringMsg=<br>RS422通道7,接收:Send RS422_7 Test
+[2022-08-03 14:50:17 src/buscomm.cpp 216]onRecvStringMsg=<br><br>
+[2022-08-03 14:50:17 src/buscomm.cpp 216]onRecvStringMsg=测试RS422通道8,发送:Send RS422_8 Test
+[2022-08-03 14:50:17 src/buscomm.cpp 385]onTheadSendMsg busType=2 size=17
+[2022-08-03 14:50:17 src/buscomm.cpp 457]arinc429 assic size=17
+[2022-08-03 14:50:17 src/buscomm.cpp 364]recvMsgTest �"�
+[2022-08-03 14:50:17 src/rs422comm.cpp 213]onRS422RecvMsg fd=8
+[2022-08-03 14:50:17 src/rs422comm.cpp 219]onRS422RecvMsg fd=8
+[2022-08-03 14:50:17 src/rs422comm.cpp 221]onRS422RecvMsg fd=8
+[2022-08-03 14:50:17 src/rs422comm.cpp 177]appendRecvRS422 fd=8
+[2022-08-03 14:50:17 src/rs422comm.cpp 180]appendRecvRS422
+[2022-08-03 14:50:17 src/rs422comm.cpp 199]appendRecvRS422
+[2022-08-03 14:50:17 src/rs422comm.cpp 202]appendRecvRS422
+[2022-08-03 14:50:17 src/rs422comm.cpp 82]setRecvRS422 fd=8  0e d4 22 8e
+[2022-08-03 14:50:17 src/rs422comm.cpp 92]setRecvRS422 fd=8 count=18
+[2022-08-03 14:50:17 src/rs422comm.cpp 109]setRecvRS422 fd=8  0e d4 22 8e
+[2022-08-03 14:50:17 src/rs422comm.cpp 123]setRecvRS422 fd=8
+[2022-08-03 14:50:17 src/rs422comm.cpp 127]setRecvRS422 fd=8
+[2022-08-03 14:50:17 src/rs422comm.cpp 208]appendRecvRS422
+[2022-08-03 14:50:17 src/rs422comm.cpp 223]onRS422RecvMsg fd=8
+[2022-08-03 14:50:17 src/rs422comm.cpp 230]onRS422RecvMsg fd=8
+[2022-08-03 14:50:17 src/buscomm.cpp 216]onRecvStringMsg=<br>RS422通道8,接收:Send RS422_8 Test
+[2022-08-03 14:50:17 src/buscomm.cpp 216]onRecvStringMsg=<br><br>
+[2022-08-03 14:50:17 src/buscomm.cpp 216]onRecvStringMsg=测试RS422通道9,发送:Send RS422_9 Test
+[2022-08-03 14:50:17 src/buscomm.cpp 385]onTheadSendMsg busType=2 size=17
+[2022-08-03 14:50:17 src/buscomm.cpp 457]arinc429 assic size=17
+[2022-08-03 14:50:17 src/buscomm.cpp 364]recvMsgTest �"�
+[2022-08-03 14:50:17 src/rs422comm.cpp 213]onRS422RecvMsg fd=9
+[2022-08-03 14:50:17 src/rs422comm.cpp 219]onRS422RecvMsg fd=9
+[2022-08-03 14:50:17 src/rs422comm.cpp 221]onRS422RecvMsg fd=9
+[2022-08-03 14:50:17 src/rs422comm.cpp 177]appendRecvRS422 fd=9
+[2022-08-03 14:50:17 src/rs422comm.cpp 180]appendRecvRS422
+[2022-08-03 14:50:17 src/rs422comm.cpp 183]appendRecvRS422
+[2022-08-03 14:50:17 src/rs422comm.cpp 199]appendRecvRS422
+[2022-08-03 14:50:17 src/rs422comm.cpp 202]appendRecvRS422
+[2022-08-03 14:50:17 src/rs422comm.cpp 82]setRecvRS422 fd=9  0e d4 22 9e
+[2022-08-03 14:50:17 src/rs422comm.cpp 92]setRecvRS422 fd=9 count=18
+[2022-08-03 14:50:17 src/rs422comm.cpp 109]setRecvRS422 fd=9  0e d4 22 9e
+[2022-08-03 14:50:17 src/rs422comm.cpp 123]setRecvRS422 fd=9
+[2022-08-03 14:50:17 src/rs422comm.cpp 127]setRecvRS422 fd=9
+[2022-08-03 14:50:17 src/rs422comm.cpp 208]appendRecvRS422
+[2022-08-03 14:50:17 src/rs422comm.cpp 223]onRS422RecvMsg fd=9
+[2022-08-03 14:50:17 src/rs422comm.cpp 230]onRS422RecvMsg fd=9
+[2022-08-03 14:50:17 src/buscomm.cpp 216]onRecvStringMsg=<br>RS422通道9,接收:Send RS422_9 Test
+[2022-08-03 14:50:17 src/buscomm.cpp 216]onRecvStringMsg=<br><br>
+[2022-08-03 14:50:17 src/buscomm.cpp 216]onRecvStringMsg=测试RS422通道10,发送:Send RS422_10 Test
+[2022-08-03 14:50:17 src/buscomm.cpp 385]onTheadSendMsg busType=2 size=18
+[2022-08-03 14:50:17 src/buscomm.cpp 457]arinc429 assic size=18
+[2022-08-03 14:50:17 src/buscomm.cpp 364]recvMsgTest �B!
+[2022-08-03 14:50:17 src/rs422comm.cpp 213]onRS422RecvMsg fd=10
+[2022-08-03 14:50:17 src/rs422comm.cpp 219]onRS422RecvMsg fd=10
+[2022-08-03 14:50:17 src/rs422comm.cpp 221]onRS422RecvMsg fd=10
+[2022-08-03 14:50:17 src/rs422comm.cpp 177]appendRecvRS422 fd=10
+[2022-08-03 14:50:17 src/rs422comm.cpp 180]appendRecvRS422
+[2022-08-03 14:50:17 src/rs422comm.cpp 199]appendRecvRS422
+[2022-08-03 14:50:17 src/rs422comm.cpp 202]appendRecvRS422
+[2022-08-03 14:50:17 src/rs422comm.cpp 82]setRecvRS422 fd=10  ed 42 21 0e
+[2022-08-03 14:50:17 src/rs422comm.cpp 92]setRecvRS422 fd=10 count=18
+[2022-08-03 14:50:17 src/rs422comm.cpp 109]setRecvRS422 fd=10  ed 42 21 0e
+[2022-08-03 14:50:17 src/rs422comm.cpp 123]setRecvRS422 fd=10
+[2022-08-03 14:50:17 src/rs422comm.cpp 127]setRecvRS422 fd=10
+[2022-08-03 14:50:17 src/rs422comm.cpp 208]appendRecvRS422
+[2022-08-03 14:50:17 src/rs422comm.cpp 223]onRS422RecvMsg fd=10
+[2022-08-03 14:50:17 src/rs422comm.cpp 230]onRS422RecvMsg fd=10
+[2022-08-03 14:50:17 src/buscomm.cpp 216]onRecvStringMsg=<br>RS422通道10,接收:Send RS422_10 Test
+[2022-08-03 14:50:18 src/buscomm.cpp 216]onRecvStringMsg=<br><br>
+[2022-08-03 14:50:18 src/buscomm.cpp 216]onRecvStringMsg=测试RS422通道11,发送:Send RS422_11 Test
+[2022-08-03 14:50:18 src/buscomm.cpp 385]onTheadSendMsg busType=2 size=18
+[2022-08-03 14:50:18 src/buscomm.cpp 457]arinc429 assic size=18
+[2022-08-03 14:50:18 src/buscomm.cpp 364]recvMsgTest �B!
+[2022-08-03 14:50:18 src/rs422comm.cpp 213]onRS422RecvMsg fd=11
+[2022-08-03 14:50:18 src/rs422comm.cpp 219]onRS422RecvMsg fd=11
+[2022-08-03 14:50:18 src/rs422comm.cpp 221]onRS422RecvMsg fd=11
+[2022-08-03 14:50:18 src/rs422comm.cpp 177]appendRecvRS422 fd=11
+[2022-08-03 14:50:18 src/rs422comm.cpp 180]appendRecvRS422
+[2022-08-03 14:50:18 src/rs422comm.cpp 183]appendRecvRS422
+[2022-08-03 14:50:18 src/rs422comm.cpp 199]appendRecvRS422
+[2022-08-03 14:50:18 src/rs422comm.cpp 202]appendRecvRS422
+[2022-08-03 14:50:18 src/rs422comm.cpp 82]setRecvRS422 fd=11  ed 42 21 1e
+[2022-08-03 14:50:18 src/rs422comm.cpp 92]setRecvRS422 fd=11 count=18
+[2022-08-03 14:50:18 src/rs422comm.cpp 109]setRecvRS422 fd=11  ed 42 21 1e
+[2022-08-03 14:50:18 src/rs422comm.cpp 123]setRecvRS422 fd=11
+[2022-08-03 14:50:18 src/rs422comm.cpp 127]setRecvRS422 fd=11
+[2022-08-03 14:50:18 src/rs422comm.cpp 208]appendRecvRS422
+[2022-08-03 14:50:18 src/rs422comm.cpp 223]onRS422RecvMsg fd=11
+[2022-08-03 14:50:18 src/rs422comm.cpp 230]onRS422RecvMsg fd=11
+[2022-08-03 14:50:18 src/buscomm.cpp 216]onRecvStringMsg=<br>RS422通道11,接收:Send RS422_11 Test
+[2022-08-03 14:50:18 src/buscomm.cpp 216]onRecvStringMsg=<br><br>
+[2022-08-03 14:50:18 src/buscomm.cpp 216]onRecvStringMsg=测试RS422通道12,发送:Send RS422_12 Test
+[2022-08-03 14:50:18 src/buscomm.cpp 385]onTheadSendMsg busType=2 size=18
+[2022-08-03 14:50:18 src/buscomm.cpp 457]arinc429 assic size=18
+[2022-08-03 14:50:18 src/buscomm.cpp 364]recvMsgTest �B!.
+[2022-08-03 14:50:18 src/rs422comm.cpp 213]onRS422RecvMsg fd=12
+[2022-08-03 14:50:18 src/rs422comm.cpp 219]onRS422RecvMsg fd=12
+[2022-08-03 14:50:18 src/rs422comm.cpp 221]onRS422RecvMsg fd=12
+[2022-08-03 14:50:18 src/rs422comm.cpp 177]appendRecvRS422 fd=12
+[2022-08-03 14:50:18 src/rs422comm.cpp 180]appendRecvRS422
+[2022-08-03 14:50:18 src/rs422comm.cpp 199]appendRecvRS422
+[2022-08-03 14:50:18 src/rs422comm.cpp 202]appendRecvRS422
+[2022-08-03 14:50:18 src/rs422comm.cpp 82]setRecvRS422 fd=12  ed 42 21 2e
+[2022-08-03 14:50:18 src/rs422comm.cpp 92]setRecvRS422 fd=12 count=18
+[2022-08-03 14:50:18 src/rs422comm.cpp 109]setRecvRS422 fd=12  ed 42 21 2e
+[2022-08-03 14:50:18 src/rs422comm.cpp 123]setRecvRS422 fd=12
+[2022-08-03 14:50:18 src/rs422comm.cpp 127]setRecvRS422 fd=12
+[2022-08-03 14:50:18 src/rs422comm.cpp 208]appendRecvRS422
+[2022-08-03 14:50:18 src/rs422comm.cpp 223]onRS422RecvMsg fd=12
+[2022-08-03 14:50:18 src/rs422comm.cpp 230]onRS422RecvMsg fd=12
+[2022-08-03 14:50:18 src/buscomm.cpp 216]onRecvStringMsg=<br>RS422通道12,接收:Send RS422_12 Test
+[2022-08-03 14:50:18 src/buscomm.cpp 216]onRecvStringMsg=<br><br>
+[2022-08-03 14:50:18 src/buscomm.cpp 216]onRecvStringMsg=测试RS422通道13,发送:Send RS422_13 Test
+[2022-08-03 14:50:18 src/buscomm.cpp 385]onTheadSendMsg busType=2 size=18
+[2022-08-03 14:50:18 src/buscomm.cpp 457]arinc429 assic size=18
+[2022-08-03 14:50:18 src/buscomm.cpp 364]recvMsgTest �B!>
+[2022-08-03 14:50:18 src/rs422comm.cpp 213]onRS422RecvMsg fd=13
+[2022-08-03 14:50:18 src/rs422comm.cpp 219]onRS422RecvMsg fd=13
+[2022-08-03 14:50:18 src/rs422comm.cpp 221]onRS422RecvMsg fd=13
+[2022-08-03 14:50:18 src/rs422comm.cpp 177]appendRecvRS422 fd=13
+[2022-08-03 14:50:18 src/rs422comm.cpp 180]appendRecvRS422
+[2022-08-03 14:50:18 src/rs422comm.cpp 183]appendRecvRS422
+[2022-08-03 14:50:18 src/rs422comm.cpp 199]appendRecvRS422
+[2022-08-03 14:50:18 src/rs422comm.cpp 202]appendRecvRS422
+[2022-08-03 14:50:18 src/rs422comm.cpp 82]setRecvRS422 fd=13  ed 42 21 3e
+[2022-08-03 14:50:18 src/rs422comm.cpp 92]setRecvRS422 fd=13 count=18
+[2022-08-03 14:50:18 src/rs422comm.cpp 109]setRecvRS422 fd=13  ed 42 21 3e
+[2022-08-03 14:50:18 src/rs422comm.cpp 123]setRecvRS422 fd=13
+[2022-08-03 14:50:18 src/rs422comm.cpp 127]setRecvRS422 fd=13
+[2022-08-03 14:50:18 src/rs422comm.cpp 208]appendRecvRS422
+[2022-08-03 14:50:18 src/rs422comm.cpp 223]onRS422RecvMsg fd=13
+[2022-08-03 14:50:18 src/rs422comm.cpp 230]onRS422RecvMsg fd=13
+[2022-08-03 14:50:18 src/buscomm.cpp 216]onRecvStringMsg=<br>RS422通道13,接收:Send RS422_13 Test
+[2022-08-03 14:50:18 src/buscomm.cpp 216]onRecvStringMsg=<br><br>
+[2022-08-03 14:50:18 src/buscomm.cpp 216]onRecvStringMsg=测试RS422通道14,发送:Send RS422_14 Test
+[2022-08-03 14:50:18 src/buscomm.cpp 385]onTheadSendMsg busType=2 size=18
+[2022-08-03 14:50:18 src/buscomm.cpp 457]arinc429 assic size=18
+[2022-08-03 14:50:18 src/buscomm.cpp 364]recvMsgTest �B!N
+[2022-08-03 14:50:18 src/rs422comm.cpp 213]onRS422RecvMsg fd=14
+[2022-08-03 14:50:18 src/rs422comm.cpp 219]onRS422RecvMsg fd=14
+[2022-08-03 14:50:18 src/rs422comm.cpp 221]onRS422RecvMsg fd=14
+[2022-08-03 14:50:18 src/rs422comm.cpp 177]appendRecvRS422 fd=14
+[2022-08-03 14:50:18 src/rs422comm.cpp 180]appendRecvRS422
+[2022-08-03 14:50:18 src/rs422comm.cpp 199]appendRecvRS422
+[2022-08-03 14:50:18 src/rs422comm.cpp 202]appendRecvRS422
+[2022-08-03 14:50:18 src/rs422comm.cpp 82]setRecvRS422 fd=14  ed 42 21 4e
+[2022-08-03 14:50:18 src/rs422comm.cpp 92]setRecvRS422 fd=14 count=18
+[2022-08-03 14:50:18 src/rs422comm.cpp 109]setRecvRS422 fd=14  ed 42 21 4e
+[2022-08-03 14:50:18 src/rs422comm.cpp 123]setRecvRS422 fd=14
+[2022-08-03 14:50:18 src/rs422comm.cpp 127]setRecvRS422 fd=14
+[2022-08-03 14:50:18 src/rs422comm.cpp 208]appendRecvRS422
+[2022-08-03 14:50:18 src/rs422comm.cpp 223]onRS422RecvMsg fd=14
+[2022-08-03 14:50:18 src/rs422comm.cpp 230]onRS422RecvMsg fd=14
+[2022-08-03 14:50:18 src/buscomm.cpp 216]onRecvStringMsg=<br>RS422通道14,接收:Send RS422_14 Test
+[2022-08-03 14:50:18 src/buscomm.cpp 216]onRecvStringMsg=<br><br>
+[2022-08-03 14:50:18 src/buscomm.cpp 216]onRecvStringMsg=测试RS422通道15,发送:Send RS422_15 Test
+[2022-08-03 14:50:18 src/buscomm.cpp 385]onTheadSendMsg busType=2 size=18
+[2022-08-03 14:50:18 src/buscomm.cpp 457]arinc429 assic size=18
+[2022-08-03 14:50:18 src/buscomm.cpp 364]recvMsgTest �B!^
+[2022-08-03 14:50:18 src/rs422comm.cpp 213]onRS422RecvMsg fd=15
+[2022-08-03 14:50:18 src/rs422comm.cpp 219]onRS422RecvMsg fd=15
+[2022-08-03 14:50:18 src/rs422comm.cpp 221]onRS422RecvMsg fd=15
+[2022-08-03 14:50:18 src/rs422comm.cpp 177]appendRecvRS422 fd=15
+[2022-08-03 14:50:18 src/rs422comm.cpp 180]appendRecvRS422
+[2022-08-03 14:50:18 src/rs422comm.cpp 183]appendRecvRS422
+[2022-08-03 14:50:18 src/rs422comm.cpp 199]appendRecvRS422
+[2022-08-03 14:50:18 src/rs422comm.cpp 202]appendRecvRS422
+[2022-08-03 14:50:18 src/rs422comm.cpp 82]setRecvRS422 fd=15  ed 42 21 5e
+[2022-08-03 14:50:18 src/rs422comm.cpp 92]setRecvRS422 fd=15 count=18
+[2022-08-03 14:50:18 src/rs422comm.cpp 109]setRecvRS422 fd=15  ed 42 21 5e
+[2022-08-03 14:50:18 src/rs422comm.cpp 123]setRecvRS422 fd=15
+[2022-08-03 14:50:18 src/rs422comm.cpp 127]setRecvRS422 fd=15
+[2022-08-03 14:50:18 src/rs422comm.cpp 208]appendRecvRS422
+[2022-08-03 14:50:18 src/rs422comm.cpp 223]onRS422RecvMsg fd=15
+[2022-08-03 14:50:18 src/rs422comm.cpp 230]onRS422RecvMsg fd=15
+[2022-08-03 14:50:18 src/buscomm.cpp 216]onRecvStringMsg=<br>RS422通道15,接收:Send RS422_15 Test
+[2022-08-03 14:50:18 src/buscomm.cpp 216]onRecvStringMsg=<br><br>
+[2022-08-03 14:50:18 src/buscomm.cpp 216]onRecvStringMsg=测试RS422通道16,发送:Send RS422_16 Test
+[2022-08-03 14:50:18 src/buscomm.cpp 385]onTheadSendMsg busType=2 size=18
+[2022-08-03 14:50:18 src/buscomm.cpp 457]arinc429 assic size=18
+[2022-08-03 14:50:18 src/buscomm.cpp 364]recvMsgTest �B!n
+[2022-08-03 14:50:18 src/rs422comm.cpp 213]onRS422RecvMsg fd=16
+[2022-08-03 14:50:18 src/rs422comm.cpp 219]onRS422RecvMsg fd=16
+[2022-08-03 14:50:18 src/rs422comm.cpp 221]onRS422RecvMsg fd=16
+[2022-08-03 14:50:18 src/rs422comm.cpp 177]appendRecvRS422 fd=16
+[2022-08-03 14:50:18 src/rs422comm.cpp 180]appendRecvRS422
+[2022-08-03 14:50:18 src/rs422comm.cpp 199]appendRecvRS422
+[2022-08-03 14:50:18 src/rs422comm.cpp 202]appendRecvRS422
+[2022-08-03 14:50:18 src/rs422comm.cpp 82]setRecvRS422 fd=16  ed 42 21 6e
+[2022-08-03 14:50:18 src/rs422comm.cpp 92]setRecvRS422 fd=16 count=18
+[2022-08-03 14:50:18 src/rs422comm.cpp 109]setRecvRS422 fd=16  ed 42 21 6e
+[2022-08-03 14:50:18 src/rs422comm.cpp 123]setRecvRS422 fd=16
+[2022-08-03 14:50:18 src/rs422comm.cpp 127]setRecvRS422 fd=16
+[2022-08-03 14:50:18 src/rs422comm.cpp 208]appendRecvRS422
+[2022-08-03 14:50:18 src/rs422comm.cpp 223]onRS422RecvMsg fd=16
+[2022-08-03 14:50:18 src/rs422comm.cpp 230]onRS422RecvMsg fd=16
+[2022-08-03 14:50:18 src/buscomm.cpp 216]onRecvStringMsg=<br>RS422通道16,接收:Send RS422_16 Test
+[2022-08-03 14:50:18 src/buscomm.cpp 216]onRecvStringMsg=<br><br>
+[2022-08-03 14:50:18 src/buscomm.cpp 216]onRecvStringMsg=测试RS422通道17,发送:Send RS422_17 Test
+[2022-08-03 14:50:18 src/buscomm.cpp 385]onTheadSendMsg busType=2 size=18
+[2022-08-03 14:50:18 src/buscomm.cpp 457]arinc429 assic size=18
+[2022-08-03 14:50:18 src/buscomm.cpp 364]recvMsgTest �B!~
+[2022-08-03 14:50:18 src/rs422comm.cpp 213]onRS422RecvMsg fd=17
+[2022-08-03 14:50:18 src/rs422comm.cpp 219]onRS422RecvMsg fd=17
+[2022-08-03 14:50:18 src/rs422comm.cpp 221]onRS422RecvMsg fd=17
+[2022-08-03 14:50:18 src/rs422comm.cpp 177]appendRecvRS422 fd=17
+[2022-08-03 14:50:18 src/rs422comm.cpp 180]appendRecvRS422
+[2022-08-03 14:50:18 src/rs422comm.cpp 183]appendRecvRS422
+[2022-08-03 14:50:18 src/rs422comm.cpp 199]appendRecvRS422
+[2022-08-03 14:50:18 src/rs422comm.cpp 202]appendRecvRS422
+[2022-08-03 14:50:18 src/rs422comm.cpp 82]setRecvRS422 fd=17  ed 42 21 7e
+[2022-08-03 14:50:18 src/rs422comm.cpp 92]setRecvRS422 fd=17 count=18
+[2022-08-03 14:50:18 src/rs422comm.cpp 109]setRecvRS422 fd=17  ed 42 21 7e
+[2022-08-03 14:50:18 src/rs422comm.cpp 123]setRecvRS422 fd=17
+[2022-08-03 14:50:18 src/rs422comm.cpp 127]setRecvRS422 fd=17
+[2022-08-03 14:50:18 src/rs422comm.cpp 208]appendRecvRS422
+[2022-08-03 14:50:18 src/rs422comm.cpp 223]onRS422RecvMsg fd=17
+[2022-08-03 14:50:18 src/rs422comm.cpp 230]onRS422RecvMsg fd=17
+[2022-08-03 14:50:18 src/buscomm.cpp 216]onRecvStringMsg=<br>RS422通道17,接收:Send RS422_17 Test
+[2022-08-03 14:50:18 src/buscomm.cpp 216]onRecvStringMsg=<br><br>
+[2022-08-03 14:50:18 src/buscomm.cpp 216]onRecvStringMsg=测试RS422通道18,发送:Send RS422_18 Test
+[2022-08-03 14:50:18 src/buscomm.cpp 385]onTheadSendMsg busType=2 size=18
+[2022-08-03 14:50:18 src/buscomm.cpp 457]arinc429 assic size=18
+[2022-08-03 14:50:18 src/buscomm.cpp 364]recvMsgTest �B!�
+[2022-08-03 14:50:18 src/rs422comm.cpp 213]onRS422RecvMsg fd=18
+[2022-08-03 14:50:18 src/rs422comm.cpp 219]onRS422RecvMsg fd=18
+[2022-08-03 14:50:18 src/rs422comm.cpp 221]onRS422RecvMsg fd=18
+[2022-08-03 14:50:18 src/rs422comm.cpp 177]appendRecvRS422 fd=18
+[2022-08-03 14:50:18 src/rs422comm.cpp 180]appendRecvRS422
+[2022-08-03 14:50:18 src/rs422comm.cpp 199]appendRecvRS422
+[2022-08-03 14:50:18 src/rs422comm.cpp 202]appendRecvRS422
+[2022-08-03 14:50:18 src/rs422comm.cpp 82]setRecvRS422 fd=18  ed 42 21 8e
+[2022-08-03 14:50:18 src/rs422comm.cpp 92]setRecvRS422 fd=18 count=18
+[2022-08-03 14:50:18 src/rs422comm.cpp 109]setRecvRS422 fd=18  ed 42 21 8e
+[2022-08-03 14:50:18 src/rs422comm.cpp 123]setRecvRS422 fd=18
+[2022-08-03 14:50:18 src/rs422comm.cpp 127]setRecvRS422 fd=18
+[2022-08-03 14:50:18 src/rs422comm.cpp 208]appendRecvRS422
+[2022-08-03 14:50:18 src/rs422comm.cpp 223]onRS422RecvMsg fd=18
+[2022-08-03 14:50:18 src/rs422comm.cpp 230]onRS422RecvMsg fd=18
+[2022-08-03 14:50:18 src/buscomm.cpp 216]onRecvStringMsg=<br>RS422通道18,接收:Send RS422_18 Test
+[2022-08-03 14:50:18 src/buscomm.cpp 216]onRecvStringMsg=<br><br>
+[2022-08-03 14:50:18 src/buscomm.cpp 216]onRecvStringMsg=测试RS422通道2,发送:5a a5 a9 9a 02 00 00 01 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09 00 0a 00 0b 00 0c 00 0d 00 0e 00 0f 00 10 00 11 00 12 00 13 00 14 00 15 00 16 00 17 00 18 00 19 00 1a 00 1b 00 1c 00 1d 00 1e 00 1f 00 20 00 21 00 22 00 23 00 24 00 25 00 26 00 27 00 28 00 29 00 2a 00 2b 00 2c 00 2d 00 2e 00 2f 00 30 00 31 00 32 00 33 00 34 00 35 00 36 00 37 00 38 00 39 00 3a 00 3b 00 3c 00 3d 00 3e 00 3f 00 40 00 41 00 42 00 43 00 44 00 45 00 46 00 47 00 48 00 49 00 4a 00 4b 00 4c 00 4d 00 4e 00 4f 00 50 00 51 00 52 00 53 00 54 00 55 00 56 00 57 00 58 00 59 00 5a 00 5b 00 5c 00 5d 00 5e 00 5f 00 60 00 61 00 62 00 63 00 64 00 65 00 66 00 67 00 68 00 69 00 6a 00 6b 00 6c 00 6d 00 6e 00 6f 00 70 00 71 00 72 00 73 00 74 00 75 00 76 00 77 00 78 00 79 00 7a 00 7b 00 7c 00 7d 00 7e 00 7f 00 80 00 81 00 82 00 83 00 84 00 85 00 86 00 87 00 88 00 89 00 8a 00 8b 00 8c 00 8d 00 8e 00 8f 00 90 00 91 00 92 00 93 00 94 00 95 00 96 00 97 00 98 00 99 00 9a 00 9b 00 9c 00 9d 00 9e 00 9f 00 a0 00 a1 00 a2 00 a3 00 a4 00 a5 00 a6 00 a7 00 a8 00 a9 00 aa 00 ab 00 ac 00 ad 00 ae 00 af 00 b0 00 b1 00 b2 00 b3 00 b4 00 b5 00 b6 00 b7 00 b8 00 b9 00 ba 00 bb 00 bc 00 bd 00 be 00 bf 00 c0 00 c1 00 c2 00 c3 00 c4 00 c5 00 c6 00 c7 00 c8 00 c9 00 ca 00 cb 00 cc 00 cd 00 ce 00 cf 00 d0 00 d1 00 d2 00 d3 00 d4 00 d5 00 d6 00 d7 00 d8 00 d9 00 da 00 db 00 dc 00 dd 00 de 00 df 00 e0 00 e1 00 e2 00 e3 00 e4 00 e5 00 e6 00 e7 00 e8 00 e9 00 ea 00 eb 00 ec 00 ed 00 ee 00 ef 00 f0 00 f1 00 f2 00 f3 00 f4 00 f5 00 f6 00 f7 00 f8 00 f9 00 fa 11 22 33 44
+[2022-08-03 14:50:18 src/buscomm.cpp 385]onTheadSendMsg busType=2 size=1535
+[2022-08-03 14:50:18 src/buscomm.cpp 457]arinc429 assic size=1535
+[2022-08-03 14:50:18 src/buscomm.cpp 364]recvMsgTest Z���
+[2022-08-03 14:50:18 src/rs422comm.cpp 213]onRS422RecvMsg fd=2
+[2022-08-03 14:50:18 src/rs422comm.cpp 219]onRS422RecvMsg fd=2
+[2022-08-03 14:50:18 src/rs422comm.cpp 221]onRS422RecvMsg fd=2
+[2022-08-03 14:50:18 src/rs422comm.cpp 177]appendRecvRS422 fd=2
+[2022-08-03 14:50:18 src/rs422comm.cpp 180]appendRecvRS422
+[2022-08-03 14:50:18 src/rs422comm.cpp 199]appendRecvRS422
+[2022-08-03 14:50:18 src/rs422comm.cpp 202]appendRecvRS422
+[2022-08-03 14:50:18 src/rs422comm.cpp 82]setRecvRS422 fd=2  5a a5 a9 9a 02 00 00 01 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09 00 0a 00 0b 00 0c 00 0d 00 0e 00 0f 00 10 00 11 00 12 00 13 00 14 00 15 00 16 00 17 00 18 00 19 00 1a 00 1b 00 1c 00 1d 00 1e 00 1f 00 20 00 21 00 22 00 23 00 24 00 25 00 26 00 27 00 28 00 29 00 2a 00 2b 00 2c 00 2d 00 2e 00 2f 00 30 00 31 00 32 00 33 00 34 00 35 00 36 00 37 00 38 00 39 00 3a 00 3b 00 3c 00 3d 00 3e 00 3f 00 40 00 41 00 42 00 43 00 44 00 45 00 46 00 47 00 48 00 49 00 4a 00 4b 00 4c 00 4d 00 4e 00 4f 00 50 00 51 00 52 00 53 00 54 00 55 00 56 00 57 00 58 00 59 00 5a 00 5b 00 5c 00 5d 00 5e 00 5f 00 60 00 61 00 62 00 63 00 64 00 65 00 66 00 67 00 68 00 69 00 6a 00 6b 00 6c 00 6d 00 6e 00 6f 00 70 00 71 00 72 00 73 00 74 00 75 00 76 00 77 00 78 00 79 00 7a 00 7b 00 7c 00 7d 00 7e 00 7f 00 80 00 81 00 82 00 83 00 84 00 85 00 86 00 87 00 88 00 89 00 8a 00 8b 00 8c 00 8d 00 8e 00 8f 00 90 00 91 00 92 00 93 00 94 00 95 00 96 00 97 00 98 00 99 00 9a 00 9b 00 9c 00 9d 00 9e 00 9f 00 a0 00 a1 00 a2 00 a3 00 a4 00 a5 00 a6 00 a7 00 a8 00 a9 00 aa 00 ab 00 ac 00 ad 00 ae 00 af 00 b0 00 b1 00 b2 00 b3 00 b4 00 b5 00 b6 00 b7 00 b8 00 b9 00 ba 00 bb 00 bc 00 bd 00 be 00 bf 00 c0 00 c1 00 c2 00 c3 00 c4 00 c5 00 c6 00 c7 00 c8 00 c9 00 ca 00 cb 00 cc 00 cd 00 ce 00 cf 00 d0 00 d1 00 d2 00 d3 00 d4 00 d5 00 d6 00 d7 00 d8 00 d9 00 da 00 db 00 dc 00 dd 00 de 00 df 00 e0 00 e1 00 e2 00 e3 00 e4 00 e5 00 e6 00 e7 00 e8 00 e9 00 ea 00 eb 00 ec 00 ed 00 ee 00 ef 00 f0 00 f1 00 f2 00 f3 00 f4 00 f5 00 f6 00 f7 00 f8 00 f9 00 fa 11 22 33 44
+[2022-08-03 14:50:18 src/rs422comm.cpp 92]setRecvRS422 fd=2 count=18
+[2022-08-03 14:50:18 src/rs422comm.cpp 109]setRecvRS422 fd=2  5a a5 a9 9a 02 00 00 01 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09 00 0a 00 0b 00 0c 00 0d 00 0e 00 0f 00 10 00 11 00 12 00 13 00 14 00 15 00 16 00 17 00 18 00 19 00 1a 00 1b 00 1c 00 1d 00 1e 00 1f 00 20 00 21 00 22 00 23 00 24 00 25 00 26 00 27 00 28 00 29 00 2a 00 2b 00 2c 00 2d 00 2e 00 2f 00 30 00 31 00 32 00 33 00 34 00 35 00 36 00 37 00 38 00 39 00 3a 00 3b 00 3c 00 3d 00 3e 00 3f 00 40 00 41 00 42 00 43 00 44 00 45 00 46 00 47 00 48 00 49 00 4a 00 4b 00 4c 00 4d 00 4e 00 4f 00 50 00 51 00 52 00 53 00 54 00 55 00 56 00 57 00 58 00 59 00 5a 00 5b 00 5c 00 5d 00 5e 00 5f 00 60 00 61 00 62 00 63 00 64 00 65 00 66 00 67 00 68 00 69 00 6a 00 6b 00 6c 00 6d 00 6e 00 6f 00 70 00 71 00 72 00 73 00 74 00 75 00 76 00 77 00 78 00 79 00 7a 00 7b 00 7c 00 7d 00 7e 00 7f 00 80 00 81 00 82 00 83 00 84 00 85 00 86 00 87 00 88 00 89 00 8a 00 8b 00 8c 00 8d 00 8e 00 8f 00 90 00 91 00 92 00 93 00 94 00 95 00 96 00 97 00 98 00 99 00 9a 00 9b 00 9c 00 9d 00 9e 00 9f 00 a0 00 a1 00 a2 00 a3 00 a4 00 a5 00 a6 00 a7 00 a8 00 a9 00 aa 00 ab 00 ac 00 ad 00 ae 00 af 00 b0 00 b1 00 b2 00 b3 00 b4 00 b5 00 b6 00 b7 00 b8 00 b9 00 ba 00 bb 00 bc 00 bd 00 be 00 bf 00 c0 00 c1 00 c2 00 c3 00 c4 00 c5 00 c6 00 c7 00 c8 00 c9 00 ca 00 cb 00 cc 00 cd 00 ce 00 cf 00 d0 00 d1 00 d2 00 d3 00 d4 00 d5 00 d6 00 d7 00 d8 00 d9 00 da 00 db 00 dc 00 dd 00 de 00 df 00 e0 00 e1 00 e2 00 e3 00 e4 00 e5 00 e6 00 e7 00 e8 00 e9 00 ea 00 eb 00 ec 00 ed 00 ee 00 ef 00 f0 00 f1 00 f2 00 f3 00 f4 00 f5 00 f6 00 f7 00 f8 00 f9 00 fa 11 22 33 44
+[2022-08-03 14:50:18 src/rs422comm.cpp 123]setRecvRS422 fd=2
+[2022-08-03 14:50:18 src/rs422comm.cpp 127]setRecvRS422 fd=2
+[2022-08-03 14:50:18 src/rs422comm.cpp 208]appendRecvRS422
+[2022-08-03 14:50:18 src/rs422comm.cpp 223]onRS422RecvMsg fd=2
+[2022-08-03 14:50:18 src/rs422comm.cpp 230]onRS422RecvMsg fd=2
+[2022-08-03 14:50:18 src/buscomm.cpp 216]onRecvStringMsg=<br>RS422通道2,接收:5a a5 a9 9a 02 00 00 01 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09 00 0a 00 0b 00 0c 00 0d 00 0e 00 0f 00 10 00 11 00 12 00 13 00 14 00 15 00 16 00 17 00 18 00 19 00 1a 00 1b 00 1c 00 1d 00 1e 00 1f 00 20 00 21 00 22 00 23 00 24 00 25 00 26 00 27 00 28 00 29 00 2a 00 2b 00 2c 00 2d 00 2e 00 2f 00 30 00 31 00 32 00 33 00 34 00 35 00 36 00 37 00 38 00 39 00 3a 00 3b 00 3c 00 3d 00 3e 00 3f 00 40 00 41 00 42 00 43 00 44 00 45 00 46 00 47 00 48 00 49 00 4a 00 4b 00 4c 00 4d 00 4e 00 4f 00 50 00 51 00 52 00 53 00 54 00 55 00 56 00 57 00 58 00 59 00 5a 00 5b 00 5c 00 5d 00 5e 00 5f 00 60 00 61 00 62 00 63 00 64 00 65 00 66 00 67 00 68 00 69 00 6a 00 6b 00 6c 00 6d 00 6e 00 6f 00 70 00 71 00 72 00 73 00 74 00 75 00 76 00 77 00 78 00 79 00 7a 00 7b 00 7c 00 7d 00 7e 00 7f 00 80 00 81 00 82 00 83 00 84 00 85 00 86 00 87 00 88 00 89 00 8a 00 8b 00 8c 00 8d 00 8e 00 8f 00 90 00 91 00 92 00 93 00 94 00 95 00 96 00 97 00 98 00 99 00 9a 00 9b 00 9c 00 9d 00 9e 00 9f 00 a0 00 a1 00 a2 00 a3 00 a4 00 a5 00 a6 00 a7 00 a8 00 a9 00 aa 00 ab 00 ac 00 ad 00 ae 00 af 00 b0 00 b1 00 b2 00 b3 00 b4 00 b5 00 b6 00 b7 00 b8 00 b9 00 ba 00 bb 00 bc 00 bd 00 be 00 bf 00 c0 00 c1 00 c2 00 c3 00 c4 00 c5 00 c6 00 c7 00 c8 00 c9 00 ca 00 cb 00 cc 00 cd 00 ce 00 cf 00 d0 00 d1 00 d2 00 d3 00 d4 00 d5 00 d6 00 d7 00 d8 00 d9 00 da 00 db 00 dc 00 dd 00 de 00 df 00 e0 00 e1 00 e2 00 e3 00 e4 00 e5 00 e6 00 e7 00 e8 00 e9 00 ea 00 eb 00 ec 00 ed 00 ee 00 ef 00 f0 00 f1 00 f2 00 f3 00 f4 00 f5 00 f6 00 f7 00 f8 00 f9 00 fa 11 22 33 44
+[2022-08-03 14:50:18 src/buscomm.cpp 216]onRecvStringMsg=<br><br>
+[2022-08-03 14:50:18 src/buscomm.cpp 216]onRecvStringMsg=测试RS422通道4,发送:5a a5 a9 9a 02 00 00 01 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09 00 0a 00 0b 00 0c 00 0d 00 0e 00 0f 00 10 00 11 00 12 00 13 00 14 00 15 00 16 00 17 00 18 00 19 00 1a 00 1b 00 1c 00 1d 00 1e 00 1f 00 20 00 21 00 22 00 23 00 24 00 25 00 26 00 27 00 28 00 29 00 2a 00 2b 00 2c 00 2d 00 2e 00 2f 00 30 00 31 00 32 00 33 00 34 00 35 00 36 00 37 00 38 00 39 00 3a 00 3b 00 3c 00 3d 00 3e 00 3f 00 40 00 41 00 42 00 43 00 44 00 45 00 46 00 47 00 48 00 49 00 4a 00 4b 00 4c 00 4d 00 4e 00 4f 00 50 00 51 00 52 00 53 00 54 00 55 00 56 00 57 00 58 00 59 00 5a 00 5b 00 5c 00 5d 00 5e 00 5f 00 60 00 61 00 62 00 63 00 64 00 65 00 66 00 67 00 68 00 69 00 6a 00 6b 00 6c 00 6d 00 6e 00 6f 00 70 00 71 00 72 00 73 00 74 00 75 00 76 00 77 00 78 00 79 00 7a 00 7b 00 7c 00 7d 00 7e 00 7f 00 80 00 81 00 82 00 83 00 84 00 85 00 86 00 87 00 88 00 89 00 8a 00 8b 00 8c 00 8d 00 8e 00 8f 00 90 00 91 00 92 00 93 00 94 00 95 00 96 00 97 00 98 00 99 00 9a 00 9b 00 9c 00 9d 00 9e 00 9f 00 a0 00 a1 00 a2 00 a3 00 a4 00 a5 00 a6 00 a7 00 a8 00 a9 00 aa 00 ab 00 ac 00 ad 00 ae 00 af 00 b0 00 b1 00 b2 00 b3 00 b4 00 b5 00 b6 00 b7 00 b8 00 b9 00 ba 00 bb 00 bc 00 bd 00 be 00 bf 00 c0 00 c1 00 c2 00 c3 00 c4 00 c5 00 c6 00 c7 00 c8 00 c9 00 ca 00 cb 00 cc 00 cd 00 ce 00 cf 00 d0 00 d1 00 d2 00 d3 00 d4 00 d5 00 d6 00 d7 00 d8 00 d9 00 da 00 db 00 dc 00 dd 00 de 00 df 00 e0 00 e1 00 e2 00 e3 00 e4 00 e5 00 e6 00 e7 00 e8 00 e9 00 ea 00 eb 00 ec 00 ed 00 ee 00 ef 00 f0 00 f1 00 f2 00 f3 00 f4 00 f5 00 f6 00 f7 00 f8 00 f9 00 fa 11 22 33 44
+[2022-08-03 14:50:18 src/buscomm.cpp 385]onTheadSendMsg busType=2 size=1535
+[2022-08-03 14:50:18 src/buscomm.cpp 457]arinc429 assic size=1535
+[2022-08-03 14:50:18 src/buscomm.cpp 364]recvMsgTest Z���
+[2022-08-03 14:50:18 src/rs422comm.cpp 213]onRS422RecvMsg fd=4
+[2022-08-03 14:50:18 src/rs422comm.cpp 219]onRS422RecvMsg fd=4
+[2022-08-03 14:50:18 src/rs422comm.cpp 221]onRS422RecvMsg fd=4
+[2022-08-03 14:50:18 src/rs422comm.cpp 177]appendRecvRS422 fd=4
+[2022-08-03 14:50:18 src/rs422comm.cpp 180]appendRecvRS422
+[2022-08-03 14:50:18 src/rs422comm.cpp 199]appendRecvRS422
+[2022-08-03 14:50:18 src/rs422comm.cpp 202]appendRecvRS422
+[2022-08-03 14:50:18 src/rs422comm.cpp 82]setRecvRS422 fd=4  5a a5 a9 9a 02 00 00 01 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09 00 0a 00 0b 00 0c 00 0d 00 0e 00 0f 00 10 00 11 00 12 00 13 00 14 00 15 00 16 00 17 00 18 00 19 00 1a 00 1b 00 1c 00 1d 00 1e 00 1f 00 20 00 21 00 22 00 23 00 24 00 25 00 26 00 27 00 28 00 29 00 2a 00 2b 00 2c 00 2d 00 2e 00 2f 00 30 00 31 00 32 00 33 00 34 00 35 00 36 00 37 00 38 00 39 00 3a 00 3b 00 3c 00 3d 00 3e 00 3f 00 40 00 41 00 42 00 43 00 44 00 45 00 46 00 47 00 48 00 49 00 4a 00 4b 00 4c 00 4d 00 4e 00 4f 00 50 00 51 00 52 00 53 00 54 00 55 00 56 00 57 00 58 00 59 00 5a 00 5b 00 5c 00 5d 00 5e 00 5f 00 60 00 61 00 62 00 63 00 64 00 65 00 66 00 67 00 68 00 69 00 6a 00 6b 00 6c 00 6d 00 6e 00 6f 00 70 00 71 00 72 00 73 00 74 00 75 00 76 00 77 00 78 00 79 00 7a 00 7b 00 7c 00 7d 00 7e 00 7f 00 80 00 81 00 82 00 83 00 84 00 85 00 86 00 87 00 88 00 89 00 8a 00 8b 00 8c 00 8d 00 8e 00 8f 00 90 00 91 00 92 00 93 00 94 00 95 00 96 00 97 00 98 00 99 00 9a 00 9b 00 9c 00 9d 00 9e 00 9f 00 a0 00 a1 00 a2 00 a3 00 a4 00 a5 00 a6 00 a7 00 a8 00 a9 00 aa 00 ab 00 ac 00 ad 00 ae 00 af 00 b0 00 b1 00 b2 00 b3 00 b4 00 b5 00 b6 00 b7 00 b8 00 b9 00 ba 00 bb 00 bc 00 bd 00 be 00 bf 00 c0 00 c1 00 c2 00 c3 00 c4 00 c5 00 c6 00 c7 00 c8 00 c9 00 ca 00 cb 00 cc 00 cd 00 ce 00 cf 00 d0 00 d1 00 d2 00 d3 00 d4 00 d5 00 d6 00 d7 00 d8 00 d9 00 da 00 db 00 dc 00 dd 00 de 00 df 00 e0 00 e1 00 e2 00 e3 00 e4 00 e5 00 e6 00 e7 00 e8 00 e9 00 ea 00 eb 00 ec 00 ed 00 ee 00 ef 00 f0 00 f1 00 f2 00 f3 00 f4 00 f5 00 f6 00 f7 00 f8 00 f9 00 fa 11 22 33 44
+[2022-08-03 14:50:18 src/rs422comm.cpp 92]setRecvRS422 fd=4 count=18
+[2022-08-03 14:50:18 src/rs422comm.cpp 109]setRecvRS422 fd=4  5a a5 a9 9a 02 00 00 01 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09 00 0a 00 0b 00 0c 00 0d 00 0e 00 0f 00 10 00 11 00 12 00 13 00 14 00 15 00 16 00 17 00 18 00 19 00 1a 00 1b 00 1c 00 1d 00 1e 00 1f 00 20 00 21 00 22 00 23 00 24 00 25 00 26 00 27 00 28 00 29 00 2a 00 2b 00 2c 00 2d 00 2e 00 2f 00 30 00 31 00 32 00 33 00 34 00 35 00 36 00 37 00 38 00 39 00 3a 00 3b 00 3c 00 3d 00 3e 00 3f 00 40 00 41 00 42 00 43 00 44 00 45 00 46 00 47 00 48 00 49 00 4a 00 4b 00 4c 00 4d 00 4e 00 4f 00 50 00 51 00 52 00 53 00 54 00 55 00 56 00 57 00 58 00 59 00 5a 00 5b 00 5c 00 5d 00 5e 00 5f 00 60 00 61 00 62 00 63 00 64 00 65 00 66 00 67 00 68 00 69 00 6a 00 6b 00 6c 00 6d 00 6e 00 6f 00 70 00 71 00 72 00 73 00 74 00 75 00 76 00 77 00 78 00 79 00 7a 00 7b 00 7c 00 7d 00 7e 00 7f 00 80 00 81 00 82 00 83 00 84 00 85 00 86 00 87 00 88 00 89 00 8a 00 8b 00 8c 00 8d 00 8e 00 8f 00 90 00 91 00 92 00 93 00 94 00 95 00 96 00 97 00 98 00 99 00 9a 00 9b 00 9c 00 9d 00 9e 00 9f 00 a0 00 a1 00 a2 00 a3 00 a4 00 a5 00 a6 00 a7 00 a8 00 a9 00 aa 00 ab 00 ac 00 ad 00 ae 00 af 00 b0 00 b1 00 b2 00 b3 00 b4 00 b5 00 b6 00 b7 00 b8 00 b9 00 ba 00 bb 00 bc 00 bd 00 be 00 bf 00 c0 00 c1 00 c2 00 c3 00 c4 00 c5 00 c6 00 c7 00 c8 00 c9 00 ca 00 cb 00 cc 00 cd 00 ce 00 cf 00 d0 00 d1 00 d2 00 d3 00 d4 00 d5 00 d6 00 d7 00 d8 00 d9 00 da 00 db 00 dc 00 dd 00 de 00 df 00 e0 00 e1 00 e2 00 e3 00 e4 00 e5 00 e6 00 e7 00 e8 00 e9 00 ea 00 eb 00 ec 00 ed 00 ee 00 ef 00 f0 00 f1 00 f2 00 f3 00 f4 00 f5 00 f6 00 f7 00 f8 00 f9 00 fa 11 22 33 44
+[2022-08-03 14:50:18 src/rs422comm.cpp 123]setRecvRS422 fd=4
+[2022-08-03 14:50:18 src/rs422comm.cpp 127]setRecvRS422 fd=4
+[2022-08-03 14:50:18 src/rs422comm.cpp 208]appendRecvRS422
+[2022-08-03 14:50:18 src/rs422comm.cpp 223]onRS422RecvMsg fd=4
+[2022-08-03 14:50:18 src/rs422comm.cpp 230]onRS422RecvMsg fd=4
+[2022-08-03 14:50:18 src/buscomm.cpp 216]onRecvStringMsg=<br>RS422通道4,接收:5a a5 a9 9a 02 00 00 01 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09 00 0a 00 0b 00 0c 00 0d 00 0e 00 0f 00 10 00 11 00 12 00 13 00 14 00 15 00 16 00 17 00 18 00 19 00 1a 00 1b 00 1c 00 1d 00 1e 00 1f 00 20 00 21 00 22 00 23 00 24 00 25 00 26 00 27 00 28 00 29 00 2a 00 2b 00 2c 00 2d 00 2e 00 2f 00 30 00 31 00 32 00 33 00 34 00 35 00 36 00 37 00 38 00 39 00 3a 00 3b 00 3c 00 3d 00 3e 00 3f 00 40 00 41 00 42 00 43 00 44 00 45 00 46 00 47 00 48 00 49 00 4a 00 4b 00 4c 00 4d 00 4e 00 4f 00 50 00 51 00 52 00 53 00 54 00 55 00 56 00 57 00 58 00 59 00 5a 00 5b 00 5c 00 5d 00 5e 00 5f 00 60 00 61 00 62 00 63 00 64 00 65 00 66 00 67 00 68 00 69 00 6a 00 6b 00 6c 00 6d 00 6e 00 6f 00 70 00 71 00 72 00 73 00 74 00 75 00 76 00 77 00 78 00 79 00 7a 00 7b 00 7c 00 7d 00 7e 00 7f 00 80 00 81 00 82 00 83 00 84 00 85 00 86 00 87 00 88 00 89 00 8a 00 8b 00 8c 00 8d 00 8e 00 8f 00 90 00 91 00 92 00 93 00 94 00 95 00 96 00 97 00 98 00 99 00 9a 00 9b 00 9c 00 9d 00 9e 00 9f 00 a0 00 a1 00 a2 00 a3 00 a4 00 a5 00 a6 00 a7 00 a8 00 a9 00 aa 00 ab 00 ac 00 ad 00 ae 00 af 00 b0 00 b1 00 b2 00 b3 00 b4 00 b5 00 b6 00 b7 00 b8 00 b9 00 ba 00 bb 00 bc 00 bd 00 be 00 bf 00 c0 00 c1 00 c2 00 c3 00 c4 00 c5 00 c6 00 c7 00 c8 00 c9 00 ca 00 cb 00 cc 00 cd 00 ce 00 cf 00 d0 00 d1 00 d2 00 d3 00 d4 00 d5 00 d6 00 d7 00 d8 00 d9 00 da 00 db 00 dc 00 dd 00 de 00 df 00 e0 00 e1 00 e2 00 e3 00 e4 00 e5 00 e6 00 e7 00 e8 00 e9 00 ea 00 eb 00 ec 00 ed 00 ee 00 ef 00 f0 00 f1 00 f2 00 f3 00 f4 00 f5 00 f6 00 f7 00 f8 00 f9 00 fa 11 22 33 44
+[2022-08-03 14:50:18 src/buscomm.cpp 216]onRecvStringMsg=<br><br>
+[2022-08-03 14:50:18 src/buscomm.cpp 216]onRecvStringMsg=测试RS422通道6,发送:5a a5 a9 9a 02 00 00 01 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09 00 0a 00 0b 00 0c 00 0d 00 0e 00 0f 00 10 00 11 00 12 00 13 00 14 00 15 00 16 00 17 00 18 00 19 00 1a 00 1b 00 1c 00 1d 00 1e 00 1f 00 20 00 21 00 22 00 23 00 24 00 25 00 26 00 27 00 28 00 29 00 2a 00 2b 00 2c 00 2d 00 2e 00 2f 00 30 00 31 00 32 00 33 00 34 00 35 00 36 00 37 00 38 00 39 00 3a 00 3b 00 3c 00 3d 00 3e 00 3f 00 40 00 41 00 42 00 43 00 44 00 45 00 46 00 47 00 48 00 49 00 4a 00 4b 00 4c 00 4d 00 4e 00 4f 00 50 00 51 00 52 00 53 00 54 00 55 00 56 00 57 00 58 00 59 00 5a 00 5b 00 5c 00 5d 00 5e 00 5f 00 60 00 61 00 62 00 63 00 64 00 65 00 66 00 67 00 68 00 69 00 6a 00 6b 00 6c 00 6d 00 6e 00 6f 00 70 00 71 00 72 00 73 00 74 00 75 00 76 00 77 00 78 00 79 00 7a 00 7b 00 7c 00 7d 00 7e 00 7f 00 80 00 81 00 82 00 83 00 84 00 85 00 86 00 87 00 88 00 89 00 8a 00 8b 00 8c 00 8d 00 8e 00 8f 00 90 00 91 00 92 00 93 00 94 00 95 00 96 00 97 00 98 00 99 00 9a 00 9b 00 9c 00 9d 00 9e 00 9f 00 a0 00 a1 00 a2 00 a3 00 a4 00 a5 00 a6 00 a7 00 a8 00 a9 00 aa 00 ab 00 ac 00 ad 00 ae 00 af 00 b0 00 b1 00 b2 00 b3 00 b4 00 b5 00 b6 00 b7 00 b8 00 b9 00 ba 00 bb 00 bc 00 bd 00 be 00 bf 00 c0 00 c1 00 c2 00 c3 00 c4 00 c5 00 c6 00 c7 00 c8 00 c9 00 ca 00 cb 00 cc 00 cd 00 ce 00 cf 00 d0 00 d1 00 d2 00 d3 00 d4 00 d5 00 d6 00 d7 00 d8 00 d9 00 da 00 db 00 dc 00 dd 00 de 00 df 00 e0 00 e1 00 e2 00 e3 00 e4 00 e5 00 e6 00 e7 00 e8 00 e9 00 ea 00 eb 00 ec 00 ed 00 ee 00 ef 00 f0 00 f1 00 f2 00 f3 00 f4 00 f5 00 f6 00 f7 00 f8 00 f9 00 fa 11 22 33 44
+[2022-08-03 14:50:18 src/buscomm.cpp 385]onTheadSendMsg busType=2 size=1535
+[2022-08-03 14:50:18 src/buscomm.cpp 457]arinc429 assic size=1535
+[2022-08-03 14:50:18 src/buscomm.cpp 364]recvMsgTest Z���
+[2022-08-03 14:50:18 src/rs422comm.cpp 213]onRS422RecvMsg fd=6
+[2022-08-03 14:50:18 src/rs422comm.cpp 219]onRS422RecvMsg fd=6
+[2022-08-03 14:50:18 src/rs422comm.cpp 221]onRS422RecvMsg fd=6
+[2022-08-03 14:50:18 src/rs422comm.cpp 177]appendRecvRS422 fd=6
+[2022-08-03 14:50:18 src/rs422comm.cpp 180]appendRecvRS422
+[2022-08-03 14:50:18 src/rs422comm.cpp 199]appendRecvRS422
+[2022-08-03 14:50:18 src/rs422comm.cpp 202]appendRecvRS422
+[2022-08-03 14:50:18 src/rs422comm.cpp 82]setRecvRS422 fd=6  5a a5 a9 9a 02 00 00 01 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09 00 0a 00 0b 00 0c 00 0d 00 0e 00 0f 00 10 00 11 00 12 00 13 00 14 00 15 00 16 00 17 00 18 00 19 00 1a 00 1b 00 1c 00 1d 00 1e 00 1f 00 20 00 21 00 22 00 23 00 24 00 25 00 26 00 27 00 28 00 29 00 2a 00 2b 00 2c 00 2d 00 2e 00 2f 00 30 00 31 00 32 00 33 00 34 00 35 00 36 00 37 00 38 00 39 00 3a 00 3b 00 3c 00 3d 00 3e 00 3f 00 40 00 41 00 42 00 43 00 44 00 45 00 46 00 47 00 48 00 49 00 4a 00 4b 00 4c 00 4d 00 4e 00 4f 00 50 00 51 00 52 00 53 00 54 00 55 00 56 00 57 00 58 00 59 00 5a 00 5b 00 5c 00 5d 00 5e 00 5f 00 60 00 61 00 62 00 63 00 64 00 65 00 66 00 67 00 68 00 69 00 6a 00 6b 00 6c 00 6d 00 6e 00 6f 00 70 00 71 00 72 00 73 00 74 00 75 00 76 00 77 00 78 00 79 00 7a 00 7b 00 7c 00 7d 00 7e 00 7f 00 80 00 81 00 82 00 83 00 84 00 85 00 86 00 87 00 88 00 89 00 8a 00 8b 00 8c 00 8d 00 8e 00 8f 00 90 00 91 00 92 00 93 00 94 00 95 00 96 00 97 00 98 00 99 00 9a 00 9b 00 9c 00 9d 00 9e 00 9f 00 a0 00 a1 00 a2 00 a3 00 a4 00 a5 00 a6 00 a7 00 a8 00 a9 00 aa 00 ab 00 ac 00 ad 00 ae 00 af 00 b0 00 b1 00 b2 00 b3 00 b4 00 b5 00 b6 00 b7 00 b8 00 b9 00 ba 00 bb 00 bc 00 bd 00 be 00 bf 00 c0 00 c1 00 c2 00 c3 00 c4 00 c5 00 c6 00 c7 00 c8 00 c9 00 ca 00 cb 00 cc 00 cd 00 ce 00 cf 00 d0 00 d1 00 d2 00 d3 00 d4 00 d5 00 d6 00 d7 00 d8 00 d9 00 da 00 db 00 dc 00 dd 00 de 00 df 00 e0 00 e1 00 e2 00 e3 00 e4 00 e5 00 e6 00 e7 00 e8 00 e9 00 ea 00 eb 00 ec 00 ed 00 ee 00 ef 00 f0 00 f1 00 f2 00 f3 00 f4 00 f5 00 f6 00 f7 00 f8 00 f9 00 fa 11 22 33 44
+[2022-08-03 14:50:18 src/rs422comm.cpp 92]setRecvRS422 fd=6 count=18
+[2022-08-03 14:50:18 src/rs422comm.cpp 109]setRecvRS422 fd=6  5a a5 a9 9a 02 00 00 01 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09 00 0a 00 0b 00 0c 00 0d 00 0e 00 0f 00 10 00 11 00 12 00 13 00 14 00 15 00 16 00 17 00 18 00 19 00 1a 00 1b 00 1c 00 1d 00 1e 00 1f 00 20 00 21 00 22 00 23 00 24 00 25 00 26 00 27 00 28 00 29 00 2a 00 2b 00 2c 00 2d 00 2e 00 2f 00 30 00 31 00 32 00 33 00 34 00 35 00 36 00 37 00 38 00 39 00 3a 00 3b 00 3c 00 3d 00 3e 00 3f 00 40 00 41 00 42 00 43 00 44 00 45 00 46 00 47 00 48 00 49 00 4a 00 4b 00 4c 00 4d 00 4e 00 4f 00 50 00 51 00 52 00 53 00 54 00 55 00 56 00 57 00 58 00 59 00 5a 00 5b 00 5c 00 5d 00 5e 00 5f 00 60 00 61 00 62 00 63 00 64 00 65 00 66 00 67 00 68 00 69 00 6a 00 6b 00 6c 00 6d 00 6e 00 6f 00 70 00 71 00 72 00 73 00 74 00 75 00 76 00 77 00 78 00 79 00 7a 00 7b 00 7c 00 7d 00 7e 00 7f 00 80 00 81 00 82 00 83 00 84 00 85 00 86 00 87 00 88 00 89 00 8a 00 8b 00 8c 00 8d 00 8e 00 8f 00 90 00 91 00 92 00 93 00 94 00 95 00 96 00 97 00 98 00 99 00 9a 00 9b 00 9c 00 9d 00 9e 00 9f 00 a0 00 a1 00 a2 00 a3 00 a4 00 a5 00 a6 00 a7 00 a8 00 a9 00 aa 00 ab 00 ac 00 ad 00 ae 00 af 00 b0 00 b1 00 b2 00 b3 00 b4 00 b5 00 b6 00 b7 00 b8 00 b9 00 ba 00 bb 00 bc 00 bd 00 be 00 bf 00 c0 00 c1 00 c2 00 c3 00 c4 00 c5 00 c6 00 c7 00 c8 00 c9 00 ca 00 cb 00 cc 00 cd 00 ce 00 cf 00 d0 00 d1 00 d2 00 d3 00 d4 00 d5 00 d6 00 d7 00 d8 00 d9 00 da 00 db 00 dc 00 dd 00 de 00 df 00 e0 00 e1 00 e2 00 e3 00 e4 00 e5 00 e6 00 e7 00 e8 00 e9 00 ea 00 eb 00 ec 00 ed 00 ee 00 ef 00 f0 00 f1 00 f2 00 f3 00 f4 00 f5 00 f6 00 f7 00 f8 00 f9 00 fa 11 22 33 44
+[2022-08-03 14:50:18 src/rs422comm.cpp 123]setRecvRS422 fd=6
+[2022-08-03 14:50:18 src/rs422comm.cpp 127]setRecvRS422 fd=6
+[2022-08-03 14:50:18 src/rs422comm.cpp 208]appendRecvRS422
+[2022-08-03 14:50:18 src/rs422comm.cpp 223]onRS422RecvMsg fd=6
+[2022-08-03 14:50:18 src/rs422comm.cpp 230]onRS422RecvMsg fd=6
+[2022-08-03 14:50:18 src/buscomm.cpp 216]onRecvStringMsg=<br>RS422通道6,接收:5a a5 a9 9a 02 00 00 01 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09 00 0a 00 0b 00 0c 00 0d 00 0e 00 0f 00 10 00 11 00 12 00 13 00 14 00 15 00 16 00 17 00 18 00 19 00 1a 00 1b 00 1c 00 1d 00 1e 00 1f 00 20 00 21 00 22 00 23 00 24 00 25 00 26 00 27 00 28 00 29 00 2a 00 2b 00 2c 00 2d 00 2e 00 2f 00 30 00 31 00 32 00 33 00 34 00 35 00 36 00 37 00 38 00 39 00 3a 00 3b 00 3c 00 3d 00 3e 00 3f 00 40 00 41 00 42 00 43 00 44 00 45 00 46 00 47 00 48 00 49 00 4a 00 4b 00 4c 00 4d 00 4e 00 4f 00 50 00 51 00 52 00 53 00 54 00 55 00 56 00 57 00 58 00 59 00 5a 00 5b 00 5c 00 5d 00 5e 00 5f 00 60 00 61 00 62 00 63 00 64 00 65 00 66 00 67 00 68 00 69 00 6a 00 6b 00 6c 00 6d 00 6e 00 6f 00 70 00 71 00 72 00 73 00 74 00 75 00 76 00 77 00 78 00 79 00 7a 00 7b 00 7c 00 7d 00 7e 00 7f 00 80 00 81 00 82 00 83 00 84 00 85 00 86 00 87 00 88 00 89 00 8a 00 8b 00 8c 00 8d 00 8e 00 8f 00 90 00 91 00 92 00 93 00 94 00 95 00 96 00 97 00 98 00 99 00 9a 00 9b 00 9c 00 9d 00 9e 00 9f 00 a0 00 a1 00 a2 00 a3 00 a4 00 a5 00 a6 00 a7 00 a8 00 a9 00 aa 00 ab 00 ac 00 ad 00 ae 00 af 00 b0 00 b1 00 b2 00 b3 00 b4 00 b5 00 b6 00 b7 00 b8 00 b9 00 ba 00 bb 00 bc 00 bd 00 be 00 bf 00 c0 00 c1 00 c2 00 c3 00 c4 00 c5 00 c6 00 c7 00 c8 00 c9 00 ca 00 cb 00 cc 00 cd 00 ce 00 cf 00 d0 00 d1 00 d2 00 d3 00 d4 00 d5 00 d6 00 d7 00 d8 00 d9 00 da 00 db 00 dc 00 dd 00 de 00 df 00 e0 00 e1 00 e2 00 e3 00 e4 00 e5 00 e6 00 e7 00 e8 00 e9 00 ea 00 eb 00 ec 00 ed 00 ee 00 ef 00 f0 00 f1 00 f2 00 f3 00 f4 00 f5 00 f6 00 f7 00 f8 00 f9 00 fa 11 22 33 44
+[2022-08-03 14:50:18 src/buscomm.cpp 216]onRecvStringMsg=<br><br>
+[2022-08-03 14:50:18 src/buscomm.cpp 216]onRecvStringMsg=测试RS422通道8,发送:5a a5 a9 9a 02 00 00 01 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09 00 0a 00 0b 00 0c 00 0d 00 0e 00 0f 00 10 00 11 00 12 00 13 00 14 00 15 00 16 00 17 00 18 00 19 00 1a 00 1b 00 1c 00 1d 00 1e 00 1f 00 20 00 21 00 22 00 23 00 24 00 25 00 26 00 27 00 28 00 29 00 2a 00 2b 00 2c 00 2d 00 2e 00 2f 00 30 00 31 00 32 00 33 00 34 00 35 00 36 00 37 00 38 00 39 00 3a 00 3b 00 3c 00 3d 00 3e 00 3f 00 40 00 41 00 42 00 43 00 44 00 45 00 46 00 47 00 48 00 49 00 4a 00 4b 00 4c 00 4d 00 4e 00 4f 00 50 00 51 00 52 00 53 00 54 00 55 00 56 00 57 00 58 00 59 00 5a 00 5b 00 5c 00 5d 00 5e 00 5f 00 60 00 61 00 62 00 63 00 64 00 65 00 66 00 67 00 68 00 69 00 6a 00 6b 00 6c 00 6d 00 6e 00 6f 00 70 00 71 00 72 00 73 00 74 00 75 00 76 00 77 00 78 00 79 00 7a 00 7b 00 7c 00 7d 00 7e 00 7f 00 80 00 81 00 82 00 83 00 84 00 85 00 86 00 87 00 88 00 89 00 8a 00 8b 00 8c 00 8d 00 8e 00 8f 00 90 00 91 00 92 00 93 00 94 00 95 00 96 00 97 00 98 00 99 00 9a 00 9b 00 9c 00 9d 00 9e 00 9f 00 a0 00 a1 00 a2 00 a3 00 a4 00 a5 00 a6 00 a7 00 a8 00 a9 00 aa 00 ab 00 ac 00 ad 00 ae 00 af 00 b0 00 b1 00 b2 00 b3 00 b4 00 b5 00 b6 00 b7 00 b8 00 b9 00 ba 00 bb 00 bc 00 bd 00 be 00 bf 00 c0 00 c1 00 c2 00 c3 00 c4 00 c5 00 c6 00 c7 00 c8 00 c9 00 ca 00 cb 00 cc 00 cd 00 ce 00 cf 00 d0 00 d1 00 d2 00 d3 00 d4 00 d5 00 d6 00 d7 00 d8 00 d9 00 da 00 db 00 dc 00 dd 00 de 00 df 00 e0 00 e1 00 e2 00 e3 00 e4 00 e5 00 e6 00 e7 00 e8 00 e9 00 ea 00 eb 00 ec 00 ed 00 ee 00 ef 00 f0 00 f1 00 f2 00 f3 00 f4 00 f5 00 f6 00 f7 00 f8 00 f9 00 fa 11 22 33 44
+[2022-08-03 14:50:18 src/buscomm.cpp 385]onTheadSendMsg busType=2 size=1535
+[2022-08-03 14:50:18 src/buscomm.cpp 457]arinc429 assic size=1535
+[2022-08-03 14:50:18 src/buscomm.cpp 364]recvMsgTest Z���
+[2022-08-03 14:50:18 src/rs422comm.cpp 213]onRS422RecvMsg fd=8
+[2022-08-03 14:50:18 src/rs422comm.cpp 219]onRS422RecvMsg fd=8
+[2022-08-03 14:50:18 src/rs422comm.cpp 221]onRS422RecvMsg fd=8
+[2022-08-03 14:50:18 src/rs422comm.cpp 177]appendRecvRS422 fd=8
+[2022-08-03 14:50:18 src/rs422comm.cpp 180]appendRecvRS422
+[2022-08-03 14:50:18 src/rs422comm.cpp 199]appendRecvRS422
+[2022-08-03 14:50:18 src/rs422comm.cpp 202]appendRecvRS422
+[2022-08-03 14:50:18 src/rs422comm.cpp 82]setRecvRS422 fd=8  0e d4 22 8e 5a a5 a9 9a 02 00 00 01 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09 00 0a 00 0b 00 0c 00 0d 00 0e 00 0f 00 10 00 11 00 12 00 13 00 14 00 15 00 16 00 17 00 18 00 19 00 1a 00 1b 00 1c 00 1d 00 1e 00 1f 00 20 00 21 00 22 00 23 00 24 00 25 00 26 00 27 00 28 00 29 00 2a 00 2b 00 2c 00 2d 00 2e 00 2f 00 30 00 31 00 32 00 33 00 34 00 35 00 36 00 37 00 38 00 39 00 3a 00 3b 00 3c 00 3d 00 3e 00 3f 00 40 00 41 00 42 00 43 00 44 00 45 00 46 00 47 00 48 00 49 00 4a 00 4b 00 4c 00 4d 00 4e 00 4f 00 50 00 51 00 52 00 53 00 54 00 55 00 56 00 57 00 58 00 59 00 5a 00 5b 00 5c 00 5d 00 5e 00 5f 00 60 00 61 00 62 00 63 00 64 00 65 00 66 00 67 00 68 00 69 00 6a 00 6b 00 6c 00 6d 00 6e 00 6f 00 70 00 71 00 72 00 73 00 74 00 75 00 76 00 77 00 78 00 79 00 7a 00 7b 00 7c 00 7d 00 7e 00 7f 00 80 00 81 00 82 00 83 00 84 00 85 00 86 00 87 00 88 00 89 00 8a 00 8b 00 8c 00 8d 00 8e 00 8f 00 90 00 91 00 92 00 93 00 94 00 95 00 96 00 97 00 98 00 99 00 9a 00 9b 00 9c 00 9d 00 9e 00 9f 00 a0 00 a1 00 a2 00 a3 00 a4 00 a5 00 a6 00 a7 00 a8 00 a9 00 aa 00 ab 00 ac 00 ad 00 ae 00 af 00 b0 00 b1 00 b2 00 b3 00 b4 00 b5 00 b6 00 b7 00 b8 00 b9 00 ba 00 bb 00 bc 00 bd 00 be 00 bf 00 c0 00 c1 00 c2 00 c3 00 c4 00 c5 00 c6 00 c7 00 c8 00 c9 00 ca 00 cb 00 cc 00 cd 00 ce 00 cf 00 d0 00 d1 00 d2 00 d3 00 d4 00 d5 00 d6 00 d7 00 d8 00 d9 00 da 00 db 00 dc 00 dd 00 de 00 df 00 e0 00 e1 00 e2 00 e3 00 e4 00 e5 00 e6 00 e7 00 e8 00 e9 00 ea 00 eb 00 ec 00 ed 00 ee 00 ef 00 f0 00 f1 00 f2 00 f3 00 f4 00 f5 00 f6 00 f7 00 f8 00 f9 00 fa 11 22 33 44
+[2022-08-03 14:50:18 src/rs422comm.cpp 92]setRecvRS422 fd=8 count=18
+[2022-08-03 14:50:18 src/rs422comm.cpp 109]setRecvRS422 fd=8  0e d4 22 8e 5a a5 a9 9a 02 00 00 01 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09 00 0a 00 0b 00 0c 00 0d 00 0e 00 0f 00 10 00 11 00 12 00 13 00 14 00 15 00 16 00 17 00 18 00 19 00 1a 00 1b 00 1c 00 1d 00 1e 00 1f 00 20 00 21 00 22 00 23 00 24 00 25 00 26 00 27 00 28 00 29 00 2a 00 2b 00 2c 00 2d 00 2e 00 2f 00 30 00 31 00 32 00 33 00 34 00 35 00 36 00 37 00 38 00 39 00 3a 00 3b 00 3c 00 3d 00 3e 00 3f 00 40 00 41 00 42 00 43 00 44 00 45 00 46 00 47 00 48 00 49 00 4a 00 4b 00 4c 00 4d 00 4e 00 4f 00 50 00 51 00 52 00 53 00 54 00 55 00 56 00 57 00 58 00 59 00 5a 00 5b 00 5c 00 5d 00 5e 00 5f 00 60 00 61 00 62 00 63 00 64 00 65 00 66 00 67 00 68 00 69 00 6a 00 6b 00 6c 00 6d 00 6e 00 6f 00 70 00 71 00 72 00 73 00 74 00 75 00 76 00 77 00 78 00 79 00 7a 00 7b 00 7c 00 7d 00 7e 00 7f 00 80 00 81 00 82 00 83 00 84 00 85 00 86 00 87 00 88 00 89 00 8a 00 8b 00 8c 00 8d 00 8e 00 8f 00 90 00 91 00 92 00 93 00 94 00 95 00 96 00 97 00 98 00 99 00 9a 00 9b 00 9c 00 9d 00 9e 00 9f 00 a0 00 a1 00 a2 00 a3 00 a4 00 a5 00 a6 00 a7 00 a8 00 a9 00 aa 00 ab 00 ac 00 ad 00 ae 00 af 00 b0 00 b1 00 b2 00 b3 00 b4 00 b5 00 b6 00 b7 00 b8 00 b9 00 ba 00 bb 00 bc 00 bd 00 be 00 bf 00 c0 00 c1 00 c2 00 c3 00 c4 00 c5 00 c6 00 c7 00 c8 00 c9 00 ca 00 cb 00 cc 00 cd 00 ce 00 cf 00 d0 00 d1 00 d2 00 d3 00 d4 00 d5 00 d6 00 d7 00 d8 00 d9 00 da 00 db 00 dc 00 dd 00 de 00 df 00 e0 00 e1 00 e2 00 e3 00 e4 00 e5 00 e6 00 e7 00 e8 00 e9 00 ea 00 eb 00 ec 00 ed 00 ee 00 ef 00 f0 00 f1 00 f2 00 f3 00 f4 00 f5 00 f6 00 f7 00 f8 00 f9 00 fa 11 22 33 44
+[2022-08-03 14:50:18 src/rs422comm.cpp 123]setRecvRS422 fd=8
+[2022-08-03 14:50:18 src/rs422comm.cpp 127]setRecvRS422 fd=8
+[2022-08-03 14:50:18 src/rs422comm.cpp 208]appendRecvRS422
+[2022-08-03 14:50:18 src/rs422comm.cpp 223]onRS422RecvMsg fd=8
+[2022-08-03 14:50:18 src/rs422comm.cpp 230]onRS422RecvMsg fd=8
+[2022-08-03 14:50:18 src/buscomm.cpp 216]onRecvStringMsg=<br>RS422通道8,接收:5a a5 a9 9a 02 00 00 01 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09 00 0a 00 0b 00 0c 00 0d 00 0e 00 0f 00 10 00 11 00 12 00 13 00 14 00 15 00 16 00 17 00 18 00 19 00 1a 00 1b 00 1c 00 1d 00 1e 00 1f 00 20 00 21 00 22 00 23 00 24 00 25 00 26 00 27 00 28 00 29 00 2a 00 2b 00 2c 00 2d 00 2e 00 2f 00 30 00 31 00 32 00 33 00 34 00 35 00 36 00 37 00 38 00 39 00 3a 00 3b 00 3c 00 3d 00 3e 00 3f 00 40 00 41 00 42 00 43 00 44 00 45 00 46 00 47 00 48 00 49 00 4a 00 4b 00 4c 00 4d 00 4e 00 4f 00 50 00 51 00 52 00 53 00 54 00 55 00 56 00 57 00 58 00 59 00 5a 00 5b 00 5c 00 5d 00 5e 00 5f 00 60 00 61 00 62 00 63 00 64 00 65 00 66 00 67 00 68 00 69 00 6a 00 6b 00 6c 00 6d 00 6e 00 6f 00 70 00 71 00 72 00 73 00 74 00 75 00 76 00 77 00 78 00 79 00 7a 00 7b 00 7c 00 7d 00 7e 00 7f 00 80 00 81 00 82 00 83 00 84 00 85 00 86 00 87 00 88 00 89 00 8a 00 8b 00 8c 00 8d 00 8e 00 8f 00 90 00 91 00 92 00 93 00 94 00 95 00 96 00 97 00 98 00 99 00 9a 00 9b 00 9c 00 9d 00 9e 00 9f 00 a0 00 a1 00 a2 00 a3 00 a4 00 a5 00 a6 00 a7 00 a8 00 a9 00 aa 00 ab 00 ac 00 ad 00 ae 00 af 00 b0 00 b1 00 b2 00 b3 00 b4 00 b5 00 b6 00 b7 00 b8 00 b9 00 ba 00 bb 00 bc 00 bd 00 be 00 bf 00 c0 00 c1 00 c2 00 c3 00 c4 00 c5 00 c6 00 c7 00 c8 00 c9 00 ca 00 cb 00 cc 00 cd 00 ce 00 cf 00 d0 00 d1 00 d2 00 d3 00 d4 00 d5 00 d6 00 d7 00 d8 00 d9 00 da 00 db 00 dc 00 dd 00 de 00 df 00 e0 00 e1 00 e2 00 e3 00 e4 00 e5 00 e6 00 e7 00 e8 00 e9 00 ea 00 eb 00 ec 00 ed 00 ee 00 ef 00 f0 00 f1 00 f2 00 f3 00 f4 00 f5 00 f6 00 f7 00 f8 00 f9 00 fa 11 22 33 44
+[2022-08-03 14:50:19 src/buscomm.cpp 216]onRecvStringMsg=<br><br>
+[2022-08-03 14:50:19 src/buscomm.cpp 216]onRecvStringMsg=测试Arinc429通道1,发送:41 41 35 35 35 41 30 31
+[2022-08-03 14:50:19 src/buscomm.cpp 385]onTheadSendMsg busType=1 size=23
+[2022-08-03 14:50:19 src/arincComm429.cpp 394]sendMsg429
+[2022-08-03 14:50:19 src/arincComm429.cpp 186]setSendBytesArinc429 size=8
+[2022-08-03 14:50:19 src/buscomm.cpp 457]arinc429 assic size=23
+[2022-08-03 14:50:19 src/buscomm.cpp 364]recvMsgTest AA555A01
+[2022-08-03 14:50:19 src/arincComm429.cpp 302]onArinc429RecvMsg [AA555A01]
+[2022-08-03 14:50:19 src/arincComm429.cpp 326]text m_HexArinc429
+[2022-08-03 14:50:19 src/arincComm429.cpp 340]setRecvArinc429 [ AA555A01]
+[2022-08-03 14:50:19 src/arincComm429.cpp 41]setRecvArinc429 [ AA555A01]
+[2022-08-03 14:50:19 src/arincComm429.cpp 56]setRecvArinc429 [ AA555A01]
+[2022-08-03 14:50:19 src/arincComm429.cpp 68]setRecvArinc429 [ AA555A01]
+[2022-08-03 14:50:19 src/arincComm429.cpp 74]setRecvArinc429 end
+[2022-08-03 14:50:19 src/buscomm.cpp 216]onRecvStringMsg=测试Arinc429通道1,接收:41 41 35 35 35 41 30 31
+[2022-08-03 14:50:19 src/buscomm.cpp 216]onRecvStringMsg=<br><br>
+[2022-08-03 14:50:19 src/buscomm.cpp 216]onRecvStringMsg=测试Arinc429通道2,发送:41 41 35 35 35 41 30 31
+[2022-08-03 14:50:19 src/buscomm.cpp 385]onTheadSendMsg busType=1 size=23
+[2022-08-03 14:50:19 src/arincComm429.cpp 394]sendMsg429
+[2022-08-03 14:50:19 src/arincComm429.cpp 186]setSendBytesArinc429 size=8
+[2022-08-03 14:50:19 src/buscomm.cpp 457]arinc429 assic size=23
+[2022-08-03 14:50:19 src/buscomm.cpp 364]recvMsgTest AA555A01
+[2022-08-03 14:50:19 src/arincComm429.cpp 302]onArinc429RecvMsg [AA555A01]
+[2022-08-03 14:50:19 src/arincComm429.cpp 326]text m_HexArinc429
+[2022-08-03 14:50:19 src/arincComm429.cpp 340]setRecvArinc429 [ AA555A01]
+[2022-08-03 14:50:19 src/arincComm429.cpp 41]setRecvArinc429 [ AA555A01]
+[2022-08-03 14:50:19 src/arincComm429.cpp 56]setRecvArinc429 [ AA555A01]
+[2022-08-03 14:50:19 src/arincComm429.cpp 68]setRecvArinc429 [ AA555A01]
+[2022-08-03 14:50:19 src/arincComm429.cpp 74]setRecvArinc429 end
+[2022-08-03 14:50:19 src/buscomm.cpp 216]onRecvStringMsg=测试Arinc429通道2,接收:41 41 35 35 35 41 30 31
+[2022-08-03 14:50:19 src/buscomm.cpp 216]onRecvStringMsg=<br><br>
+[2022-08-03 14:50:19 src/buscomm.cpp 216]onRecvStringMsg=测试Arinc429通道3,发送:41 41 35 35 35 41 30 31
+[2022-08-03 14:50:19 src/buscomm.cpp 385]onTheadSendMsg busType=1 size=23
+[2022-08-03 14:50:19 src/arincComm429.cpp 394]sendMsg429
+[2022-08-03 14:50:19 src/arincComm429.cpp 186]setSendBytesArinc429 size=8
+[2022-08-03 14:50:19 src/buscomm.cpp 457]arinc429 assic size=23
+[2022-08-03 14:50:19 src/buscomm.cpp 364]recvMsgTest AA555A01
+[2022-08-03 14:50:19 src/arincComm429.cpp 302]onArinc429RecvMsg [AA555A01]
+[2022-08-03 14:50:19 src/arincComm429.cpp 326]text m_HexArinc429
+[2022-08-03 14:50:19 src/arincComm429.cpp 340]setRecvArinc429 [ AA555A01]
+[2022-08-03 14:50:19 src/arincComm429.cpp 41]setRecvArinc429 [ AA555A01]
+[2022-08-03 14:50:19 src/arincComm429.cpp 56]setRecvArinc429 [ AA555A01]
+[2022-08-03 14:50:19 src/arincComm429.cpp 68]setRecvArinc429 [ AA555A01]
+[2022-08-03 14:50:19 src/arincComm429.cpp 74]setRecvArinc429 end
+[2022-08-03 14:50:19 src/buscomm.cpp 216]onRecvStringMsg=测试Arinc429通道3,接收:41 41 35 35 35 41 30 31
+[2022-08-03 14:50:19 src/buscomm.cpp 216]onRecvStringMsg=<br><br>
+[2022-08-03 14:50:19 src/buscomm.cpp 216]onRecvStringMsg=测试Arinc429通道4,发送:41 41 35 35 35 41 30 31
+[2022-08-03 14:50:19 src/buscomm.cpp 385]onTheadSendMsg busType=1 size=23
+[2022-08-03 14:50:19 src/arincComm429.cpp 394]sendMsg429
+[2022-08-03 14:50:19 src/arincComm429.cpp 186]setSendBytesArinc429 size=8
+[2022-08-03 14:50:19 src/buscomm.cpp 457]arinc429 assic size=23
+[2022-08-03 14:50:19 src/buscomm.cpp 364]recvMsgTest AA555A01
+[2022-08-03 14:50:19 src/arincComm429.cpp 302]onArinc429RecvMsg [AA555A01]
+[2022-08-03 14:50:19 src/arincComm429.cpp 326]text m_HexArinc429
+[2022-08-03 14:50:19 src/arincComm429.cpp 340]setRecvArinc429 [ AA555A01]
+[2022-08-03 14:50:19 src/arincComm429.cpp 41]setRecvArinc429 [ AA555A01]
+[2022-08-03 14:50:19 src/arincComm429.cpp 56]setRecvArinc429 [ AA555A01]
+[2022-08-03 14:50:19 src/arincComm429.cpp 68]setRecvArinc429 [ AA555A01]
+[2022-08-03 14:50:19 src/arincComm429.cpp 74]setRecvArinc429 end
+[2022-08-03 14:50:19 src/buscomm.cpp 216]onRecvStringMsg=测试Arinc429通道4,接收:41 41 35 35 35 41 30 31
+[2022-08-03 14:50:19 src/buscomm.cpp 216]onRecvStringMsg=<br><br>
+[2022-08-03 14:50:19 src/buscomm.cpp 216]onRecvStringMsg=测试Arinc429通道5,发送:41 41 35 35 35 41 30 31
+[2022-08-03 14:50:19 src/buscomm.cpp 385]onTheadSendMsg busType=1 size=23
+[2022-08-03 14:50:19 src/arincComm429.cpp 394]sendMsg429
+[2022-08-03 14:50:19 src/arincComm429.cpp 186]setSendBytesArinc429 size=8
+[2022-08-03 14:50:19 src/buscomm.cpp 457]arinc429 assic size=23
+[2022-08-03 14:50:19 src/buscomm.cpp 364]recvMsgTest AA555A01
+[2022-08-03 14:50:19 src/arincComm429.cpp 302]onArinc429RecvMsg [AA555A01]
+[2022-08-03 14:50:19 src/arincComm429.cpp 326]text m_HexArinc429
+[2022-08-03 14:50:19 src/arincComm429.cpp 340]setRecvArinc429 [ AA555A01]
+[2022-08-03 14:50:19 src/arincComm429.cpp 41]setRecvArinc429 [ AA555A01]
+[2022-08-03 14:50:19 src/arincComm429.cpp 56]setRecvArinc429 [ AA555A01]
+[2022-08-03 14:50:19 src/arincComm429.cpp 68]setRecvArinc429 [ AA555A01]
+[2022-08-03 14:50:19 src/arincComm429.cpp 74]setRecvArinc429 end
+[2022-08-03 14:50:19 src/buscomm.cpp 216]onRecvStringMsg=测试Arinc429通道5,接收:41 41 35 35 35 41 30 31
+[2022-08-03 14:50:19 src/buscomm.cpp 216]onRecvStringMsg=<br><br>
+[2022-08-03 14:50:19 src/buscomm.cpp 216]onRecvStringMsg=测试Arinc429通道6,发送:41 41 35 35 35 41 30 31
+[2022-08-03 14:50:19 src/buscomm.cpp 385]onTheadSendMsg busType=1 size=23
+[2022-08-03 14:50:19 src/arincComm429.cpp 394]sendMsg429
+[2022-08-03 14:50:19 src/arincComm429.cpp 186]setSendBytesArinc429 size=8
+[2022-08-03 14:50:19 src/buscomm.cpp 457]arinc429 assic size=23
+[2022-08-03 14:50:19 src/buscomm.cpp 364]recvMsgTest AA555A01
+[2022-08-03 14:50:19 src/arincComm429.cpp 302]onArinc429RecvMsg [AA555A01]
+[2022-08-03 14:50:19 src/arincComm429.cpp 326]text m_HexArinc429
+[2022-08-03 14:50:19 src/arincComm429.cpp 340]setRecvArinc429 [ AA555A01]
+[2022-08-03 14:50:19 src/arincComm429.cpp 41]setRecvArinc429 [ AA555A01]
+[2022-08-03 14:50:19 src/arincComm429.cpp 56]setRecvArinc429 [ AA555A01]
+[2022-08-03 14:50:19 src/arincComm429.cpp 68]setRecvArinc429 [ AA555A01]
+[2022-08-03 14:50:19 src/arincComm429.cpp 74]setRecvArinc429 end
+[2022-08-03 14:50:19 src/buscomm.cpp 216]onRecvStringMsg=测试Arinc429通道6,接收:41 41 35 35 35 41 30 31
+[2022-08-03 14:50:19 src/buscomm.cpp 216]onRecvStringMsg=<br><br>
+[2022-08-03 14:50:19 src/buscomm.cpp 216]onRecvStringMsg=测试Arinc429通道7,发送:41 41 35 35 35 41 30 31
+[2022-08-03 14:50:19 src/buscomm.cpp 385]onTheadSendMsg busType=1 size=23
+[2022-08-03 14:50:19 src/arincComm429.cpp 394]sendMsg429
+[2022-08-03 14:50:19 src/arincComm429.cpp 186]setSendBytesArinc429 size=8
+[2022-08-03 14:50:19 src/buscomm.cpp 457]arinc429 assic size=23
+[2022-08-03 14:50:19 src/buscomm.cpp 364]recvMsgTest AA555A01
+[2022-08-03 14:50:19 src/arincComm429.cpp 302]onArinc429RecvMsg [AA555A01]
+[2022-08-03 14:50:19 src/arincComm429.cpp 326]text m_HexArinc429
+[2022-08-03 14:50:19 src/arincComm429.cpp 340]setRecvArinc429 [ AA555A01]
+[2022-08-03 14:50:19 src/arincComm429.cpp 41]setRecvArinc429 [ AA555A01]
+[2022-08-03 14:50:19 src/arincComm429.cpp 56]setRecvArinc429 [ AA555A01]
+[2022-08-03 14:50:19 src/arincComm429.cpp 68]setRecvArinc429 [ AA555A01]
+[2022-08-03 14:50:19 src/arincComm429.cpp 74]setRecvArinc429 end
+[2022-08-03 14:50:19 src/buscomm.cpp 216]onRecvStringMsg=测试Arinc429通道7,接收:41 41 35 35 35 41 30 31
+[2022-08-03 14:50:19 src/buscomm.cpp 216]onRecvStringMsg=<br><br>
+[2022-08-03 14:50:19 src/buscomm.cpp 216]onRecvStringMsg=测试Arinc429通道8,发送:41 41 35 35 35 41 30 31
+[2022-08-03 14:50:19 src/buscomm.cpp 385]onTheadSendMsg busType=1 size=23
+[2022-08-03 14:50:19 src/arincComm429.cpp 394]sendMsg429
+[2022-08-03 14:50:19 src/arincComm429.cpp 186]setSendBytesArinc429 size=8
+[2022-08-03 14:50:19 src/buscomm.cpp 457]arinc429 assic size=23
+[2022-08-03 14:50:19 src/buscomm.cpp 364]recvMsgTest AA555A01
+[2022-08-03 14:50:19 src/arincComm429.cpp 302]onArinc429RecvMsg [AA555A01]
+[2022-08-03 14:50:19 src/arincComm429.cpp 326]text m_HexArinc429
+[2022-08-03 14:50:19 src/arincComm429.cpp 340]setRecvArinc429 [ AA555A01]
+[2022-08-03 14:50:19 src/arincComm429.cpp 41]setRecvArinc429 [ AA555A01]
+[2022-08-03 14:50:19 src/arincComm429.cpp 56]setRecvArinc429 [ AA555A01]
+[2022-08-03 14:50:19 src/arincComm429.cpp 68]setRecvArinc429 [ AA555A01]
+[2022-08-03 14:50:19 src/arincComm429.cpp 74]setRecvArinc429 end
+[2022-08-03 14:50:19 src/buscomm.cpp 216]onRecvStringMsg=测试Arinc429通道8,接收:41 41 35 35 35 41 30 31
+[2022-08-03 14:50:19 src/buscomm.cpp 216]onRecvStringMsg=<br><br>
+[2022-08-03 14:50:19 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_1为输出模式，并输出高电平
+[2022-08-03 14:50:19 src/threadtask.cpp 96]0
+[2022-08-03 14:50:19 src/threadtask.cpp 104]flag=0
+[2022-08-03 14:50:19 src/threadtask.cpp 105]flag1=80
+[2022-08-03 14:50:19 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_-8为输入模式，并输出低电平<br>
+[2022-08-03 14:50:19 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_1为输出模式，并输出低电平
+[2022-08-03 14:50:19 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_-8为输入模式，并输出高电平<br>
+[2022-08-03 14:50:19 src/buscomm.cpp 216]onRecvStringMsg=<font color="#FF00FF">IO_1回环测试未通过!</font><br>
+[2022-08-03 14:50:19 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_2为输出模式，并输出高电平
+[2022-08-03 14:50:19 src/threadtask.cpp 96]0
+[2022-08-03 14:50:19 src/threadtask.cpp 104]flag=2
+[2022-08-03 14:50:19 src/threadtask.cpp 105]flag1=100
+[2022-08-03 14:50:19 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_-7为输入模式，并输出低电平<br>
+[2022-08-03 14:50:19 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_2为输出模式，并输出低电平
+[2022-08-03 14:50:19 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_-7为输入模式，并输出高电平<br>
+[2022-08-03 14:50:19 src/buscomm.cpp 216]onRecvStringMsg=<font color="#FF00FF">IO_2回环测试未通过!</font><br>
+[2022-08-03 14:50:19 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_3为输出模式，并输出高电平
+[2022-08-03 14:50:19 src/threadtask.cpp 96]0
+[2022-08-03 14:50:19 src/threadtask.cpp 104]flag=4
+[2022-08-03 14:50:19 src/threadtask.cpp 105]flag1=200
+[2022-08-03 14:50:19 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_-6为输入模式，并输出低电平<br>
+[2022-08-03 14:50:19 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_3为输出模式，并输出低电平
+[2022-08-03 14:50:19 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_-6为输入模式，并输出高电平<br>
+[2022-08-03 14:50:19 src/buscomm.cpp 216]onRecvStringMsg=<font color="#FF00FF">IO_3回环测试未通过!</font><br>
+[2022-08-03 14:50:19 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_4为输出模式，并输出高电平
+[2022-08-03 14:50:19 src/threadtask.cpp 96]0
+[2022-08-03 14:50:19 src/threadtask.cpp 104]flag=8
+[2022-08-03 14:50:19 src/threadtask.cpp 105]flag1=400
+[2022-08-03 14:50:19 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_-5为输入模式，并输出低电平<br>
+[2022-08-03 14:50:19 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_4为输出模式，并输出低电平
+[2022-08-03 14:50:19 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_-5为输入模式，并输出高电平<br>
+[2022-08-03 14:50:19 src/buscomm.cpp 216]onRecvStringMsg=<font color="#FF00FF">IO_4回环测试未通过!</font><br>
+[2022-08-03 14:50:19 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_5为输出模式，并输出高电平
+[2022-08-03 14:50:20 src/threadtask.cpp 96]0
+[2022-08-03 14:50:20 src/threadtask.cpp 104]flag=10
+[2022-08-03 14:50:20 src/threadtask.cpp 105]flag1=800
+[2022-08-03 14:50:20 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_-4为输入模式，并输出低电平<br>
+[2022-08-03 14:50:20 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_5为输出模式，并输出低电平
+[2022-08-03 14:50:20 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_-4为输入模式，并输出高电平<br>
+[2022-08-03 14:50:20 src/buscomm.cpp 216]onRecvStringMsg=<font color="#FF00FF">IO_5回环测试未通过!</font><br>
+[2022-08-03 14:50:20 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_6为输出模式，并输出高电平
+[2022-08-03 14:50:20 src/threadtask.cpp 96]0
+[2022-08-03 14:50:20 src/threadtask.cpp 104]flag=20
+[2022-08-03 14:50:20 src/threadtask.cpp 105]flag1=1000
+[2022-08-03 14:50:20 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_-3为输入模式，并输出低电平<br>
+[2022-08-03 14:50:20 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_6为输出模式，并输出低电平
+[2022-08-03 14:50:20 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_-3为输入模式，并输出高电平<br>
+[2022-08-03 14:50:20 src/buscomm.cpp 216]onRecvStringMsg=<font color="#FF00FF">IO_6回环测试未通过!</font><br>
+[2022-08-03 14:50:20 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_7为输出模式，并输出高电平
+[2022-08-03 14:50:20 src/threadtask.cpp 96]0
+[2022-08-03 14:50:20 src/threadtask.cpp 104]flag=40
+[2022-08-03 14:50:20 src/threadtask.cpp 105]flag1=2000
+[2022-08-03 14:50:20 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_-2为输入模式，并输出低电平<br>
+[2022-08-03 14:50:20 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_7为输出模式，并输出低电平
+[2022-08-03 14:50:20 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_-2为输入模式，并输出高电平<br>
+[2022-08-03 14:50:20 src/buscomm.cpp 216]onRecvStringMsg=<font color="#FF00FF">IO_7回环测试未通过!</font><br>
+[2022-08-03 14:50:20 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_8为输出模式，并输出高电平
+[2022-08-03 14:50:20 src/threadtask.cpp 96]0
+[2022-08-03 14:50:20 src/threadtask.cpp 104]flag=80
+[2022-08-03 14:50:20 src/threadtask.cpp 105]flag1=1
+[2022-08-03 14:50:20 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_-1为输入模式，并输出低电平<br>
+[2022-08-03 14:50:20 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_8为输出模式，并输出低电平
+[2022-08-03 14:50:20 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_-1为输入模式，并输出高电平<br>
+[2022-08-03 14:50:20 src/buscomm.cpp 216]onRecvStringMsg=<font color="#FF00FF">IO_8回环测试未通过!</font><br>
+[2022-08-03 14:50:20 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_9为输出模式，并输出高电平
+[2022-08-03 14:50:20 src/threadtask.cpp 96]0
+[2022-08-03 14:50:20 src/threadtask.cpp 104]flag=100
+[2022-08-03 14:50:20 src/threadtask.cpp 105]flag1=2
+[2022-08-03 14:50:20 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_0为输入模式，并输出低电平<br>
+[2022-08-03 14:50:20 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_9为输出模式，并输出低电平
+[2022-08-03 14:50:20 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_0为输入模式，并输出高电平<br>
+[2022-08-03 14:50:20 src/buscomm.cpp 216]onRecvStringMsg=<font color="#FF00FF">IO_9回环测试未通过!</font><br>
+[2022-08-03 14:50:20 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_10为输出模式，并输出高电平
+[2022-08-03 14:50:20 src/threadtask.cpp 96]0
+[2022-08-03 14:50:20 src/threadtask.cpp 104]flag=200
+[2022-08-03 14:50:20 src/threadtask.cpp 105]flag1=4
+[2022-08-03 14:50:20 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_1为输入模式，并输出低电平<br>
+[2022-08-03 14:50:20 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_10为输出模式，并输出低电平
+[2022-08-03 14:50:20 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_1为输入模式，并输出高电平<br>
+[2022-08-03 14:50:20 src/buscomm.cpp 216]onRecvStringMsg=<font color="#FF00FF">IO_10回环测试未通过!</font><br>
+[2022-08-03 14:50:20 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_11为输出模式，并输出高电平
+[2022-08-03 14:50:20 src/threadtask.cpp 96]0
+[2022-08-03 14:50:20 src/threadtask.cpp 104]flag=400
+[2022-08-03 14:50:20 src/threadtask.cpp 105]flag1=8
+[2022-08-03 14:50:20 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_2为输入模式，并输出低电平<br>
+[2022-08-03 14:50:20 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_11为输出模式，并输出低电平
+[2022-08-03 14:50:20 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_2为输入模式，并输出高电平<br>
+[2022-08-03 14:50:20 src/buscomm.cpp 216]onRecvStringMsg=<font color="#FF00FF">IO_11回环测试未通过!</font><br>
+[2022-08-03 14:50:20 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_12为输出模式，并输出高电平
+[2022-08-03 14:50:20 src/threadtask.cpp 96]0
+[2022-08-03 14:50:20 src/threadtask.cpp 104]flag=800
+[2022-08-03 14:50:20 src/threadtask.cpp 105]flag1=10
+[2022-08-03 14:50:20 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_3为输入模式，并输出低电平<br>
+[2022-08-03 14:50:20 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_12为输出模式，并输出低电平
+[2022-08-03 14:50:20 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_3为输入模式，并输出高电平<br>
+[2022-08-03 14:50:20 src/buscomm.cpp 216]onRecvStringMsg=<font color="#FF00FF">IO_12回环测试未通过!</font><br>
+[2022-08-03 14:50:20 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_13为输出模式，并输出高电平
+[2022-08-03 14:50:20 src/threadtask.cpp 96]0
+[2022-08-03 14:50:20 src/threadtask.cpp 104]flag=1000
+[2022-08-03 14:50:20 src/threadtask.cpp 105]flag1=20
+[2022-08-03 14:50:20 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_4为输入模式，并输出低电平<br>
+[2022-08-03 14:50:20 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_13为输出模式，并输出低电平
+[2022-08-03 14:50:20 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_4为输入模式，并输出高电平<br>
+[2022-08-03 14:50:20 src/buscomm.cpp 216]onRecvStringMsg=<font color="#FF00FF">IO_13回环测试未通过!</font><br>
+[2022-08-03 14:50:20 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_14为输出模式，并输出高电平
+[2022-08-03 14:50:20 src/threadtask.cpp 96]0
+[2022-08-03 14:50:20 src/threadtask.cpp 104]flag=2000
+[2022-08-03 14:50:20 src/threadtask.cpp 105]flag1=40
+[2022-08-03 14:50:20 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_5为输入模式，并输出低电平<br>
+[2022-08-03 14:50:20 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_14为输出模式，并输出低电平
+[2022-08-03 14:50:20 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_5为输入模式，并输出高电平<br>
+[2022-08-03 14:50:20 src/buscomm.cpp 216]onRecvStringMsg=<font color="#FF00FF">IO_14回环测试未通过!</font><br>
+[2022-08-03 14:50:20 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_15为输出模式，并输出高电平
+[2022-08-03 14:50:21 src/threadtask.cpp 96]0
+[2022-08-03 14:50:21 src/threadtask.cpp 104]flag=4000
+[2022-08-03 14:50:21 src/threadtask.cpp 105]flag1=80
+[2022-08-03 14:50:21 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_6为输入模式，并输出低电平<br>
+[2022-08-03 14:50:21 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_15为输出模式，并输出低电平
+[2022-08-03 14:50:21 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_6为输入模式，并输出高电平<br>
+[2022-08-03 14:50:21 src/buscomm.cpp 216]onRecvStringMsg=<font color="#FF00FF">IO_15回环测试未通过!</font><br>
+[2022-08-03 14:50:21 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_16为输出模式，并输出高电平
+[2022-08-03 14:50:21 src/threadtask.cpp 96]0
+[2022-08-03 14:50:21 src/threadtask.cpp 104]flag=8000
+[2022-08-03 14:50:21 src/threadtask.cpp 105]flag1=100
+[2022-08-03 14:50:21 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_7为输入模式，并输出低电平<br>
+[2022-08-03 14:50:21 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_16为输出模式，并输出低电平
+[2022-08-03 14:50:21 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_7为输入模式，并输出高电平<br>
+[2022-08-03 14:50:21 src/buscomm.cpp 216]onRecvStringMsg=<font color="#FF00FF">IO_16回环测试未通过!</font><br>
+[2022-08-03 14:50:21 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_17为输出模式，并输出高电平
+[2022-08-03 14:50:21 src/threadtask.cpp 96]0
+[2022-08-03 14:50:21 src/threadtask.cpp 104]flag=0
+[2022-08-03 14:50:21 src/threadtask.cpp 105]flag1=200
+[2022-08-03 14:50:21 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_8为输入模式，并输出低电平<br>
+[2022-08-03 14:50:21 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_17为输出模式，并输出低电平
+[2022-08-03 14:50:21 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_8为输入模式，并输出高电平<br>
+[2022-08-03 14:50:21 src/buscomm.cpp 216]onRecvStringMsg=<font color="#FF00FF">IO_17回环测试未通过!</font><br>
+[2022-08-03 14:50:21 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_18为输出模式，并输出高电平
+[2022-08-03 14:50:21 src/threadtask.cpp 96]0
+[2022-08-03 14:50:21 src/threadtask.cpp 104]flag=0
+[2022-08-03 14:50:21 src/threadtask.cpp 105]flag1=400
+[2022-08-03 14:50:21 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_9为输入模式，并输出低电平<br>
+[2022-08-03 14:50:21 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_18为输出模式，并输出低电平
+[2022-08-03 14:50:21 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_9为输入模式，并输出高电平<br>
+[2022-08-03 14:50:21 src/buscomm.cpp 216]onRecvStringMsg=<font color="#FF00FF">IO_18回环测试未通过!</font><br>
+[2022-08-03 14:50:21 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_19为输出模式，并输出高电平
+[2022-08-03 14:50:21 src/threadtask.cpp 96]0
+[2022-08-03 14:50:21 src/threadtask.cpp 104]flag=0
+[2022-08-03 14:50:21 src/threadtask.cpp 105]flag1=800
+[2022-08-03 14:50:21 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_10为输入模式，并输出低电平<br>
+[2022-08-03 14:50:21 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_19为输出模式，并输出低电平
+[2022-08-03 14:50:21 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_10为输入模式，并输出高电平<br>
+[2022-08-03 14:50:21 src/buscomm.cpp 216]onRecvStringMsg=<font color="#FF00FF">IO_19回环测试未通过!</font><br>
+[2022-08-03 14:50:21 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_20为输出模式，并输出高电平
+[2022-08-03 14:50:21 src/threadtask.cpp 96]0
+[2022-08-03 14:50:21 src/threadtask.cpp 104]flag=0
+[2022-08-03 14:50:21 src/threadtask.cpp 105]flag1=1000
+[2022-08-03 14:50:21 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_11为输入模式，并输出低电平<br>
+[2022-08-03 14:50:21 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_20为输出模式，并输出低电平
+[2022-08-03 14:50:21 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_11为输入模式，并输出高电平<br>
+[2022-08-03 14:50:21 src/buscomm.cpp 216]onRecvStringMsg=<font color="#FF00FF">IO_20回环测试未通过!</font><br>
+[2022-08-03 14:50:21 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_21为输出模式，并输出高电平
+[2022-08-03 14:50:21 src/threadtask.cpp 96]0
+[2022-08-03 14:50:21 src/threadtask.cpp 104]flag=0
+[2022-08-03 14:50:21 src/threadtask.cpp 105]flag1=2000
+[2022-08-03 14:50:21 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_12为输入模式，并输出低电平<br>
+[2022-08-03 14:50:21 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_21为输出模式，并输出低电平
+[2022-08-03 14:50:21 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_12为输入模式，并输出高电平<br>
+[2022-08-03 14:50:21 src/buscomm.cpp 216]onRecvStringMsg=<font color="#FF00FF">IO_21回环测试未通过!</font><br>
+[2022-08-03 14:50:21 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_22为输出模式，并输出高电平
+[2022-08-03 14:50:21 src/threadtask.cpp 96]0
+[2022-08-03 14:50:21 src/threadtask.cpp 104]flag=0
+[2022-08-03 14:50:21 src/threadtask.cpp 105]flag1=4000
+[2022-08-03 14:50:21 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_13为输入模式，并输出低电平<br>
+[2022-08-03 14:50:21 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_22为输出模式，并输出低电平
+[2022-08-03 14:50:21 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_13为输入模式，并输出高电平<br>
+[2022-08-03 14:50:21 src/buscomm.cpp 216]onRecvStringMsg=<font color="#FF00FF">IO_22回环测试未通过!</font><br>
+[2022-08-03 14:50:21 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_23为输出模式，并输出高电平
+[2022-08-03 14:50:21 src/threadtask.cpp 96]0
+[2022-08-03 14:50:21 src/threadtask.cpp 104]flag=0
+[2022-08-03 14:50:21 src/threadtask.cpp 105]flag1=8000
+[2022-08-03 14:50:21 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_14为输入模式，并输出低电平<br>
+[2022-08-03 14:50:21 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_23为输出模式，并输出低电平
+[2022-08-03 14:50:21 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_14为输入模式，并输出高电平<br>
+[2022-08-03 14:50:21 src/buscomm.cpp 216]onRecvStringMsg=<font color="#FF00FF">IO_23回环测试未通过!</font><br>
+[2022-08-03 14:50:21 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_24为输出模式，并输出高电平
+[2022-08-03 14:50:21 src/threadtask.cpp 96]0
+[2022-08-03 14:50:21 src/threadtask.cpp 104]flag=0
+[2022-08-03 14:50:21 src/threadtask.cpp 105]flag1=0
+[2022-08-03 14:50:21 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_15为输入模式，并输出低电平<br>
+[2022-08-03 14:50:21 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_24为输出模式，并输出低电平
+[2022-08-03 14:50:21 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_15为输入模式，并输出高电平<br>
+[2022-08-03 14:50:21 src/buscomm.cpp 216]onRecvStringMsg=<font color="#FF00FF">IO_24回环测试未通过!</font><br>
+[2022-08-03 14:50:21 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_25为输出模式，并输出高电平
+[2022-08-03 14:50:22 src/threadtask.cpp 96]0
+[2022-08-03 14:50:22 src/threadtask.cpp 104]flag=0
+[2022-08-03 14:50:22 src/threadtask.cpp 105]flag1=0
+[2022-08-03 14:50:22 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_16为输入模式，并输出低电平<br>
+[2022-08-03 14:50:22 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_25为输出模式，并输出低电平
+[2022-08-03 14:50:22 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_16为输入模式，并输出高电平<br>
+[2022-08-03 14:50:22 src/buscomm.cpp 216]onRecvStringMsg=<font color="#FF00FF">IO_25回环测试未通过!</font><br>
+[2022-08-03 14:50:22 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_15为输出模式，并输出高电平
+[2022-08-03 14:50:22 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_16为输入模式，并输出低电平<br>
+[2022-08-03 14:50:22 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_15为输出模式，并输出低电平
+[2022-08-03 14:50:22 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_16为输入模式，并输出高电平<br>
+[2022-08-03 14:50:22 src/buscomm.cpp 216]onRecvStringMsg=<font color="#FF00FF">IO_15回环测试未通过!</font><br>
+[2022-08-03 14:50:22 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_16为输出模式，并输出高电平
+[2022-08-03 14:50:22 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_15为输入模式，并输出低电平<br>
+[2022-08-03 14:50:22 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_16为输出模式，并输出低电平
+[2022-08-03 14:50:22 src/buscomm.cpp 216]onRecvStringMsg=<br>设置IO_15为输入模式，并输出高电平<br>
+[2022-08-03 14:50:22 src/buscomm.cpp 216]onRecvStringMsg=<font color="#FF00FF">IO_16回环测试未通过!</font><br>
+[2022-08-03 14:50:22 src/buscomm.cpp 216]onRecvStringMsg=测试完毕<br><br>

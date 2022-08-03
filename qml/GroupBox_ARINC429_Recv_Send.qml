@@ -19,6 +19,8 @@ Item {
 
         function showTitle()
         {
+            console.log("grp.fd:" + grp.fd)
+
             switch (grp.fd)
             {
             case 0 : return "";
@@ -86,47 +88,6 @@ Item {
                             wrapMode:TextArea.Wrap
                             selectByKeyboard: true
                             selectByMouse: true
-                            /*RegExpValidator{
-                            regExp: {/A-Fa-f0-9/}
-                        }*/
-                            /*Keys.onPressed: {
-                                switch(event.key)
-                                {
-                                case Qt.Key_0:
-                                case Qt.Key_1:
-                                case Qt.Key_2:
-                                case Qt.Key_3:
-                                case Qt.Key_4:
-                                case Qt.Key_5:
-                                case Qt.Key_6:
-                                case Qt.Key_7:
-                                case Qt.Key_8:
-                                case Qt.Key_9:
-                                case Qt.Key_A:
-                                case Qt.Key_B:
-                                case Qt.Key_C:
-                                case Qt.Key_D:
-                                case Qt.Key_E:
-                                case Qt.Key_F:
-                                case Qt.Key_Backspace:
-                                case Qt.Key_Space:
-                                case Qt.Key_Delete:
-                                case Qt.Key_Enter:
-                                case Qt.Key_Escape:
-                                case Qt.Key_Direction_L:
-                                case Qt.Key_Direction_R:
-                                case Qt.Key_PageUp:
-                                case Qt.Key_PageDown:
-                                case Qt.Key_Up:
-                                case Qt.Key_Down:
-                                case Qt.Key_Left:
-                                case Qt.Key_Right:
-                                case Qt.Key_Tab:
-                                    return;
-                                }
-                                event.accepted=true;
-                            }*/
-
                         }
                     }
 
@@ -143,7 +104,7 @@ Item {
 
                         //选择状态更改事件
                         onCheckedChanged: {
-//                             arinc429.setHexarinc429(grp.fd,checked);
+                            //                             arinc429.setHexarinc429(grp.fd,checked);
                             console.log(grp.title + ",选择十六进制:" + checked)
                             if (checked)
                             {
@@ -181,21 +142,12 @@ Item {
 
                     Label{
                         id:lbl429SendBytes
-                        objectName: "lbl429SendBytes"
-                       // text:"0"      //channelBytes()
+                        text:"0"
                         anchors.bottom: parent.bottom
                         anchors.bottomMargin: 10
                         anchors.horizontalCenter: parent.horizontalCenter
                         height: 30
-                        function channelBytes()//当前频道显示的switch函数
-                        {
-                            switch (grp.fd)
-                            {
-                            case 0 : return "";
-
-                            default: return "";
-                            }
-                        }
+                        objectName: "lbl429SendBytes"
                     }
 
                     //发送按钮
@@ -212,8 +164,9 @@ Item {
 
                         //点击事件
                         onClicked: {
-                            console.log(grp.title + ",点击发送："   + txtAreaSend.text)
+                            console.log(grp.title + ",点击发送："   + txtAreaSend.text);
                             bus.sendMsg(1,grp.fd, txtAreaSend.text,txtAreaSend.text.length,checkHexSend.checked);
+                            console.log("sendMsg 点击发送：");
                         }
                     }
 
@@ -221,7 +174,7 @@ Item {
 
                 //接收数据子页
                 Item {
-
+                    objectName: "arinc429RecvItem"
                     ScrollView{
                         id: scRevcView
                         anchors.top: parent.top
@@ -232,6 +185,7 @@ Item {
                         TextArea{
                             id:txtAreaRecv
                             objectName: "arinc429RecvItemTextArea"
+                            text:""
                             wrapMode:TextArea.Wrap
                             onTextChanged: {
                                 var strlength=txtAreaRecv.length;
@@ -253,24 +207,19 @@ Item {
                         enabled: true
                         height: 40
                         onCheckedChanged: {
-                        arinc429.setHexarinc429(grp.fd,checked);
+                            arinc429.setDisplayHexArinc429(grp.fd,checked);
                             console.log(grp.title + ",接收数据-选择十六进制:" + checked)
-
                         }
                     }
 
-
-
-
-
                     Label{
-                        id:lbl429RecvBytes
+                        text:"0"
+                        //                        id:lbl429RecvBytes
                         objectName: "lbl429RecvBytes"
                         anchors.bottom: parent.bottom
                         anchors.bottomMargin: 10
                         anchors.horizontalCenter: parent.horizontalCenter
                         height: 30
-
                     }
 
                     //按钮
@@ -287,13 +236,13 @@ Item {
                         //点击事件
                         onClicked: {
                             console.log(grp.title + ",点击清除：");
-                            arinc429.setRecvarinc429(grp.fd,"");
-//                            switch (grp.fd)
-//                            {
-//                            case 0 : return "";
+                            arinc429.setRecvArincMsg(grp.fd,"");
+                            //                            switch (grp.fd)
+                            //                            {
+                            //                            case 0 : return "";
 
-//                            default: return "";
-//                            }
+                            //                            default: return "";
+                            //                            }
                         }
                     }
 

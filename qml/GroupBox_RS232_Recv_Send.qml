@@ -178,9 +178,7 @@ Item {
 
                 //接收数据子页
                 Item {
-
                     objectName: "rs232RecvItem"
-
                     ScrollView{
                         id: scRevcView
                         anchors.top: parent.top

@@ -65,6 +65,7 @@ int main(int argc, char *argv[])
             QCoreApplication::exit(-1);
     }, Qt::QueuedConnection);
     engine.load(url);
+
     bus->open();
 
     rs232->qmlObject=engine.rootObjects().first()->findChildren<QObject*>("rs232Page").first();

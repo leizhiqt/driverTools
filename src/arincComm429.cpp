@@ -6,6 +6,9 @@
 #include "threadtask.h"
 #include "callc.h"
 #include "bclog.h"
+#include "convert_util.h"
+
+extern void str_trim(char  *s1);
 
 uint8_t rxbuf429[arinc429PortNum][2048];
 
@@ -33,49 +36,91 @@ arincComm429::arincComm429(QObject *parent) : QObject(parent)
 }
 
 
-void arincComm429::setRecvArinc429(const int fd, const QString &recvArinc429)
+void arincComm429::setRecvArinc429(const int fd, const QString recvArinc429)
 {
-    LOG_INFO("setRecvArinc429 fd=%d %s",fd,recvArinc429.toLatin1().data());
-    printf_hex(recvArinc429.toLatin1().data(),recvArinc429.length());
-//    if (recvArinc429 == m_recvArinc429[fd-1]  && recvArinc429!="")
-//        return;
+    LOG_INFO("setRecvArinc429 [%s]",recvArinc429.toLatin1().data());
     if (recvArinc429=="") m_recvBytesArinc429[fd-1]=0;
-    m_recvArinc429[fd-1] = recvArinc429;
-    //emit recvRS42210Changed();
-    //emit recvBytesRS42210Changed();
+//    m_recvArinc429[fd-1] = recvArinc429;
+
     QList<QObject*> objList=qmlObject->findChildren<QObject*>("arinc429GroupBox");
     if(objList.count()>=fd){
-       // result = (int)rs422_write(arinc429PortReadAddress[fd-1], msg_buf, (uint16_t)size);
+
         QList<QObject*> arinc429RecvItemTextAreaList=objList[fd-1]->findChildren<QObject*>("arinc429RecvItemTextArea");
         if (arinc429RecvItemTextAreaList.count()>0){
             QObject* arinc429RecvItemTextArea= arinc429RecvItemTextAreaList.first();
             if(arinc429RecvItemTextArea)
             {
-              // QString m_sendBytesStr=QString("%1").arg(m_sendBytesArinc429[fd-1],3,10,QChar('0'));
-               QString m_recvStr=QString("%1").arg(m_recvArinc429[fd-1]);
+                QString m_recvStr = recvArinc429;
+                arinc429RecvItemTextArea->setProperty("text",m_recvStr);
+                bool bRet;
+                LOG_INFO("setRecvArinc429 [%s]",recvArinc429.toLatin1().data());
+                bRet=QMetaObject::invokeMethod(arinc429RecvItemTextArea,"clear");
+                bRet=QMetaObject::invokeMethod(arinc429RecvItemTextArea,"append",Q_ARG(QString,m_recvStr));
+            }
+        }
+
+        QList<QObject*> labelRecvBytesArinc429List=objList[fd-1]->findChildren<QObject*>("lbl429RecvBytes");
+        if (labelRecvBytesArinc429List.count()>0){
+            QObject* labelRecvBytesArinc429= labelRecvBytesArinc429List.first();
+            if(labelRecvBytesArinc429)
+            {
+                QString m_recvBytesStr=QString("%1").arg(m_recvBytesArinc429[fd-1]);
+                LOG_INFO("setRecvArinc429 [%s]",recvArinc429.toLatin1().data());
+
+                labelRecvBytesArinc429->setProperty("text",m_recvBytesStr);
+                bool bRet=QMetaObject::invokeMethod(labelRecvBytesArinc429,"doLayout");
+            }
+        }
+        LOG_INFO("setRecvArinc429 end");
+    }
+}
+
+void arincComm429::setRecvArincMsg(const int fd, const QString recvArinc429)
+{
+    LOG_INFO("setRecvArincMsg");
+
+//    char buf[256];
+//    char *p=recvArinc429.toLatin1().data();
+//    sprintf_hex(buf,(uchar_8 *)p,recvArinc429.length());
+//    LOG_INFO("setRecvArinc429 fd=%d %s",fd,buf);
+
+    if (recvArinc429=="") m_recvBytesArinc429[fd-1]=0;
+    m_recvArinc429[fd-1] = recvArinc429;
+
+    qDebug()<<"recvArinc429:"<<recvArinc429;
+
+    QList<QObject*> objList=qmlObject->findChildren<QObject*>("arinc429GroupBox");
+    if(objList.count()>=fd){
+        //显示数据
+        QList<QObject*> arinc429RecvItemTextAreaList=objList[fd-1]->findChildren<QObject*>("arinc429RecvItemTextArea");
+        if (arinc429RecvItemTextAreaList.count()>0){
+            QObject* arinc429RecvItemTextArea= arinc429RecvItemTextAreaList.first();
+            if(arinc429RecvItemTextArea)
+            {
+                QString m_recvStr=m_recvArinc429[fd-1];
                 arinc429RecvItemTextArea->setProperty("text",m_recvStr);
                 bool bRet=QMetaObject::invokeMethod(arinc429RecvItemTextArea,"clear");
                 bRet=QMetaObject::invokeMethod(arinc429RecvItemTextArea,"append",Q_ARG(QString,m_recvStr));
             }
         }
+        //显示长度
         QList<QObject*> labelRecvBytesArinc429List=objList[fd-1]->findChildren<QObject*>("lbl232RecvBytes");
         if (labelRecvBytesArinc429List.count()>0){
             QObject* labelRecvBytesArinc429= labelRecvBytesArinc429List.first();
             if(labelRecvBytesArinc429)
             {
-               // QString m_sendBytesStr=QString("%1").arg(m_sendBytesArinc429[fd-1],3,10,QChar('0'));
                 QString m_recvBytesStr=QString("%1").arg(m_recvBytesArinc429[fd-1]);
                 labelRecvBytesArinc429->setProperty("text",m_recvBytesStr);
                 bool bRet=QMetaObject::invokeMethod(labelRecvBytesArinc429,"doLayout");
             }
         }
     }
-
-
 }
 
 void arincComm429::setRecvArincComm429(const int fd,const QString &recvArinc429)
 {
+    LOG_INFO("setRecvArincComm429");
+
     if (recvArinc429=="") m_recvBytesArinc429[fd-1]=0;
     m_recvArinc429[fd-1] = recvArinc429;
     //emit recvRS42210Changed();
@@ -113,41 +158,48 @@ void arincComm429::setRecvArincComm429(const int fd,const QString &recvArinc429)
 
 void arincComm429::setRecvBytesArinc429(const int fd, long recvBytesArinc429)
 {
+    LOG_INFO("setRecvBytesArinc429");
+
     if (m_recvBytesArinc429[fd-1] == recvBytesArinc429)
         return;
     m_recvBytesArinc429[fd-1] = recvBytesArinc429;
     QList<QObject*> objList=qmlObject->findChildren<QObject*>("arinc429GroupBox");
     if(objList.count()>=fd){
         //result = (int)rs422_write(arinc429PortReadAddress[fd-1], msg_buf, (uint16_t)size);
-        QList<QObject*> labelRecvBytesArinc429List=objList[fd-1]->findChildren<QObject*>("lbl232RecvBytes");
+        QList<QObject*> labelRecvBytesArinc429List=objList[fd-1]->findChildren<QObject*>("lbl429RecvBytes");
         if (labelRecvBytesArinc429List.count()>0){
             QObject* labelRecvBytesArinc429= labelRecvBytesArinc429List.first();
             if(labelRecvBytesArinc429)
             {
                 //QString m_sendBytesStr=QString("%1").arg(m_sendBytesArinc429[fd-1],3,10,QChar('0'));
                 QString m_recvBytesStr=QString("%1").arg(m_recvBytesArinc429[fd-1]);
+                LOG_INFO("%s",m_recvBytesStr.toUtf8().data());
                 labelRecvBytesArinc429->setProperty("text",m_recvBytesStr);
                 bool bRet=QMetaObject::invokeMethod(labelRecvBytesArinc429,"doLayout");
             }
         }
     }
 }
-
-void arincComm429::setSendBytesArinc429(const int fd,long sendBytesArinc429)
+//QByteArray msgPack, int size
+void arincComm429::setSendBytesArinc429(const int fd,int len)
 {
-    m_sendBytesArinc429[fd-1] = sendBytesArinc429;
+    LOG_INFO("setSendBytesArinc429 size=%d",len);
+
+    QString m_sendBytesStr=QString("%1").arg(len);
+    //    LOG_INFO("size=%d",len);
+    //    LOG_INFO("%s",m_sendBytesStr.toLatin1().data());
+
     if (enableDisplay[fd-1])
     {
         QList<QObject*> objList=qmlObject->findChildren<QObject*>("arinc429GroupBox");
-        if(objList.count()>=fd){
-            //result = (int)rs422_write(arinc429PortReadAddress[fd-1], msg_buf, (uint16_t)size);
-            QList<QObject*> labelSendBytesArinc429List=objList[fd-1]->findChildren<QObject*>("lbl232SendBytes");
-            if (labelSendBytesArinc429List.count()>0){
+        if(objList.count()>=fd)
+        {
+            QList<QObject*> labelSendBytesArinc429List=objList[fd-1]->findChildren<QObject*>("lbl429SendBytes");
+            if (labelSendBytesArinc429List.count()>0)
+            {
                 QObject* labelSendBytesArinc429= labelSendBytesArinc429List.first();
                 if(labelSendBytesArinc429)
                 {
-                    //QString m_sendBytesStr=QString("%1").arg(m_sendBytesArinc429[fd-1],3,10,QChar('0'));
-                    QString m_sendBytesStr=QString("%1").arg(m_sendBytesArinc429[fd-1]);
                     labelSendBytesArinc429->setProperty("text",m_sendBytesStr);
                     bool bRet=QMetaObject::invokeMethod(labelSendBytesArinc429,"doLayout");
                 }
@@ -170,7 +222,7 @@ void arincComm429::saveFileClick(int fd,bool saveFile)
     else
     {
         if(isSaveFile[fd-1])
-          saveFileName[fd-1].close();
+            saveFileName[fd-1].close();
     }
 }
 
@@ -190,9 +242,7 @@ QString arincComm429::GetCorrectUnicode(const QByteArray& ba)
     return text;
 }
 
-
-
-void arincComm429::setHexArinc429(int fd,bool hexARINC429)
+void arincComm429::setDisplayHexArinc429(int fd,bool hexARINC429)
 {
     if(m_HexArinc429[fd-1]==hexARINC429)
         return;
@@ -201,52 +251,97 @@ void arincComm429::setHexArinc429(int fd,bool hexARINC429)
     {
         m_recvArinc429[fd-1]=m_recvArinc429[fd-1].mid(1024*4,m_recvArinc429[fd-1].length()-1024*4);
     }
+
+    qDebug()<<m_recvArinc429[fd-1];
+
+    LOG_INFO("setHexArinc429 [%s]",m_recvArinc429[fd-1].toLocal8Bit().data());
+
     QString tempStr=m_recvArinc429[fd-1];
     m_HexArinc429[fd-1]=hexARINC429;
 
     if(m_HexArinc429[fd-1]){
+
+        QTextCodec* gbk = QTextCodec::codecForName("gbk");
+        tempStr.replace(" ","");
+
+        QByteArray temp_arr = gbk->fromUnicode(tempStr.toLocal8Bit().data());
+        tempStr=tempStr.toLatin1().toHex(' ');
+        setRecvArinc429(fd,tempStr);
+        LOG_INFO("setRecvArinc429 [%s]",tempStr.toLocal8Bit().data());
+
+//        QByteArray msgPack= tempStr.toLatin1();
+//        int size=msgPack.length();
+
+//        char *s_p = msgPack.begin();
+//        char *buf_p=(char *) malloc(sizeof(char)*size);
+//        strncpy(buf_p,s_p,size);
+//        str_trim(buf_p);
+
+//        int buf_len=strlen(buf_p);
+//        int hbuf_len=buf_len/2;
+
+//        char *hbuf_p=(char *) malloc(sizeof(char)*buf_len);
+//        memset(hbuf_p,'\0',buf_len);
+//        hexs_to_binary(buf_p,buf_len,(uchar_8 *)hbuf_p);
+
+//        QByteArray pack(hbuf_p,hbuf_len);
+
+//        setRecvArinc429(fd,QString(pack));
+
+//        delete hbuf_p;
+//        delete buf_p;
+    } else {
+//        QByteArray ab=QByteArray::fromHex(tempStr.replace(" ","").toLatin1());
+//        QString returnData=QString(ab);
+        setRecvArinc429(fd,tempStr);
+    }
+}
+
+void arincComm429::onArinc429RecvMsg(const int fd, QString recvArinc429,int length)
+{
+    LOG_INFO("onArinc429RecvMsg [%s]",recvArinc429.toLocal8Bit().data());
+
+    //    appendRecvArinc429(fd,data,length);
+
+    m_recvBytesArinc429[fd-1] += length;
+
+    if(m_HexArinc429[fd-1] && m_recvBytesArinc429[fd-1]>0)
+    {
+
+        LOG_INFO("m_HexArinc429");
+        QString tempStr=recvArinc429;
+//        tempStr.replace(" ","");
+
         QTextCodec* gbk = QTextCodec::codecForName("gbk");
         QByteArray temp_arr = gbk->fromUnicode(tempStr.toLocal8Bit().data());
         tempStr=temp_arr.toHex(' ');
-        setRecvArinc429(fd,tempStr);
-    } else {
-        QByteArray ab=QByteArray::fromHex(tempStr.replace(" ","").toLatin1());
-        QString returnData=GetCorrectUnicode(ab);
-        setRecvArinc429(fd,returnData);
-    }
-}
 
+        m_recvArinc429[fd-1] += " "+ tempStr;
 
-
-void arincComm429::appendRecvArinc429(int fd,const QString &recvArinc429)
-{
-    if(m_HexArinc429[fd-1] && m_recvBytesArinc429[fd-1]>0)
-    {
-        m_recvArinc429[fd-1] =m_recvArinc429[fd-1]+" "+recvArinc429;
         if(isSaveFile[fd-1])
-           saveFileName[fd-1].write((" "+recvArinc429).toLocal8Bit());
+            saveFileName[fd-1].write((" "+recvArinc429).toLocal8Bit());
     }
     else
     {
-        m_recvArinc429[fd-1] += recvArinc429;
+        LOG_INFO("text m_HexArinc429");
+
+        m_recvArinc429[fd-1] += " "+recvArinc429;
+
         if(isSaveFile[fd-1])
-          saveFileName[fd-1].write(recvArinc429.toLocal8Bit());
-    }if (m_recvArinc429[fd-1].length()>1024*16*2)
+            saveFileName[fd-1].write(recvArinc429.toLocal8Bit());
+    }
+
+    if (m_recvArinc429[fd-1].length()>1024*16*2)
         m_recvArinc429[fd-1]=m_recvArinc429[fd-1].mid(1024*16,m_recvArinc429[fd-1].length()-1024*16);
+
+    enableDisplay[fd-1]=true;
     if (enableDisplay[fd-1])
     {
+        LOG_INFO("setRecvArinc429 [%s]",m_recvArinc429[fd-1].toUtf8().data());
+
         setRecvArinc429(fd,m_recvArinc429[fd-1]);
-        //emit recvArinc429Changed();
-        //emit recvBytesArinc429Changed();
         enableDisplay[fd-1]=false;
     }
-}
-
-
-void arincComm429::onArinc429RecvMsg(const int fd, QString data,int length)
-{
-    m_recvBytesArinc429[fd-1]+=length/3;
-    appendRecvArinc429(fd,data);
 }
 
 
@@ -270,11 +365,10 @@ int arincComm429::openArinc429()
     for(int i=0;i<arinc429PortNum;i++)
     {
         isArinc429Open[i]=true;
-        m_HexArinc429[i]=true;
+        m_HexArinc429[i]=false;
     }
     return 0;
 }
-
 
 int arincComm429::closeArinc429()
 {
@@ -293,43 +387,54 @@ int arincComm429::arinc429Config(int fd, int baudrate, int parity, int encmode)
     return 0;
 }
 
-
-
 int arincComm429::sendMsg429(int fd, QByteArray msgPack, int size)
 {
     int result = -1;
 
-    QByteArray tarArray(msgPack);
-    lowconvert(msgPack,&tarArray);
+    LOG_INFO("sendMsg429");
 
-    QString msg=QString(tarArray).toUpper();
-    int dataLenth=size/8;
-    if (size%8>0)
-        dataLenth++;
-    uint32_t msg_buf[dataLenth];
-    bool ok;
-    for(int i=0;i<dataLenth;i++)
-    {
-        if (i==dataLenth-1)
-        {
-            msg_buf[i]=msg.mid(i*8,msg.length()-i*8).toUInt(&ok,16);
-        }
-        else
-        {
-            msg_buf[i]=msg.mid(i*8,8).toUInt(&ok,16);
-        }
-    }
+//    m_HexArinc429[fd-1] = true;
+    m_sendBytesArinc429[fd-1] += size;
+    setSendBytesArinc429(fd, m_sendBytesArinc429[fd-1]);
 
-    if(isArinc429Open[fd-1]){
-        result = (int)arinc429_write(arinc429PortWriteAddress[fd-1], msg_buf, dataLenth);
-        m_sendBytesArinc429[fd-1]+=dataLenth*4;
-        if (enableDisplay[fd-1])
-        {
-            setSendBytesArinc429(fd, m_sendBytesArinc429[fd-1]);
-        }
-    }
-    else
-        qDebug()<<"ARINC429_TX_"<< fd-1 <<" is not Open\n";
+    //     char *p = msgPack.begin();
+    //     char buf[4];
+    //     memcpy(buf,p,4);
+    //     ntoh_32(buf);
+
+    //    QByteArray tarArray(msgPack);
+    //    lowconvert(msgPack,&tarArray);
+
+    //    QString msg=QString(tarArray).toUpper();
+    //    int dataLenth=size/8;
+    //    if (size%8>0)
+    //        dataLenth++;
+    //    uint32_t msg_buf[dataLenth];
+    //    bool ok;
+    //    for(int i=0;i<dataLenth;i++)
+    //    {
+    //        if (i==dataLenth-1)
+    //        {
+    //            msg_buf[i]=msg.mid(i*8,msg.length()-i*8).toUInt(&ok,16);
+    //        }
+    //        else
+    //        {
+    //            msg_buf[i]=msg.mid(i*8,8).toUInt(&ok,16);
+    //        }
+    //    }
+
+    //    if(isArinc429Open[fd-1]){
+    //        result = (int)arinc429_write(arinc429PortWriteAddress[fd-1], msg_buf, dataLenth);
+    //        m_sendBytesArinc429[fd-1]+=4;
+    //        if (enableDisplay[fd-1])
+    //        {
+    //            setSendBytesArinc429(fd, m_sendBytesArinc429[fd-1]);
+    //            setSendBytesArinc429(fd, m_sendBytesArinc429[fd-1]);
+    //            setSendBytesArinc429(fd, *((int *)buf));
+    //        }
+    //    }
+    //    else
+    //        qDebug()<<"ARINC429_TX_"<< fd-1 <<" is not Open\n";
 
     return result;
 }
