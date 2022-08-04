@@ -280,24 +280,21 @@ void arincComm429::onArinc429RecvMsg(const int fd, QString recvArinc429,int leng
 {
     LOG_INFO("onArinc429RecvMsg [%s]",recvArinc429.toLocal8Bit().data());
 
-    //    appendRecvArinc429(fd,data,length);
-
     if(m_HexArinc429[fd-1]){
-//        QByteArray ab;
-//        LOG_INFO("onRS232RecvMsg %d %s",length,data.begin());
         m_recvBytesArinc429[fd-1] += length;
-//        QString tmpStr=recvArinc429.toLatin1().toHex(' ');
-        QString str1=recvArinc429.toLatin1();
-        str1.replace(" ","");
-        QByteArray ba;
-        convertStringToHex(str1,ba);
+//        QString str1=recvArinc429.toLatin1();
+//        str1.replace(" ","");
+//        QByteArray ba;
+//        convertStringToHex(str1,ba);
 
-        QString hexs = ByteArrayToHexString(ba);
-        setRecvArinc429(fd,hexs);
+//        QString hexs = ByteArrayToHexString(ba);
+
+//        LOG_INFO("onArinc429RecvMsg %d %s",length,hexs.toLatin1().begin());
+
+        setRecvArinc429(fd,recvArinc429);
     } else {
-//        QString returnData=GetCorrectUnicode(data);
-        LOG_INFO("appendRecvRS232 %d",length);
-        m_recvBytesArinc429[fd-1] += recvArinc429.length();
+        LOG_INFO("onArinc429RecvMsg %d %s",length,recvArinc429.toLatin1().begin());
+        m_recvBytesArinc429[fd-1] += length;
         setRecvArinc429(fd,recvArinc429);
     }
 
@@ -388,9 +385,8 @@ int arincComm429::sendMsg429(int fd, QByteArray msgPack, int size,bool isHex)
 {
     int result = -1;
 
-    LOG_INFO("sendMsg429");
+    LOG_INFO("sendMsg429 %s %d",msgPack.begin(),size);
 
-//    m_HexArinc429[fd-1] = true;
     m_sendBytesArinc429[fd-1] += size;
     m_HexArinc429[fd-1] = isHex;
     setSendBytesArinc429(fd, m_sendBytesArinc429[fd-1]);

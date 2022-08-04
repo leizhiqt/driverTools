@@ -80,8 +80,7 @@ QByteArray HexStringToByteArray(QString HexString)
             if(ok){
                 ret.append(c);
             }else{
-//                qDebug()<<"非法的16进制字符："<<s;
-//                QMessageBox::warning(0,tr("错误："),QString("非法的16进制字符: \"%1\"").arg(s));
+                printf("非法的16进制字符：%s\n",s.toLatin1().data());
             }
         }
     }

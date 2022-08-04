@@ -58,22 +58,27 @@ void rs422Comm::setHexRS422(int fd,bool hexRS422)
 {
     if(m_HexRS422[fd-1]==hexRS422)
         return;
+    m_HexRS422[fd-1]=hexRS422;
 
     if ((m_recvRS422[fd-1]).length()>1024*4)
     {
         m_recvRS422[fd-1]=m_recvRS422[fd-1].mid(1024*4,m_recvRS422[fd-1].length()-1024*4);
     }
+
     QString tempStr=m_recvRS422[fd-1];
-    m_HexRS422[fd-1]=hexRS422;
+    tempStr.replace(" ","");
+
+    m_recvRS422[fd-1]="";
 
     if(m_HexRS422[fd-1]){
-        QTextCodec* gbk = QTextCodec::codecForName("gbk");
-        QByteArray temp_arr = gbk->fromUnicode(tempStr.toLocal8Bit().data());
-        tempStr=temp_arr.toHex(' ');
+        tempStr=tempStr.toLatin1().toHex(' ');
+
         setRecvRS422(fd,tempStr);
     } else {
-        QByteArray ab=QByteArray::fromHex(tempStr.replace(" ","").toLatin1());
+        QByteArray ab=QByteArray::fromHex(tempStr.toLatin1());
         QString returnData=GetCorrectUnicode(ab);
+        LOG_INFO("setRecvRS422 %s",returnData.toLatin1().data());
+
         setRecvRS422(fd,returnData);
     }
 }
@@ -84,18 +89,17 @@ void rs422Comm::setRecvRS422(const int fd, const QString &recvRS422)
 
     //if (recvRS422 == m_recvRS422[fd-1]  && recvRS422!="")
     //    return;
-    if (recvRS422=="") m_recvBytesRS422[fd-1]=0;
-    m_recvRS422[fd-1] = recvRS422;
-    //emit recvRS42210Changed();
-    //emit recvBytesRS42210Changed();
+
+    if (recvRS422=="")
+    {
+        m_recvBytesRS422[fd-1]=0;
+        m_recvRS422[fd-1]=recvRS422;
+    }else{
+        m_recvRS422[fd-1] += " "+recvRS422;
+    }
 
     QList<QObject*> objList=qmlObject->findChildren<QObject*>("rs422GroupBox");
     LOG_INFO("setRecvRS422 fd=%d count=%d",fd,objList.count());
-
-//    QList<QObject*>::iterator i;
-//    for (i = objList.begin(); i != objList.end(); ++i){
-//        LOG_INFO("objectName ===%s",(*i)->objectName().toLatin1().data());
-//    }
 
     if(objList.count()>=fd){
         //result = (int)rs422_write(rs422PortReadAddress[fd-1], msg_buf, (uint16_t)size);
@@ -104,10 +108,9 @@ void rs422Comm::setRecvRS422(const int fd, const QString &recvRS422)
             QObject* rs422RecvItemTextArea= rs422RecvItemTextAreaList.first();
             if(rs422RecvItemTextArea)
             {
-                //QString m_sendBytesStr=QString("%1").arg(m_sendBytesRS422[fd-1],3,10,QChar('0'));
                 QString m_recvStr=QString("%1").arg(m_recvRS422[fd-1]);
-                //rs422RecvItemTextArea->setProperty("text",m_recvStr);
-                LOG_INFO("setRecvRS422 fd=%d %s",fd,m_recvStr.toLatin1().data());
+                rs422RecvItemTextArea->setProperty("text",m_recvStr);
+
                 bool bRet=QMetaObject::invokeMethod(rs422RecvItemTextArea,"clear");
                 bRet=QMetaObject::invokeMethod(rs422RecvItemTextArea,"append",Q_ARG(QString,m_recvStr));
             }
@@ -117,9 +120,9 @@ void rs422Comm::setRecvRS422(const int fd, const QString &recvRS422)
             QObject* labelRecvBytesRS422= labelRecvBytesRS422List.first();
             if(labelRecvBytesRS422)
             {
-                //QString m_sendBytesStr=QString("%1").arg(m_sendBytesRS422[fd-1],3,10,QChar('0'));
                 QString m_recvBytesStr=QString("%1").arg(m_recvBytesRS422[fd-1]);
                 labelRecvBytesRS422->setProperty("text",m_recvBytesStr);
+
                 bool bRet=QMetaObject::invokeMethod(labelRecvBytesRS422,"doLayout");
                 LOG_INFO("setRecvRS422 fd=%d",fd);
             }
@@ -175,38 +178,38 @@ void rs422Comm::setSendBytesRS422(const int fd,long sendBytesRS422)
 
 void rs422Comm::appendRecvRS422(int fd,const QString &recvRS422)
 {
-    LOG_INFO("appendRecvRS422 fd=%d",fd);
-    if(m_HexRS422[fd-1] && m_recvBytesRS422[fd-1]>0)
-    {
+    LOG_INFO("appendRecvRS422 %s",recvRS422.toLatin1().data());
+//    if(m_HexRS422[fd-1] && m_recvBytesRS422[fd-1]>0)
+//    {
+//        LOG_INFO("appendRecvRS422");
+//        m_recvRS422[fd-1] =m_recvRS422[fd-1]+" "+recvRS422;
+//        if(isSaveFile[fd-1]){
+//            LOG_INFO("appendRecvRS422");
+//           saveFileName[fd-1].write((" "+recvRS422).toLocal8Bit());
+//        }
+//    }
+//    else
+//    {
+//        LOG_INFO("appendRecvRS422");
+//        m_recvRS422[fd-1] += recvRS422;
+//        if(isSaveFile[fd-1]){
+//          saveFileName[fd-1].write(recvRS422.toLocal8Bit());
+//        }
+//    }
+//    if (m_recvRS422[fd-1].length()>1024*16*2){
+//        LOG_INFO("appendRecvRS422");
+//        m_recvRS422[fd-1]=m_recvRS422[fd-1].mid(1024*16,m_recvRS422[fd-1].length()-1024*16);
+//    }
+//    LOG_INFO("appendRecvRS422");
+//    if (enableDisplay[fd-1])
+//    {
         LOG_INFO("appendRecvRS422");
-        m_recvRS422[fd-1] =m_recvRS422[fd-1]+" "+recvRS422;
-        if(isSaveFile[fd-1]){
-            LOG_INFO("appendRecvRS422");
-           saveFileName[fd-1].write((" "+recvRS422).toLocal8Bit());
-        }
-    }
-    else
-    {
-        LOG_INFO("appendRecvRS422");
-        m_recvRS422[fd-1] += recvRS422;
-        if(isSaveFile[fd-1]){
-          saveFileName[fd-1].write(recvRS422.toLocal8Bit());
-        }
-    }
-    if (m_recvRS422[fd-1].length()>1024*16*2){
-        LOG_INFO("appendRecvRS422");
-        m_recvRS422[fd-1]=m_recvRS422[fd-1].mid(1024*16,m_recvRS422[fd-1].length()-1024*16);
-    }
-    LOG_INFO("appendRecvRS422");
-    if (enableDisplay[fd-1])
-    {
-        LOG_INFO("appendRecvRS422");
-        setRecvRS422(fd,m_recvRS422[fd-1]);
+        setRecvRS422(fd,recvRS422);
         //emit recvRS42208Changed();
         //emit recvBytesRS42208Changed();
-        enableDisplay[fd-1]=false;
-    }
-    LOG_INFO("appendRecvRS422");
+//        enableDisplay[fd-1]=false;
+//    }
+//    LOG_INFO("appendRecvRS422");
 }
 
 void rs422Comm::onRS422RecvMsg(int fd, QByteArray data,int length)

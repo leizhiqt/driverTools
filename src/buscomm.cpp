@@ -274,7 +274,6 @@ void busComm::btnAutoTestClicked()
 //        QMetaObject::invokeMethod(pctrlobj,  "recvMsg",  Q_RETURN_ARG(QVariant,rValue),  Q_ARG(QVariant, fd),Q_ARG(QVariant, qs),Q_ARG(QVariant, length));
 //    }
 
-
 void busComm::open()
 {
     QThreadPool::globalInstance()->setMaxThreadCount(10);
@@ -304,7 +303,6 @@ void busComm::open()
     result = arinc429->openArinc429(fd42906);*/
 }
 
-
 int busComm::close()
 {
     int size = 0;
@@ -319,11 +317,6 @@ int busComm::close()
     return 0;
 }
 
-
-
-
-
-
 int busComm::pinConfig(int pin,char pinMode)
 {
     return 1;
@@ -333,7 +326,6 @@ int busComm::pinConfig(int pin,char pinMode)
         //return io_set_inputmode(pin);
         */
 }
-
 
 int busComm::readDigital(int pin)
 {
@@ -350,8 +342,6 @@ int busComm::writeDigital(int pin, int value)
 int busComm::recvMsgTest(int busType,int recFd, QByteArray data,int length)
 {
     LOG_INFO("recvMsgTest length=%d",length);
-//    char *p =data.begin();
-//    printf_hex(p,length);
 
     int result = -1;
     switch(busType)
@@ -378,21 +368,35 @@ void busComm::onTheadSendMsg(int busType, int fd, QByteArray msgPack, int size, 
 
 int busComm::sendMsg(int busType, int fd, QByteArray msgPack, int size, bool checkHexSend)
 {
-    //checkHexSend = false
     LOG_INFO("sendMsg busType=%d size=%d msg=%s",busType,size,msgPack.begin());
 
     QByteArray ab;
-
+    int len = size;
     if (checkHexSend)
     {
+        ab=msgPack;
         QString str=QString(msgPack);
         str.replace(" ","");
+        len = str.length();
 
-        QString str1=str.toLatin1().toHex(' ');
+//        ab=HexStringToByteArray(str);
 
-        convertStringToHex(str1,ab);
+//        str.replace(" ","");
 
-        LOG_INFO("sendMsg busType=%d size=%d msg=%s",busType,ab.length(),ab.begin());
+//        LOG_INFO("sendMsg busType=%d size=%d msg=%s",busType,str.length(),str.toLatin1().data());
+
+//        len = str.length();
+
+//        ab = str1.toLatin1();
+
+//        QString str1=str.toLatin1().toHex(' ');
+
+//        ab = str1.toLatin1();
+//        convertStringToHex(str1,ab);
+
+        //ab=HexStringToByteArray(str1);
+
+        LOG_INFO("sendMsg busType=%d ab.length=%d ab=%s",busType,ab.length(),ab.begin());
     }
 
     int result = -1;
@@ -401,35 +405,36 @@ int busComm::sendMsg(int busType, int fd, QByteArray msgPack, int size, bool che
     case 1:
         if (checkHexSend)
         {
-            result=arinc429->sendMsg429(fd,ab,ab.length(),checkHexSend);
+            result=arinc429->sendMsg429(fd,ab,len/2,checkHexSend);
         }
         else
         {
-            result=arinc429->sendMsg429(fd,msgPack,size,checkHexSend);
+            result=arinc429->sendMsg429(fd,msgPack,len,checkHexSend);
         }
         break;
     case 2:
         if (checkHexSend)
         {
-            result=rs422->sendMsg422(fd,ab,ab.length(),checkHexSend);
+            result=rs422->sendMsg422(fd,ab,len/2,checkHexSend);
         }
         else
         {
-            result=rs422->sendMsg422(fd,msgPack,size,checkHexSend);
+            result=rs422->sendMsg422(fd,msgPack,len,checkHexSend);
         }
         break;
     case 3:
         if (checkHexSend)
         {
-            result=rs232->sendMsg232(fd,ab,ab.length(),checkHexSend);
+            result=rs232->sendMsg232(fd,ab,len/2,checkHexSend);
         }
         else
         {
-            result=rs232->sendMsg232(fd,msgPack,size,checkHexSend);
+            result=rs232->sendMsg232(fd,msgPack,len,checkHexSend);
         }
         break;
     }
 
+    //接收数据
     if (checkHexSend)
     {
         recvMsgTest(busType, fd, ab,ab.length());

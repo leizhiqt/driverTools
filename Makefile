@@ -3480,7 +3480,9 @@ build/gcc-x86_64/temp/rs422comm.o: src/rs422comm.cpp src/rs422comm.h \
 		../Qt5.14.2/5.14.2/gcc_64/include/QtCore/qxmlstream.h \
 		../Qt5.14.2/5.14.2/gcc_64/include/QtCore/qtcoreversion.h \
 		../Qt5.14.2/5.14.2/gcc_64/include/QtCore/QDebug \
-		src/uartfunc.h
+		src/uartfunc.h \
+		QtStrConvert.h \
+		../Qt5.14.2/5.14.2/gcc_64/include/QtCore/QString
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/gcc-x86_64/temp/rs422comm.o src/rs422comm.cpp
 
 build/gcc-x86_64/temp/threadtask.o: src/threadtask.cpp src/threadtask.h \
@@ -3653,10 +3655,8 @@ install_DriverTools: first FORCE
 	$(QINSTALL) /home/zhi/driverToolsTest11/3rd/drv_202110151323/drv_global.h $(INSTALL_ROOT)/home/zhi/driverToolsTest11/build/gcc-x86_64/bin/drv_global.h
 	$(QINSTALL) /home/zhi/driverToolsTest11/3rd/drv_202110151323/libdrv.so $(INSTALL_ROOT)/home/zhi/driverToolsTest11/build/gcc-x86_64/bin/libdrv.so
 	$(QINSTALL) /home/zhi/driverToolsTest11/3rd/drv_202110151323/libdrv.so.1.0.0 $(INSTALL_ROOT)/home/zhi/driverToolsTest11/build/gcc-x86_64/bin/libdrv.so.1.0.0
-	$(QINSTALL) /home/zhi/driverToolsTest11/3rd/drv_202110151323/libdrv.so.1.0.0.tar.gz $(INSTALL_ROOT)/home/zhi/driverToolsTest11/build/gcc-x86_64/bin/libdrv.so.1.0.0.tar.gz
 
 uninstall_DriverTools: FORCE
-	-$(DEL_FILE) -r $(INSTALL_ROOT)/home/zhi/driverToolsTest11/build/gcc-x86_64/bin/libdrv.so.1.0.0.tar.gz
 	-$(DEL_FILE) -r $(INSTALL_ROOT)/home/zhi/driverToolsTest11/build/gcc-x86_64/bin/libdrv.so.1.0.0
 	-$(DEL_FILE) -r $(INSTALL_ROOT)/home/zhi/driverToolsTest11/build/gcc-x86_64/bin/libdrv.so
 	-$(DEL_FILE) -r $(INSTALL_ROOT)/home/zhi/driverToolsTest11/build/gcc-x86_64/bin/drv_global.h
