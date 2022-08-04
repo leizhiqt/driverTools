@@ -370,79 +370,32 @@ int busComm::sendMsg(int busType, int fd, QByteArray msgPack, int size, bool che
 {
     LOG_INFO("sendMsg busType=%d size=%d msg=%s",busType,size,msgPack.begin());
 
-    QByteArray ab;
-    int len = size;
+    QString str=QString(msgPack);
+    str.replace(" ","");
+    int len = str.length();
+    LOG_INFO("sendMsg busType=%d ab.length=%d",busType,len);
+
     if (checkHexSend)
     {
-        ab=msgPack;
-        QString str=QString(msgPack);
-        str.replace(" ","");
-        len = str.length();
-
-//        ab=HexStringToByteArray(str);
-
-//        str.replace(" ","");
-
-//        LOG_INFO("sendMsg busType=%d size=%d msg=%s",busType,str.length(),str.toLatin1().data());
-
-//        len = str.length();
-
-//        ab = str1.toLatin1();
-
-//        QString str1=str.toLatin1().toHex(' ');
-
-//        ab = str1.toLatin1();
-//        convertStringToHex(str1,ab);
-
-        //ab=HexStringToByteArray(str1);
-
-        LOG_INFO("sendMsg busType=%d ab.length=%d ab=%s",busType,ab.length(),ab.begin());
+        len /= 2;
     }
 
     int result = -1;
     switch(busType)
     {
     case 1:
-        if (checkHexSend)
-        {
-            result=arinc429->sendMsg429(fd,ab,len/2,checkHexSend);
-        }
-        else
-        {
             result=arinc429->sendMsg429(fd,msgPack,len,checkHexSend);
-        }
         break;
     case 2:
-        if (checkHexSend)
-        {
-            result=rs422->sendMsg422(fd,ab,len/2,checkHexSend);
-        }
-        else
-        {
             result=rs422->sendMsg422(fd,msgPack,len,checkHexSend);
-        }
         break;
     case 3:
-        if (checkHexSend)
-        {
-            result=rs232->sendMsg232(fd,ab,len/2,checkHexSend);
-        }
-        else
-        {
             result=rs232->sendMsg232(fd,msgPack,len,checkHexSend);
-        }
         break;
     }
 
     //接收数据
-    if (checkHexSend)
-    {
-        recvMsgTest(busType, fd, ab,ab.length());
-    }
-    else
-    {
-        recvMsgTest(busType, fd, msgPack, size);
-    }
+    recvMsgTest(busType, fd, msgPack, len);
 
     return result;
 }
