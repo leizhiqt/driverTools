@@ -66,7 +66,9 @@ int main(int argc, char *argv[])
     }, Qt::QueuedConnection);
     engine.load(url);
 
+    LOG_INFO("bus->open1");
     bus->open();
+    LOG_INFO("bus->open2");
 
     rs232->qmlObject=engine.rootObjects().first()->findChildren<QObject*>("rs232Page").first();
     rs422->qmlObject=engine.rootObjects().first()->findChildren<QObject*>("rs422Page").first();

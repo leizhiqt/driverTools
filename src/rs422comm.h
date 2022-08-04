@@ -59,7 +59,7 @@ public:
     Q_INVOKABLE int rs422Config(int fd, int baudrate=115200, int bits=8, int parity=0, int stop=1);
     QString GetCorrectUnicode(const QByteArray& ba);
 
-    int sendMsg422(int fd, QByteArray msgPack, int size);
+    int sendMsg422(int fd, QByteArray msgPack, int size,bool isHex);
     //int sendMsg422(int fd, QString msgPack, int size);
 
 

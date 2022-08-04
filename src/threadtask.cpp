@@ -160,7 +160,7 @@ void ThreadTask::runAutoTest()
     QThread::QThread::msleep(50);
     status=io_read();
     qDebug("status=%x",status);
-    if (status==0x8000)
+    if (status==0x80)
     {
         emit recvAutoTestStringChanged("<br>设置IO_16为输入模式，并输出低电平<br>");
         if (isPass)

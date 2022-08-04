@@ -100,7 +100,7 @@ Item {
                     CheckBox{
                         id:checkHexSend
                         text: "十六进制"
-                        checked: ture
+                        checked: true
                         enabled: true
                         anchors.bottom: parent.bottom
                         anchors.bottomMargin: 10
@@ -118,7 +118,7 @@ Item {
                                 var vartemp="";
                                 for(var i = 0; i < txtAreaSend.text.length; i++){
                                     vartemp=txtAreaSend.text.charCodeAt(i);
-                                    if (val == "")
+                                    if (val === "")
                                     {
                                         if (vartemp<16) val="0"+vartemp.toString(16)
                                         else val=vartemp.toString(16);
@@ -209,7 +209,7 @@ Item {
                         anchors.bottomMargin: 10
                         anchors.left: parent.left
                         anchors.leftMargin: 10
-                        checked: ture
+                        checked: true
                         enabled: true
                         height: 40
 

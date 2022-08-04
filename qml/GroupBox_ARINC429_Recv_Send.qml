@@ -203,7 +203,7 @@ Item {
                         anchors.bottomMargin: 10
                         anchors.left: parent.left
                         anchors.leftMargin: 10
-                        checked: ture
+                        checked: true
                         enabled: true
                         height: 40
                         onCheckedChanged: {

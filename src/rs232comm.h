@@ -13,9 +13,6 @@
 class rs232Comm : public QObject
 {
     Q_OBJECT
-    bool hexRs232[rs232PortNum];
-
-
 public:
     explicit rs232Comm(QObject *parent = nullptr);
     static rs232Comm *getInstance();
@@ -52,7 +49,7 @@ public:
     Q_INVOKABLE int rs232Config(int fd, int baudrate=115200, int bits=8, int parity=0, int stop=0);
     QString GetCorrectUnicode(const QByteArray& ba);
     //void setRS232CallBackFunc(int fd, rx_data_ST cbk);
-    int sendMsg232(int fd, QString msgPack, int size);
+    int sendMsg232(int fd, QString msgPack, int size,bool isHex);
     //int sendMsg232(int fd, QByteArray msgPack, int size);
 
 signals:
@@ -71,6 +68,7 @@ private:
     QString m_recvRS232[rs232PortNum];
     long m_recvBytesRS232[rs232PortNum]={0};
     long m_sendBytesRS232[rs232PortNum]={0};
+//    bool hexRs232[rs232PortNum];
 
     static rs232Comm * pThis;   //静态对象指针
 };

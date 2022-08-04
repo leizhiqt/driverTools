@@ -9,6 +9,7 @@
 #include "callc.h"
 #include "uartfunc.h"
 #include "bclog.h"
+#include "QtStrConvert.h"
 
 uint8_t rxbuf422[rs422PortNum][2048];
 rs422Comm *rs422Comm::pThis = 0;
@@ -210,27 +211,24 @@ void rs422Comm::appendRecvRS422(int fd,const QString &recvRS422)
 
 void rs422Comm::onRS422RecvMsg(int fd, QByteArray data,int length)
 {
-    LOG_INFO("onRS422RecvMsg fd=%d",fd);
-    char *p = data.begin();
-    printf_hex(p,length);
+    LOG_INFO("onRS422RecvMsg %d %s",length,data.begin());
 
     m_recvBytesRS422[fd-1]+=length;
     if(m_HexRS422[fd-1]){
-        LOG_INFO("onRS422RecvMsg fd=%d",fd);
-        data=data.toHex(' ');
-        LOG_INFO("onRS422RecvMsg fd=%d",fd);
-        appendRecvRS422(fd,data);
-        LOG_INFO("onRS422RecvMsg fd=%d",fd);
+        QString str1(data);
+        str1.replace(" ","");
+        QByteArray ba;
+        convertStringToHex(str1,ba);
+
+        QString hexs = ByteArrayToHexString(ba);
+
+        appendRecvRS422(fd,hexs);
     } else {
         QString returnData=GetCorrectUnicode(data);
-        LOG_INFO("onRS422RecvMsg fd=%d",fd);
+
         appendRecvRS422(fd,returnData);
-        LOG_INFO("onRS422RecvMsg fd=%d",fd);
     }
-    LOG_INFO("onRS422RecvMsg fd=%d",fd);
 }
-
-
 
 int rs422Comm::openRS422()
 {
@@ -320,12 +318,24 @@ QString rs422Comm::GetCorrectUnicode(const QByteArray& ba)
     return text;
 }
 
-int rs422Comm::sendMsg422(int fd, QByteArray msgPack, int size)
+int rs422Comm::sendMsg422(int fd, QByteArray msgPack, int size,bool isHex)
 {
     int result = -1;
+
+    LOG_INFO("sendMsg422 %s",msgPack.data());
+    LOG_INFO("setRecvRS232 m_recvRS422[fd-1] %s",m_recvRS422[fd-1].data());
+
+    m_sendBytesRS422[fd-1] += size;
+    m_HexRS422[fd-1] = isHex;
+    LOG_INFO("setHexRS232 %d %d",m_HexRS422,m_sendBytesRS422[fd-1]);
+    setSendBytesRS422(fd, m_sendBytesRS422[fd-1]);
+
+
     //QTextCodec* gbk = QTextCodec::codecForName("gbk");
     //QByteArray send_arr = gbk->fromUnicode(msgPack.toLocal8Bit().data());
-    QByteArray send_arr=msgPack;
+
+
+    /*QByteArray send_arr=msgPack;
     size=send_arr.length();
     char msg_buf[size];
     memset(msg_buf,0,size*sizeof(char));
@@ -342,6 +352,7 @@ int rs422Comm::sendMsg422(int fd, QByteArray msgPack, int size)
     }
     else
         qDebug()<<"RS422_TX_"<< fd-1 <<" is not Open\n";
+    */
     return 0;
 }
 

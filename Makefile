@@ -52,7 +52,8 @@ OBJECTS_DIR   = build/gcc-x86_64/temp/
 
 ####### Files
 
-SOURCES       = main.cpp \
+SOURCES       = QtStrConvert.cpp \
+		main.cpp \
 		src/arincComm429.cpp \
 		src/buscomm.cpp \
 		src/callc.cpp \
@@ -84,7 +85,8 @@ SOURCES       = main.cpp \
 		build/gcc-x86_64/temp/moc_rs232comm.cpp \
 		build/gcc-x86_64/temp/moc_rs422comm.cpp \
 		build/gcc-x86_64/temp/moc_threadtask.cpp
-OBJECTS       = build/gcc-x86_64/temp/main.o \
+OBJECTS       = build/gcc-x86_64/temp/QtStrConvert.o \
+		build/gcc-x86_64/temp/main.o \
 		build/gcc-x86_64/temp/arincComm429.o \
 		build/gcc-x86_64/temp/buscomm.o \
 		build/gcc-x86_64/temp/callc.o \
@@ -328,7 +330,8 @@ DIST          = ../Qt5.14.2/5.14.2/gcc_64/mkspecs/features/spec_pre.prf \
 		../Qt5.14.2/5.14.2/gcc_64/mkspecs/features/exceptions.prf \
 		../Qt5.14.2/5.14.2/gcc_64/mkspecs/features/yacc.prf \
 		../Qt5.14.2/5.14.2/gcc_64/mkspecs/features/lex.prf \
-		driverToolsTest.pro src/arincComm429.h \
+		driverToolsTest.pro QtStrConvert.h \
+		src/arincComm429.h \
 		src/buscomm.h \
 		src/callc.h \
 		src/diocomm.h \
@@ -336,7 +339,8 @@ DIST          = ../Qt5.14.2/5.14.2/gcc_64/mkspecs/features/spec_pre.prf \
 		src/rs232comm.h \
 		src/rs422comm.h \
 		src/threadtask.h \
-		src/uartfunc.h main.cpp \
+		src/uartfunc.h QtStrConvert.cpp \
+		main.cpp \
 		src/arincComm429.cpp \
 		src/buscomm.cpp \
 		src/callc.cpp \
@@ -802,8 +806,8 @@ distdir: FORCE
 	$(COPY_FILE) --parents qml.qrc $(DISTDIR)/
 	$(COPY_FILE) --parents qml_qmlcache.qrc $(DISTDIR)/
 	$(COPY_FILE) --parents ../Qt5.14.2/5.14.2/gcc_64/mkspecs/features/data/dummy.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents src/arincComm429.h src/buscomm.h src/callc.h src/diocomm.h src/drv_global.h src/rs232comm.h src/rs422comm.h src/threadtask.h src/uartfunc.h $(DISTDIR)/
-	$(COPY_FILE) --parents main.cpp src/arincComm429.cpp src/buscomm.cpp src/callc.cpp src/diocomm.cpp src/rs232comm.cpp src/rs422comm.cpp src/threadtask.cpp src/uartfunc.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents QtStrConvert.h src/arincComm429.h src/buscomm.h src/callc.h src/diocomm.h src/drv_global.h src/rs232comm.h src/rs422comm.h src/threadtask.h src/uartfunc.h $(DISTDIR)/
+	$(COPY_FILE) --parents QtStrConvert.cpp main.cpp src/arincComm429.cpp src/buscomm.cpp src/callc.cpp src/diocomm.cpp src/rs232comm.cpp src/rs422comm.cpp src/threadtask.cpp src/uartfunc.cpp $(DISTDIR)/
 	$(COPY_FILE) --parents driverToolsTest_zh_CN.ts $(DISTDIR)/
 
 
@@ -1589,6 +1593,54 @@ compiler_clean: compiler_qmlcache_clean compiler_qmlcache_loader_clean compiler_
 
 ####### Compile
 
+build/gcc-x86_64/temp/QtStrConvert.o: QtStrConvert.cpp QtStrConvert.h \
+		../Qt5.14.2/5.14.2/gcc_64/include/QtCore/QString \
+		../Qt5.14.2/5.14.2/gcc_64/include/QtCore/qstring.h \
+		../Qt5.14.2/5.14.2/gcc_64/include/QtCore/qchar.h \
+		../Qt5.14.2/5.14.2/gcc_64/include/QtCore/qglobal.h \
+		../Qt5.14.2/5.14.2/gcc_64/include/QtCore/qconfig-bootstrapped.h \
+		../Qt5.14.2/5.14.2/gcc_64/include/QtCore/qconfig.h \
+		../Qt5.14.2/5.14.2/gcc_64/include/QtCore/qtcore-config.h \
+		../Qt5.14.2/5.14.2/gcc_64/include/QtCore/qsystemdetection.h \
+		../Qt5.14.2/5.14.2/gcc_64/include/QtCore/qprocessordetection.h \
+		../Qt5.14.2/5.14.2/gcc_64/include/QtCore/qcompilerdetection.h \
+		../Qt5.14.2/5.14.2/gcc_64/include/QtCore/qtypeinfo.h \
+		../Qt5.14.2/5.14.2/gcc_64/include/QtCore/qsysinfo.h \
+		../Qt5.14.2/5.14.2/gcc_64/include/QtCore/qlogging.h \
+		../Qt5.14.2/5.14.2/gcc_64/include/QtCore/qflags.h \
+		../Qt5.14.2/5.14.2/gcc_64/include/QtCore/qatomic.h \
+		../Qt5.14.2/5.14.2/gcc_64/include/QtCore/qbasicatomic.h \
+		../Qt5.14.2/5.14.2/gcc_64/include/QtCore/qatomic_bootstrap.h \
+		../Qt5.14.2/5.14.2/gcc_64/include/QtCore/qgenericatomic.h \
+		../Qt5.14.2/5.14.2/gcc_64/include/QtCore/qatomic_cxx11.h \
+		../Qt5.14.2/5.14.2/gcc_64/include/QtCore/qatomic_msvc.h \
+		../Qt5.14.2/5.14.2/gcc_64/include/QtCore/qglobalstatic.h \
+		../Qt5.14.2/5.14.2/gcc_64/include/QtCore/qmutex.h \
+		../Qt5.14.2/5.14.2/gcc_64/include/QtCore/qnumeric.h \
+		../Qt5.14.2/5.14.2/gcc_64/include/QtCore/qversiontagging.h \
+		../Qt5.14.2/5.14.2/gcc_64/include/QtCore/qbytearray.h \
+		../Qt5.14.2/5.14.2/gcc_64/include/QtCore/qrefcount.h \
+		../Qt5.14.2/5.14.2/gcc_64/include/QtCore/qnamespace.h \
+		../Qt5.14.2/5.14.2/gcc_64/include/QtCore/qarraydata.h \
+		../Qt5.14.2/5.14.2/gcc_64/include/QtCore/qstringliteral.h \
+		../Qt5.14.2/5.14.2/gcc_64/include/QtCore/qstringalgorithms.h \
+		../Qt5.14.2/5.14.2/gcc_64/include/QtCore/qstringview.h \
+		../Qt5.14.2/5.14.2/gcc_64/include/QtCore/qstringbuilder.h \
+		../Qt5.14.2/5.14.2/gcc_64/include/QtCore/QStringList \
+		../Qt5.14.2/5.14.2/gcc_64/include/QtCore/qstringlist.h \
+		../Qt5.14.2/5.14.2/gcc_64/include/QtCore/qlist.h \
+		../Qt5.14.2/5.14.2/gcc_64/include/QtCore/qalgorithms.h \
+		../Qt5.14.2/5.14.2/gcc_64/include/QtCore/qiterator.h \
+		../Qt5.14.2/5.14.2/gcc_64/include/QtCore/qhashfunctions.h \
+		../Qt5.14.2/5.14.2/gcc_64/include/QtCore/qpair.h \
+		../Qt5.14.2/5.14.2/gcc_64/include/QtCore/qvector.h \
+		../Qt5.14.2/5.14.2/gcc_64/include/QtCore/qcontainertools_impl.h \
+		../Qt5.14.2/5.14.2/gcc_64/include/QtCore/qpoint.h \
+		../Qt5.14.2/5.14.2/gcc_64/include/QtCore/qbytearraylist.h \
+		../Qt5.14.2/5.14.2/gcc_64/include/QtCore/qregexp.h \
+		../Qt5.14.2/5.14.2/gcc_64/include/QtCore/qstringmatcher.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/gcc-x86_64/temp/QtStrConvert.o QtStrConvert.cpp
+
 build/gcc-x86_64/temp/main.o: main.cpp ../Qt5.14.2/5.14.2/gcc_64/include/QtWidgets/QApplication \
 		../Qt5.14.2/5.14.2/gcc_64/include/QtWidgets/qapplication.h \
 		../Qt5.14.2/5.14.2/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -2354,7 +2406,9 @@ build/gcc-x86_64/temp/arincComm429.o: src/arincComm429.cpp src/arincComm429.h \
 		../Qt5.14.2/5.14.2/gcc_64/include/QtCore/QThread \
 		3rd/libcomm-pre.v0/include/bclog.h \
 		3rd/libcomm-pre.v0/include/convert_util.h \
-		3rd/libcomm-pre.v0/include/dtype.h
+		3rd/libcomm-pre.v0/include/dtype.h \
+		QtStrConvert.h \
+		../Qt5.14.2/5.14.2/gcc_64/include/QtCore/QString
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/gcc-x86_64/temp/arincComm429.o src/arincComm429.cpp
 
 build/gcc-x86_64/temp/buscomm.o: src/buscomm.cpp src/buscomm.h \
@@ -2639,8 +2693,10 @@ build/gcc-x86_64/temp/buscomm.o: src/buscomm.cpp src/buscomm.h \
 		../Qt5.14.2/5.14.2/gcc_64/include/QtQml/qjsvalue.h \
 		../Qt5.14.2/5.14.2/gcc_64/include/QtQml/qqmlerror.h \
 		../Qt5.14.2/5.14.2/gcc_64/include/QtCore/QTime \
+		3rd/libcomm-pre.v0/include/dtype.h \
 		3rd/libcomm-pre.v0/include/convert_util.h \
-		3rd/libcomm-pre.v0/include/dtype.h
+		QtStrConvert.h \
+		../Qt5.14.2/5.14.2/gcc_64/include/QtCore/QString
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/gcc-x86_64/temp/buscomm.o src/buscomm.cpp
 
 build/gcc-x86_64/temp/callc.o: src/callc.cpp src/drv_202110151323/drv_global.h \
@@ -3205,7 +3261,11 @@ build/gcc-x86_64/temp/rs232comm.o: src/rs232comm.cpp src/rs232comm.h \
 		3rd/libcomm-pre.v0/include/bclog.h \
 		src/arincComm429.h \
 		src/diocomm.h \
-		../Qt5.14.2/5.14.2/gcc_64/include/QtCore/QMetaObject
+		../Qt5.14.2/5.14.2/gcc_64/include/QtCore/QMetaObject \
+		3rd/libcomm-pre.v0/include/convert_util.h \
+		3rd/libcomm-pre.v0/include/dtype.h \
+		QtStrConvert.h \
+		../Qt5.14.2/5.14.2/gcc_64/include/QtCore/QString
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/gcc-x86_64/temp/rs232comm.o src/rs232comm.cpp
 
 build/gcc-x86_64/temp/rs422comm.o: src/rs422comm.cpp src/rs422comm.h \

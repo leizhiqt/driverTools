@@ -13,23 +13,11 @@
 #include <QTime>
 #include <QThreadPool>
 #include "threadtask.h"
+#include "dtype.h"
 #include "convert_util.h"
+#include "QtStrConvert.h"
 
-void str_trim(char  *s1)
-{
-    char *s2;
-    s2 = s1; //让我们的S2指向数组，以便更改数组里面的东西
-    while (*s1) {
-        if (*s1 == ' ') {
-            s1++;
-        } else {
-            *s2 = *s1;
-            s1++;
-            s2++; //指向数组的指针往后移动
-        }
-    }
-    *s2 = '\0';
-}
+
 
 busComm *busComm::pThis = 0;
 /**
@@ -361,7 +349,9 @@ int busComm::writeDigital(int pin, int value)
 
 int busComm::recvMsgTest(int busType,int recFd, QByteArray data,int length)
 {
-    LOG_INFO("recvMsgTest %s",data.begin());
+    LOG_INFO("recvMsgTest length=%d",length);
+//    char *p =data.begin();
+//    printf_hex(p,length);
 
     int result = -1;
     switch(busType)
@@ -389,21 +379,21 @@ void busComm::onTheadSendMsg(int busType, int fd, QByteArray msgPack, int size, 
 int busComm::sendMsg(int busType, int fd, QByteArray msgPack, int size, bool checkHexSend)
 {
     //checkHexSend = false
-//    LOG_INFO("sendMsg busType=%d size=%d",busType,size);
+    LOG_INFO("sendMsg busType=%d size=%d msg=%s",busType,size,msgPack.begin());
 
-//    char *s_p = msgPack.begin();
-//    char *buf_p=(char *) malloc(sizeof(char)*size);
-//    strncpy(buf_p,s_p,size);
-//    str_trim(buf_p);
+    QByteArray ab;
 
-//    int buf_len=strlen(buf_p);
-//    int hbuf_len=buf_len/2;
+    if (checkHexSend)
+    {
+        QString str=QString(msgPack);
+        str.replace(" ","");
 
-//    char *hbuf_p=(char *) malloc(sizeof(char)*buf_len);
-//    memset(hbuf_p,'\0',buf_len);
-//    hexs_to_binary(buf_p,buf_len,(uchar_8 *)hbuf_p);
+        QString str1=str.toLatin1().toHex(' ');
 
-//    LOG_INFO("sendMsg busType=%d size=%d",busType,size);
+        convertStringToHex(str1,ab);
+
+        LOG_INFO("sendMsg busType=%d size=%d msg=%s",busType,ab.length(),ab.begin());
+    }
 
     int result = -1;
     switch(busType)
@@ -411,62 +401,43 @@ int busComm::sendMsg(int busType, int fd, QByteArray msgPack, int size, bool che
     case 1:
         if (checkHexSend)
         {
-            QString str=QString(msgPack);
-            QByteArray ab=QByteArray::fromHex(str.replace(" ","").toLatin1());
-            result=arinc429->sendMsg429(fd,ab,ab.length());
-//            LOG_INFO("arinc429 checkHexSend %02x %02x %02x %02x ",*hbuf_p,*(hbuf_p+1),*(hbuf_p+2),*(hbuf_p+3));
+            result=arinc429->sendMsg429(fd,ab,ab.length(),checkHexSend);
         }
         else
         {
-            result=arinc429->sendMsg429(fd,msgPack,size);
-            LOG_INFO("arinc429 assic size=%d",size);
+            result=arinc429->sendMsg429(fd,msgPack,size,checkHexSend);
         }
         break;
     case 2:
         if (checkHexSend)
         {
-            QString str=QString(msgPack);
-            QByteArray ab=QByteArray::fromHex(str.replace(" ","").toLatin1());
-            result=rs422->sendMsg422(fd,ab,ab.length());
+            result=rs422->sendMsg422(fd,ab,ab.length(),checkHexSend);
         }
         else
         {
-            result=rs422->sendMsg422(fd,msgPack,size);
+            result=rs422->sendMsg422(fd,msgPack,size,checkHexSend);
         }
         break;
     case 3:
         if (checkHexSend)
         {
-            QString str=QString(msgPack);
-            QByteArray ab=QByteArray::fromHex(str.replace(" ","").toLatin1());
-            result=rs232->sendMsg232(fd,ab,ab.length());
+            result=rs232->sendMsg232(fd,ab,ab.length(),checkHexSend);
         }
         else
         {
-            result=rs232->sendMsg232(fd,msgPack,size);
+            result=rs232->sendMsg232(fd,msgPack,size,checkHexSend);
         }
         break;
-
     }
 
     if (checkHexSend)
     {
-        QString str=QString(msgPack);
-        QByteArray ab=QByteArray::fromHex(str.replace(" ","").toLatin1());
-
-        LOG_INFO("arinc429 assic size=%d",size);
-
         recvMsgTest(busType, fd, ab,ab.length());
     }
     else
     {
-        LOG_INFO("arinc429 assic size=%d",size);
-
         recvMsgTest(busType, fd, msgPack, size);
     }
-
-//    delete buf_p;
-//    delete hbuf_p;
 
     return result;
 }

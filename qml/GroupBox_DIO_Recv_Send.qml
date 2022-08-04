@@ -116,7 +116,7 @@ Item {
             objectName: "btnChannel"
 
             //是否高电平
-            property var highLevel: false
+            property var highLevel: true
 
 
 
@@ -131,8 +131,8 @@ Item {
             checked: channelPlay1();
 
             //对于发送通道，提供点击选中事件
-            checkable: comBoxDirection.currentIndex==1 ? true : false
-            //checkable: true
+            //checkable: comBoxDirection.currentIndex==1 ? true : false
+            checkable: true
             onCheckedChanged: {
 
                 if(checked)
@@ -149,7 +149,7 @@ Item {
                 {
                 case 0 : return false;
 
-                default: return false;
+                default: return true;
                 }
 
             }
@@ -159,7 +159,7 @@ Item {
                 {
                 case 0 : return false;
 
-                default: return false;
+                default: return true;
                 }
             }
         }

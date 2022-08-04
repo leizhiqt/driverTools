@@ -7,6 +7,7 @@
 #include "callc.h"
 #include "bclog.h"
 #include "convert_util.h"
+#include "QtStrConvert.h"
 
 extern void str_trim(char  *s1);
 
@@ -39,8 +40,14 @@ arincComm429::arincComm429(QObject *parent) : QObject(parent)
 void arincComm429::setRecvArinc429(const int fd, const QString recvArinc429)
 {
     LOG_INFO("setRecvArinc429 [%s]",recvArinc429.toLatin1().data());
-    if (recvArinc429=="") m_recvBytesArinc429[fd-1]=0;
-//    m_recvArinc429[fd-1] = recvArinc429;
+
+    if (recvArinc429=="")
+    {
+        m_recvBytesArinc429[fd-1]=0;
+        m_recvArinc429[fd-1]=recvArinc429;
+    }else{
+        m_recvArinc429[fd-1] += " "+recvArinc429;
+    }
 
     QList<QObject*> objList=qmlObject->findChildren<QObject*>("arinc429GroupBox");
     if(objList.count()>=fd){
@@ -50,7 +57,7 @@ void arincComm429::setRecvArinc429(const int fd, const QString recvArinc429)
             QObject* arinc429RecvItemTextArea= arinc429RecvItemTextAreaList.first();
             if(arinc429RecvItemTextArea)
             {
-                QString m_recvStr = recvArinc429;
+                QString m_recvStr = m_recvArinc429[fd-1];;
                 arinc429RecvItemTextArea->setProperty("text",m_recvStr);
                 bool bRet;
                 LOG_INFO("setRecvArinc429 [%s]",recvArinc429.toLatin1().data());
@@ -79,15 +86,10 @@ void arincComm429::setRecvArincMsg(const int fd, const QString recvArinc429)
 {
     LOG_INFO("setRecvArincMsg");
 
-//    char buf[256];
-//    char *p=recvArinc429.toLatin1().data();
-//    sprintf_hex(buf,(uchar_8 *)p,recvArinc429.length());
-//    LOG_INFO("setRecvArinc429 fd=%d %s",fd,buf);
-
     if (recvArinc429=="") m_recvBytesArinc429[fd-1]=0;
     m_recvArinc429[fd-1] = recvArinc429;
 
-    qDebug()<<"recvArinc429:"<<recvArinc429;
+    qDebug()<<"recvArinc429:"<<m_recvArinc429[fd-1];
 
     QList<QObject*> objList=qmlObject->findChildren<QObject*>("arinc429GroupBox");
     if(objList.count()>=fd){
@@ -99,6 +101,7 @@ void arincComm429::setRecvArincMsg(const int fd, const QString recvArinc429)
             {
                 QString m_recvStr=m_recvArinc429[fd-1];
                 arinc429RecvItemTextArea->setProperty("text",m_recvStr);
+
                 bool bRet=QMetaObject::invokeMethod(arinc429RecvItemTextArea,"clear");
                 bRet=QMetaObject::invokeMethod(arinc429RecvItemTextArea,"append",Q_ARG(QString,m_recvStr));
             }
@@ -110,6 +113,7 @@ void arincComm429::setRecvArincMsg(const int fd, const QString recvArinc429)
             if(labelRecvBytesArinc429)
             {
                 QString m_recvBytesStr=QString("%1").arg(m_recvBytesArinc429[fd-1]);
+
                 labelRecvBytesArinc429->setProperty("text",m_recvBytesStr);
                 bool bRet=QMetaObject::invokeMethod(labelRecvBytesArinc429,"doLayout");
             }
@@ -133,9 +137,9 @@ void arincComm429::setRecvArincComm429(const int fd,const QString &recvArinc429)
             QObject* arinc429RecvItemTextArea= arinc429RecvItemTextAreaList.first();
             if(arinc429RecvItemTextArea)
             {
-                //QString m_sendBytesStr=QString("%1").arg(m_sendBytesArinc429[fd-1],3,10,QChar('0'));
-                QString m_recvStr=QString("%1").arg(m_recvArinc429[fd-1]);
-                //arinc429RecvItemTextArea->setProperty("text",m_recvStr);
+                QString m_recvStr=m_recvArinc429[fd-1];
+                arinc429RecvItemTextArea->setProperty("text",m_recvStr);
+
                 bool bRet=QMetaObject::invokeMethod(arinc429RecvItemTextArea,"clear");
                 bRet=QMetaObject::invokeMethod(arinc429RecvItemTextArea,"append",Q_ARG(QString,m_recvStr));
             }
@@ -145,7 +149,6 @@ void arincComm429::setRecvArincComm429(const int fd,const QString &recvArinc429)
             QObject* labelRecvBytesArinc429= labelRecvBytesArinc429List.first();
             if(labelRecvBytesArinc429)
             {
-                //QString m_sendBytesStr=QString("%1").arg(m_sendBytesArinc429[fd-1],3,10,QChar('0'));
                 QString m_recvBytesStr=QString("%1").arg(m_recvBytesArinc429[fd-1]);
                 labelRecvBytesArinc429->setProperty("text",m_recvBytesStr);
                 bool bRet=QMetaObject::invokeMethod(labelRecvBytesArinc429,"doLayout");
@@ -244,56 +247,32 @@ QString arincComm429::GetCorrectUnicode(const QByteArray& ba)
 
 void arincComm429::setDisplayHexArinc429(int fd,bool hexARINC429)
 {
+    LOG_INFO("setDisplayHexArinc429 %d %d",hexARINC429,m_HexArinc429[fd-1]);
+
     if(m_HexArinc429[fd-1]==hexARINC429)
         return;
+
+    m_HexArinc429[fd-1]=hexARINC429;
 
     if ((m_recvArinc429[fd-1]).length()>1024*4)
     {
         m_recvArinc429[fd-1]=m_recvArinc429[fd-1].mid(1024*4,m_recvArinc429[fd-1].length()-1024*4);
     }
 
-    qDebug()<<m_recvArinc429[fd-1];
-
-    LOG_INFO("setHexArinc429 [%s]",m_recvArinc429[fd-1].toLocal8Bit().data());
-
     QString tempStr=m_recvArinc429[fd-1];
-    m_HexArinc429[fd-1]=hexARINC429;
+    tempStr.replace(" ","");
+    m_recvArinc429[fd-1]="";
 
     if(m_HexArinc429[fd-1]){
-
-        QTextCodec* gbk = QTextCodec::codecForName("gbk");
-        tempStr.replace(" ","");
-
-        QByteArray temp_arr = gbk->fromUnicode(tempStr.toLocal8Bit().data());
         tempStr=tempStr.toLatin1().toHex(' ');
+        LOG_INFO("setDisplayHexArinc429 [%s]",tempStr.toLocal8Bit().data());
         setRecvArinc429(fd,tempStr);
-        LOG_INFO("setRecvArinc429 [%s]",tempStr.toLocal8Bit().data());
-
-//        QByteArray msgPack= tempStr.toLatin1();
-//        int size=msgPack.length();
-
-//        char *s_p = msgPack.begin();
-//        char *buf_p=(char *) malloc(sizeof(char)*size);
-//        strncpy(buf_p,s_p,size);
-//        str_trim(buf_p);
-
-//        int buf_len=strlen(buf_p);
-//        int hbuf_len=buf_len/2;
-
-//        char *hbuf_p=(char *) malloc(sizeof(char)*buf_len);
-//        memset(hbuf_p,'\0',buf_len);
-//        hexs_to_binary(buf_p,buf_len,(uchar_8 *)hbuf_p);
-
-//        QByteArray pack(hbuf_p,hbuf_len);
-
-//        setRecvArinc429(fd,QString(pack));
-
-//        delete hbuf_p;
-//        delete buf_p;
     } else {
-//        QByteArray ab=QByteArray::fromHex(tempStr.replace(" ","").toLatin1());
-//        QString returnData=QString(ab);
-        setRecvArinc429(fd,tempStr);
+        QByteArray ab=QByteArray::fromHex(tempStr.toLatin1());
+        QString returnData=GetCorrectUnicode(ab);
+        LOG_INFO("setDisplayHexArinc429 %s",returnData.toLatin1().data());
+
+        setRecvArinc429(fd,returnData);
     }
 }
 
@@ -303,47 +282,65 @@ void arincComm429::onArinc429RecvMsg(const int fd, QString recvArinc429,int leng
 
     //    appendRecvArinc429(fd,data,length);
 
-    m_recvBytesArinc429[fd-1] += length;
+    if(m_HexArinc429[fd-1]){
+//        QByteArray ab;
+//        LOG_INFO("onRS232RecvMsg %d %s",length,data.begin());
+        m_recvBytesArinc429[fd-1] += length;
+//        QString tmpStr=recvArinc429.toLatin1().toHex(' ');
+        QString str1=recvArinc429.toLatin1();
+        str1.replace(" ","");
+        QByteArray ba;
+        convertStringToHex(str1,ba);
 
-    if(m_HexArinc429[fd-1] && m_recvBytesArinc429[fd-1]>0)
-    {
-
-        LOG_INFO("m_HexArinc429");
-        QString tempStr=recvArinc429;
-//        tempStr.replace(" ","");
-
-        QTextCodec* gbk = QTextCodec::codecForName("gbk");
-        QByteArray temp_arr = gbk->fromUnicode(tempStr.toLocal8Bit().data());
-        tempStr=temp_arr.toHex(' ');
-
-        m_recvArinc429[fd-1] += " "+ tempStr;
-
-        if(isSaveFile[fd-1])
-            saveFileName[fd-1].write((" "+recvArinc429).toLocal8Bit());
-    }
-    else
-    {
-        LOG_INFO("text m_HexArinc429");
-
-        m_recvArinc429[fd-1] += " "+recvArinc429;
-
-        if(isSaveFile[fd-1])
-            saveFileName[fd-1].write(recvArinc429.toLocal8Bit());
+        QString hexs = ByteArrayToHexString(ba);
+        setRecvArinc429(fd,hexs);
+    } else {
+//        QString returnData=GetCorrectUnicode(data);
+        LOG_INFO("appendRecvRS232 %d",length);
+        m_recvBytesArinc429[fd-1] += recvArinc429.length();
+        setRecvArinc429(fd,recvArinc429);
     }
 
-    if (m_recvArinc429[fd-1].length()>1024*16*2)
-        m_recvArinc429[fd-1]=m_recvArinc429[fd-1].mid(1024*16,m_recvArinc429[fd-1].length()-1024*16);
+//    m_recvBytesArinc429[fd-1] += length;
 
-    enableDisplay[fd-1]=true;
-    if (enableDisplay[fd-1])
-    {
-        LOG_INFO("setRecvArinc429 [%s]",m_recvArinc429[fd-1].toUtf8().data());
+//    if(m_HexArinc429[fd-1] && m_recvBytesArinc429[fd-1]>0)
+//    {
 
-        setRecvArinc429(fd,m_recvArinc429[fd-1]);
-        enableDisplay[fd-1]=false;
-    }
+//        LOG_INFO("m_HexArinc429");
+//        QString tempStr=recvArinc429;
+////        tempStr.replace(" ","");
+
+//        QTextCodec* gbk = QTextCodec::codecForName("gbk");
+//        QByteArray temp_arr = gbk->fromUnicode(tempStr.toLocal8Bit().data());
+//        tempStr=temp_arr.toHex(' ');
+
+//        m_recvArinc429[fd-1] += " "+ tempStr;
+
+//        if(isSaveFile[fd-1])
+//            saveFileName[fd-1].write((" "+recvArinc429).toLocal8Bit());
+//    }
+//    else
+//    {
+//        LOG_INFO("text m_HexArinc429");
+
+//        m_recvArinc429[fd-1] += " "+recvArinc429;
+
+//        if(isSaveFile[fd-1])
+//            saveFileName[fd-1].write(recvArinc429.toLocal8Bit());
+//    }
+
+//    if (m_recvArinc429[fd-1].length()>1024*16*2)
+//        m_recvArinc429[fd-1]=m_recvArinc429[fd-1].mid(1024*16,m_recvArinc429[fd-1].length()-1024*16);
+
+//    enableDisplay[fd-1]=true;
+//    if (enableDisplay[fd-1])
+//    {
+//        LOG_INFO("setRecvArinc429 [%s]",m_recvArinc429[fd-1].toUtf8().data());
+
+//        setRecvArinc429(fd,m_recvArinc429[fd-1]);
+//        enableDisplay[fd-1]=false;
+//    }
 }
-
 
 int arincComm429::openArinc429()
 {
@@ -387,7 +384,7 @@ int arincComm429::arinc429Config(int fd, int baudrate, int parity, int encmode)
     return 0;
 }
 
-int arincComm429::sendMsg429(int fd, QByteArray msgPack, int size)
+int arincComm429::sendMsg429(int fd, QByteArray msgPack, int size,bool isHex)
 {
     int result = -1;
 
@@ -395,6 +392,7 @@ int arincComm429::sendMsg429(int fd, QByteArray msgPack, int size)
 
 //    m_HexArinc429[fd-1] = true;
     m_sendBytesArinc429[fd-1] += size;
+    m_HexArinc429[fd-1] = isHex;
     setSendBytesArinc429(fd, m_sendBytesArinc429[fd-1]);
 
     //     char *p = msgPack.begin();

@@ -10,7 +10,7 @@
 class arincComm429 : public QObject
 {
     Q_OBJECT
-    bool hexArinc429[arinc429PortNum];
+//    bool hexArinc429[arinc429PortNum];
 
 public:
     explicit arincComm429(QObject *parent = nullptr);
@@ -40,7 +40,7 @@ public:
     QString GetCorrectUnicode(const QByteArray& ba);
 
     Q_INVOKABLE int arinc429Config(int fd, int baudrate=115200, int parity=0, int encmode=0);
-    int sendMsg429(int fd, QByteArray msgPack, int size);
+    int sendMsg429(int fd, QByteArray msgPack, int size,bool isHex);
 
     Q_INVOKABLE void setRecvArincMsg(const int fd,const QString recvArinc429);
 

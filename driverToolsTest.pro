@@ -27,6 +27,7 @@ OBJECTS_DIR = $$buildDir/temp
 UI_DIR = $$PWD/uimain
 
 SOURCES += \
+        QtStrConvert.cpp \
         main.cpp \
         src/arincComm429.cpp \
         src/buscomm.cpp \
@@ -43,6 +44,7 @@ TRANSLATIONS += \
     driverToolsTest_zh_CN.ts
 
 HEADERS += \
+    QtStrConvert.h \
     src/arincComm429.h \
     src/buscomm.h \
     src/callc.h \
